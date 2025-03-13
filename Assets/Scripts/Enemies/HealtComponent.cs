@@ -19,22 +19,9 @@ public class HealtComponent : MonoBehaviour
     public void GetDamage(float d){
         _health -=d;
         _onDamage.Invoke();
-        
+
         if(_health<=0) {
             _onDeath.Invoke();
         }
-    }
-    
-    public 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
