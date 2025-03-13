@@ -8,6 +8,7 @@ public class ShipInputProvider : MonoBehaviour
     [SerializeField] InputActionReference _rotateRight, _rotateLeft, _shootTopCannon, _shootBottomCannon;
 
     [SerializeField] RotationComponent _shipRotation;
+    [SerializeField] ShootComponent _topCannon, _bottomCannon;
 
     #region Patron ActionReference
     private void OnEnable()
@@ -24,8 +25,8 @@ public class ShipInputProvider : MonoBehaviour
         _rotateRight.action.performed += OnRightInputRecieved;
         _rotateLeft.action.performed += OnLefttInputRecieved;
 
-        //_shootTopCannon.action.performed += OnShootTopInputRecieved;
-        //_shootBottomCannon.action.performed += OnShootBottomInputRecieved;
+        _shootTopCannon.action.performed += OnShootTopInputRecieved;
+        _shootBottomCannon.action.performed += OnShootBottomInputRecieved;
     }
 
     private void OnDisable()
@@ -33,8 +34,8 @@ public class ShipInputProvider : MonoBehaviour
         _rotateRight.action.performed -= OnRightInputRecieved;
         _rotateLeft.action.performed -= OnLefttInputRecieved;
 
-        //_shootTopCannon.action.performed -= OnShootTopInputRecieved;
-        //_shootBottomCannon.action.performed -= OnShootBottomInputRecieved;
+        _shootTopCannon.action.performed -= OnShootTopInputRecieved;
+        _shootBottomCannon.action.performed -= OnShootBottomInputRecieved;
     }
 
     private void OnDestroy()
@@ -51,7 +52,7 @@ public class ShipInputProvider : MonoBehaviour
     private void OnRightInputRecieved(InputAction.CallbackContext obj) => _shipRotation.RotateObject(true);
     private void OnLefttInputRecieved(InputAction.CallbackContext obj) => _shipRotation.RotateObject(false);
 
-    //private void OnShootTopInputRecieved(InputAction.CallbackContext obj) => shootTop
-    //private void OnShootBottomInputRecieved(InputAction.CallbackContext obj) => shootBottom
+    private void OnShootTopInputRecieved(InputAction.CallbackContext obj) => _topCannon.Shoot();
+    private void OnShootBottomInputRecieved(InputAction.CallbackContext obj) => _bottomCannon.Shoot();
     #endregion
 }

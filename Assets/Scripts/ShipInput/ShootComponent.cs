@@ -9,18 +9,19 @@ using UnityEngine.Rendering;
 public class ShootComponent : MonoBehaviour
 {
 
-    [SerializeField] GameObject _bullet;
-    [SerializeField] float _cooldown = 100.0f;
+    [SerializeField] private GameObject _bulletPrefab;
+    [SerializeField] private float _cooldown = 100.0f;
 
-    [SerializeField] Vector2 v;
-    Transform _shipTransform;
+    [SerializeField] private Vector2 _directionOffset;
+    private Transform _shipTransform;
 
-    bool _canShoot = true;
-    Stopwatch _stopwatch = new Stopwatch();
+    private bool _canShoot = true;
+    private Stopwatch _stopwatch = new Stopwatch();
     private void Start()
     {
         _shipTransform = transform;
     }
+
     private void Update()
     {
         if(!_canShoot){
@@ -31,14 +32,16 @@ public class ShootComponent : MonoBehaviour
             }
         }   
     }
+
     public void Shoot(){
-    
-     if(_canShoot)
-     { 
-        GameObject.Instantiate(_bullet,_shipTransform.up,new quaternion(v.x,0.0f,v.y,1.0f));
-        _canShoot = false;
-       _stopwatch.Start();
-    }
-    
+         if(_canShoot)
+         { 
+            GameObject bullet = Instantiate(_bulletPrefab, _shipTransform.position, Quaternion.identity);
+            IMovementComponent bulletMovement = bullet.GetComponent<IMovementComponent>();
+            if (bulletMovement != null) bulletMovement.SetDirection(_shipTransform.up * _directionOffset);
+
+            _stopwatch.Start();
+            _canShoot = false;
+         }
     }
 }
