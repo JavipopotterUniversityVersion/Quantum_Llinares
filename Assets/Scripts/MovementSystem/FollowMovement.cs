@@ -6,8 +6,8 @@ public class FollowMovement : MonoBehaviour
 {
     Transform myTransform;
     [SerializeField] Transform followRef;
-    [SerializeField] float speed = 0.5f;
-    [SerializeField] float maxOffset;
+    [SerializeField] float speed = 1.5f;
+    [SerializeField] float maxOffset = 5;
     float distanceToTarget;
 
 
