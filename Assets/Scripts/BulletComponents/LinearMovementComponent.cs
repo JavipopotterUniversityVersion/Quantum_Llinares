@@ -21,6 +21,8 @@ public class LinearMovementComponent : MonoBehaviour, IMovementComponent
         _mTransform.Translate(_direction * _speed * Time.deltaTime);
     }
 
+    public void SetSpeed(float speed) => _speed = speed;
+
     public void SetDirection(Vector2 direction) => _direction = direction;
     public Vector2 GetDirection() => _direction;
 }
