@@ -10,6 +10,7 @@ public class ShipTransition : MonoBehaviour
     [SerializeField] Transform Ship1;
     [SerializeField] Transform Ship2;
     [SerializeField] UnityEvent _onDivide;
+    public UnityEvent OnDivide => _onDivide;
     // Start is called before the first frame update
     void Start()
     {
