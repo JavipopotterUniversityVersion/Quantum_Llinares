@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using TreeEditor;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -30,22 +31,14 @@ public class ShootComponent : MonoBehaviour
             }
         }   
     }
-    public void ShootUp(){
+    public void Shoot(){
     
      if(_canShoot)
      { 
-        GameObject.Instantiate(_bullet,v*_shipTransform.up,Quaternion.identity);
+        GameObject.Instantiate(_bullet,_shipTransform.up,new quaternion(v.x,0.0f,v.y,1.0f));
         _canShoot = false;
        _stopwatch.Start();
     }
-    }
-    public void ShootDown(){
     
-     if(_canShoot)
-     { 
-        GameObject.Instantiate(_bullet,v*_shipTransform.up,Quaternion.identity);
-        _canShoot = false;
-       _stopwatch.Start();
-    }
     }
 }

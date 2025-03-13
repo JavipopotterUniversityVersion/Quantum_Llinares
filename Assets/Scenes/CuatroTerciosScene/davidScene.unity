@@ -487,7 +487,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _bullet: {fileID: 3114354635972571905, guid: 4252c4f624f6370419dee9256283c1e8, type: 3}
   _cooldown: 500
-  v: {x: 0, y: -1}
+  v: {x: 0, y: 1}
 --- !u!4 &1485215162
 Transform:
   m_ObjectHideFlags: 0
