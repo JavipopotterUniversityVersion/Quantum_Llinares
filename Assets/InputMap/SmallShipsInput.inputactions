@@ -1,104 +1,41 @@
 {
-    "name": "PlayerInput",
+    "name": "SmallShipsInput",
     "maps": [
         {
-            "name": "New action map",
-            "id": "95c6e069-a0f2-4d13-866b-029b8f0e6f42",
+            "name": "Rotation",
+            "id": "3203f3ac-e9d4-4dd5-8a72-b3d28ad6bc52",
             "actions": [
                 {
-                    "name": "PlayerLeftShootUp",
+                    "name": "Ship1 Left",
                     "type": "Button",
-                    "id": "ba41f74c-f0ab-497b-a331-d53e38057d93",
+                    "id": "64dc8fe2-aa74-405a-961d-84667af15ab8",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
                 },
                 {
-                    "name": "PlayerLeftShootDown",
+                    "name": "Ship2 Left",
                     "type": "Button",
-                    "id": "7cd43bc1-4860-40b4-a60f-2b3ce385ea5f",
+                    "id": "f22ba528-ae05-4a96-81f9-355205444528",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
                 },
                 {
-                    "name": "PlayerLeftRotleft",
+                    "name": "Ship1 Right",
                     "type": "Button",
-                    "id": "e9175b74-f996-46ec-9e4a-6239e8f585a5",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "Hold",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "PlayerLeftRotRight",
-                    "type": "Button",
-                    "id": "3c558330-85fb-4351-af3b-032ae813e634",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "Hold",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "PlayerRightShootUp",
-                    "type": "Button",
-                    "id": "641af55d-7d22-467e-bf7e-be39846df8a3",
+                    "id": "7e4b8af4-2dc8-4a8a-9ab8-d0f18d44a03c",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
                 },
                 {
-                    "name": "PlayerRightShootDown",
+                    "name": "Ship2 Right",
                     "type": "Button",
-                    "id": "efd1a00d-7890-4026-9ac4-836441cef23b",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "PlayerRightRotLeft",
-                    "type": "Button",
-                    "id": "befaeb09-4614-4e55-8049-7656472f7719",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "Hold",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "PlayerRightRotRight",
-                    "type": "Button",
-                    "id": "c3abedfd-b672-409c-b068-c16dc58ad64a",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "Hold",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "PlayerLeftUnion",
-                    "type": "Button",
-                    "id": "19bc2eba-0db6-4634-8031-339e982636c2",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "PlayerRightUnion",
-                    "type": "Button",
-                    "id": "b137bf4a-10c0-42f7-86a7-84084ef2dcc0",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Pause",
-                    "type": "Button",
-                    "id": "c39d0b0b-670c-432f-bd5c-4d81b2c9baa9",
+                    "id": "3b0480c6-fb3a-4ef3-a273-6e4fcba81f86",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -108,243 +45,313 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "fd32bdd8-886c-4f29-8bfd-0f75583ac5b8",
-                    "path": "<Keyboard>/w",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "PlayerLeftShootUp",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "1aa71018-f1d7-4bf4-9f24-8192b1d9e9f3",
-                    "path": "<Gamepad>/dpad/up",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "PlayerLeftShootUp",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "672286a3-0cb3-4027-988b-26d643f80a45",
-                    "path": "<Keyboard>/s",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "PlayerLeftShootDown",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "c2c54081-f5dc-43bc-a07e-f66855b6f416",
-                    "path": "<Gamepad>/dpad/down",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "PlayerLeftShootDown",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "8dd78ff5-b264-4ed9-bc31-b715dcc96c94",
+                    "id": "e7afe1b9-9c16-447b-ba20-d5716f231f63",
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "PlayerLeftRotleft",
+                    "action": "Ship1 Left",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "c6d994a4-8594-4295-8c3d-f94d2dfca45a",
+                    "id": "35e02979-c980-4491-9422-9265902e131a",
                     "path": "<Gamepad>/dpad/left",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "PlayerLeftRotleft",
+                    "action": "Ship1 Left",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "ca205489-6381-4cb2-85a1-2c43c8a2658a",
-                    "path": "<Keyboard>/d",
+                    "id": "a757ecb0-71a2-4041-be74-c1dbd904fbea",
+                    "path": "<Keyboard>/j",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "PlayerLeftRotRight",
+                    "action": "Ship2 Left",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "9bb4d2a2-9013-4047-b8ca-2b052868776c",
-                    "path": "<Gamepad>/dpad/right",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "PlayerLeftRotRight",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "235a4bd2-137d-415e-8e36-36f9e82315a1",
-                    "path": "<Keyboard>/upArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "PlayerRightShootUp",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "dac5d27e-437f-40cc-91ad-b9a0a6e91618",
-                    "path": "<Gamepad>/buttonNorth",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "PlayerRightShootUp",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "ee54b55b-c6bb-4a6d-9e26-9636b7ddd637",
-                    "path": "<Keyboard>/downArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "PlayerRightShootDown",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "d22c7eb9-47fd-4ac5-af60-f0ba1982859c",
-                    "path": "<Gamepad>/buttonSouth",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "PlayerRightShootDown",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "2580f214-a476-4aa1-bb8a-4bfd78817d80",
-                    "path": "<Keyboard>/leftArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "PlayerRightRotLeft",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "c2c54ea3-ba60-4b43-a46d-1fe317b07665",
+                    "id": "625045f5-31cb-4f62-a555-9dc2ab262829",
                     "path": "<Gamepad>/buttonWest",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "PlayerRightRotLeft",
+                    "action": "Ship2 Left",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "d396191d-c305-4933-9eba-15db3eff0106",
-                    "path": "<Keyboard>/rightArrow",
+                    "id": "613301fe-ac1f-469c-94eb-23c5600d63a0",
+                    "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "PlayerRightRotRight",
+                    "action": "Ship1 Right",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "66be2e12-e167-4999-b8a1-3309afb4fe23",
-                    "path": "<Gamepad>/buttonEast",
+                    "id": "2010c39c-cbc5-45fe-b673-12e778ce86db",
+                    "path": "<Gamepad>/dpad/right",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "PlayerRightRotRight",
+                    "action": "Ship1 Right",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "c5c4e063-390a-4d19-8ef3-837cbcfbe64c",
-                    "path": "<Keyboard>/e",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "PlayerLeftUnion",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "906c96ff-eacc-49cc-8c05-bc19603a2e90",
-                    "path": "<Gamepad>/leftTrigger",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "PlayerLeftUnion",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "69d6622a-4b31-4e54-9b20-e8f2838aced9",
+                    "id": "9a8d9446-5331-4f0d-8a49-39c5317fa37f",
                     "path": "<Keyboard>/l",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "PlayerRightUnion",
+                    "action": "Ship2 Right",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "7b90233e-ad87-43b1-a2ce-25a65f88395d",
+                    "id": "9936ebd2-ad94-4361-a99c-64fb0e7f028a",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Ship2 Right",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Shooting",
+            "id": "3ebff384-8c0e-40d1-a950-01ddfe8bae5f",
+            "actions": [
+                {
+                    "name": "Ship1 Top",
+                    "type": "Button",
+                    "id": "a2b37d34-4898-439b-bc36-72b40746d15a",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Ship2 Top",
+                    "type": "Button",
+                    "id": "addea926-d23e-40e4-a84f-0c1e78b1d7d4",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Ship1 Bottom",
+                    "type": "Button",
+                    "id": "041ea3c1-104b-43a3-af2f-41e2dab65a25",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Ship2 Bottom",
+                    "type": "Button",
+                    "id": "08bd210e-b865-4952-9510-568918178e70",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "f3df9ba3-50af-488e-bb32-0b6526f9313e",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Ship1 Top",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "691e3912-de06-4d7f-9fae-d1581d0c4d44",
+                    "path": "<Gamepad>/dpad/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Ship1 Top",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c776dcc0-5287-4f15-8ffe-8b6a47b7c367",
+                    "path": "<Keyboard>/i",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Ship2 Top",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "78fc7e7c-3b02-4019-8e06-8d825e606672",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Ship2 Top",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "43b710c7-778c-4e7a-98dd-28a3e7a3e338",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Ship1 Bottom",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9d3c2f22-dfd5-423f-96d2-773d96808b5a",
+                    "path": "<Gamepad>/dpad/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Ship1 Bottom",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "09bc5d78-e2d2-449c-9b5f-1095514c5ae7",
+                    "path": "<Keyboard>/k",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Ship2 Bottom",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a2c42980-5170-4237-86fe-c6f41fe7b3cb",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Ship2 Bottom",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Entwine",
+            "id": "8909fef3-2976-4b42-ae4b-c14fcc344d3c",
+            "actions": [
+                {
+                    "name": "Ship1 Warp",
+                    "type": "Button",
+                    "id": "a31e9863-1280-419c-9a68-c565027f23fb",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Ship2 Warp",
+                    "type": "Button",
+                    "id": "fc58009e-3f5e-4c00-83f4-7165c608c874",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "550a583a-bf7d-450b-a872-494737a68886",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Ship1 Warp",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ede8e753-5697-4773-b296-b4496188ebf2",
+                    "path": "<Gamepad>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Ship1 Warp",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "92594f07-fe94-4922-8d6f-40f64ad8f81c",
+                    "path": "<AndroidGamepad>/leftShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Ship1 Warp",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d3424d2b-3b2b-4c25-9828-234fe2056b35",
+                    "path": "<Keyboard>/p",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Ship2 Warp",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7549a782-3c48-4295-9966-cb8dafec0c9c",
                     "path": "<Gamepad>/rightTrigger",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "PlayerRightUnion",
+                    "action": "Ship2 Warp",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "819a304b-7357-4f9b-927f-b3b9877039a0",
-                    "path": "<Keyboard>/escape",
+                    "id": "ce28caa7-2429-48fb-bf09-813a8c34561e",
+                    "path": "<Gamepad>/rightShoulder",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Pause",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "20b6c3c4-a45f-4627-a39e-e0526789dade",
-                    "path": "<Gamepad>/start",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Pause",
+                    "action": "Ship2 Warp",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
