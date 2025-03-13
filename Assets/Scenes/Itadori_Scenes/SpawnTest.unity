@@ -245,7 +245,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _spawnRateRange: {x: 2, y: 3}
   _enemiesAmountRange: {x: 1, y: 3}
-  _positionRange: {x: 6.65, y: 4.99}
+  _positionRange: {x: 8.86, y: 4.99}
   _enemyPrefab: {fileID: 5007368530161212412, guid: c947c836923364d46b3f8b85197fe71c, type: 3}
   _scaleCurve:
     serializedVersion: 2
