@@ -5,7 +5,7 @@ using UnityEngine;
 public class AcceleratedMovement : MonoBehaviour
 {
     FollowMovement followMovement;
-    [SerializeField] float acceleration = 0.0005f; // Se usa cuando está lejos
+    [SerializeField] float acceleration = 0.005f; // Se usa cuando está lejos
 
     // Deceleración
     float deccelerationInitialSpeed;
@@ -15,6 +15,7 @@ public class AcceleratedMovement : MonoBehaviour
     void Start()
     {
         followMovement = GetComponent<FollowMovement>();
+        deccelerationInitialSpeed = followMovement.getSpeed();
     }
 
     // Update is called once per frame
@@ -30,6 +31,7 @@ public class AcceleratedMovement : MonoBehaviour
         // Si está más cerca que el doble de la distancia máxima permitida, frena hasta alcanzar la distancia máxima permitida
         else if (followMovement.getDistanceToTarget() > followMovement.getMaxOffset())
         {
+            Debug.Log("Decelerating");
             decceleration = - (deccelerationInitialSpeed * deccelerationInitialSpeed) / (2 * followMovement.getMaxOffset());
             followMovement.setSpeed(followMovement.getSpeed() + decceleration * Time.deltaTime);
         }
