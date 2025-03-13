@@ -26,16 +26,13 @@ public class ShipTransitionListener : MonoBehaviour
         followMovement.setTarget(playerRef);
     }
 
-    public void OnEnable(){
-        shipTransition.OnDivide.AddListener(ChangeRef);
-    }
-
     public void OnDisable(){
         shipTransition.OnDivide.RemoveListener(ChangeRef);
     }
 
     public void setShipTransition(ShipTransition shipTransition_){
         shipTransition = shipTransition_;
+        shipTransition.OnDivide.AddListener(ChangeRef);
     }
 
     public void setPlayerTracker(PlayerTracker playerTracker_){

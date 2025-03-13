@@ -31,7 +31,6 @@ public class AcceleratedMovement : MonoBehaviour
         // Si está más cerca que el doble de la distancia máxima permitida, frena hasta alcanzar la distancia máxima permitida
         else if (followMovement.getDistanceToTarget() > followMovement.getMaxOffset())
         {
-            Debug.Log("Decelerating");
             decceleration = - (deccelerationInitialSpeed * deccelerationInitialSpeed) / (2 * followMovement.getMaxOffset());
             followMovement.setSpeed(followMovement.getSpeed() + decceleration * Time.deltaTime);
         }

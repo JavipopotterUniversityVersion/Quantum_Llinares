@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8860647101128480432}
   - component: {fileID: 5135379291334372343}
+  - component: {fileID: 31461914622944525}
   m_Layer: 0
   m_Name: Naves
   m_TagString: Untagged
@@ -53,6 +54,22 @@ MonoBehaviour:
   _onDivide:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &31461914622944525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4600646670652317577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8e2d54d6e28e4459e0317a810dbd86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _ships:
+  - {fileID: 6558577215184524824}
+  - {fileID: 8853344769111147024}
+  - {fileID: 2093526051904771534}
 --- !u!1001 &163393694972686376
 PrefabInstance:
   m_ObjectHideFlags: 0
