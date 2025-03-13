@@ -11,7 +11,6 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] GameObject _enemyPrefab;
 
     [SerializeField] PlayerTracker _playerTracker;
-    [SerializeField] Transform _playerTransform => _playerTracker.GetPlayer();
 
     [SerializeField] AnimationCurve _spawnRateCurve;
     [SerializeField] AnimationCurve _speedCurve;
@@ -77,7 +76,7 @@ public class EnemySpawner : MonoBehaviour
 
         if(enemy.TryGetComponent(out FollowMovement followMovement))
         {
-            followMovement.setTarget(_playerTransform.transform);
+            followMovement.setTarget(_playerTracker.GetNearestPlayer(spawnPosition));
             followMovement.setSpeed(Random.Range(_speedRange.x, _speedRange.y) * _speedCurve.Evaluate(_timer / _timeToReachMaxScale));
         }
         else
