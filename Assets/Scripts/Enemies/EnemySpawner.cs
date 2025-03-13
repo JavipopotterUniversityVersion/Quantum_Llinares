@@ -16,6 +16,7 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] AnimationCurve _spawnRateCurve;
     [SerializeField] AnimationCurve _speedCurve;
     [SerializeField] float _timeToReachMaxScale = 500.0f;
+    [SerializeField] Transform _entitesContainer;
 
     float _timer = 0.0f;
 
@@ -73,7 +74,7 @@ public class EnemySpawner : MonoBehaviour
 
         spawnPosition += (Vector2)transform.position;
 
-        GameObject enemy = Instantiate(_enemyPrefab, spawnPosition, Quaternion.identity);
+        GameObject enemy = Instantiate(_enemyPrefab, spawnPosition, Quaternion.identity, _entitesContainer);
 
         if(enemy.TryGetComponent(out FollowMovement followMovement))
         {
