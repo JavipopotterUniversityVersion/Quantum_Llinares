@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ShipTransition : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class ShipTransition : MonoBehaviour
     [SerializeField] Transform MainShip;
     [SerializeField] Transform Ship1;
     [SerializeField] Transform Ship2;
+    [SerializeField] UnityEvent _onDivide;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +24,7 @@ public class ShipTransition : MonoBehaviour
 
     [ContextMenu("Divide")]
     void Divide(){
+        _onDivide.Invoke();
         if (divided){
             Ship1.gameObject.SetActive(false);
             Ship2.gameObject.SetActive(false);
