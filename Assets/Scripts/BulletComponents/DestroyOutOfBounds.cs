@@ -4,17 +4,8 @@ using UnityEngine;
 
 public class DestroyOutOfBounds : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (GetComponent<Renderer>() != null && !GetComponent<Renderer>().isVisible)
-        {
+    private void OnTriggerExit2D(Collider2D other) {
+        if(other.gameObject.CompareTag("Bounds")){
             Destroy(gameObject);
         }
     }
