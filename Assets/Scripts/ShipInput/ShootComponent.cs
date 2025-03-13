@@ -11,16 +11,12 @@ public class ShootComponent : MonoBehaviour
 
     [SerializeField] private GameObject _bulletPrefab;
     [SerializeField] private float _cooldown = 100.0f;
+    [SerializeField] private float _speed = 5.0f;
 
     [SerializeField] private Vector2 _directionOffset;
-    private Transform _shipTransform;
 
     private bool _canShoot = true;
     private Stopwatch _stopwatch = new Stopwatch();
-    private void Start()
-    {
-        _shipTransform = transform;
-    }
 
     private void Update()
     {
@@ -36,9 +32,12 @@ public class ShootComponent : MonoBehaviour
     public void Shoot(){
          if(_canShoot)
          { 
-            GameObject bullet = Instantiate(_bulletPrefab, _shipTransform.position, Quaternion.identity);
-            IMovementComponent bulletMovement = bullet.GetComponent<IMovementComponent>();
-            if (bulletMovement != null) bulletMovement.SetDirection(_shipTransform.up * _directionOffset);
+            GameObject bullet = Instantiate(_bulletPrefab, transform.position, Quaternion.identity);
+            
+            if (bullet.TryGetComponent(out IMovementComponent bulletMovement)){ 
+                bulletMovement.SetDirection(transform.up * _directionOffset);
+                bulletMovement.SetSpeed(_speed);
+            }
 
             _stopwatch.Start();
             _canShoot = false;

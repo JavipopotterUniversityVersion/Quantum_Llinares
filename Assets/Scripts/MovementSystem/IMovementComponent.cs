@@ -6,4 +6,5 @@ public interface IMovementComponent
 {
     Vector2 GetDirection();
     void SetDirection(Vector2 direction);
+    void SetSpeed(float speed);
 }
