@@ -7,7 +7,7 @@ public class LinearMovementComponent : MonoBehaviour, IMovementComponent
 {
     Transform _mTransform;
     [SerializeField] float _speed = 10.0f;
-    [SerializeField] Vector2 _direction = Vector2.up;
+    Vector2 _direction = Vector2.up;
 
     // Start is called before the first frame update
     void Start()
