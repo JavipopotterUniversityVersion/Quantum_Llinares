@@ -7,9 +7,13 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] Vector2 _spawnRateRange;
     [SerializeField] Vector2Int _enemiesAmountRange;
     [SerializeField] Vector2 _positionRange;
+    [SerializeField] Vector2 _speedRange;
     [SerializeField] GameObject _enemyPrefab;
 
-    [SerializeField] AnimationCurve _scaleCurve;
+    [SerializeField] PlayerTracker _playerTracker;
+
+    [SerializeField] AnimationCurve _spawnRateCurve;
+    [SerializeField] AnimationCurve _speedCurve;
     [SerializeField] float _timeToReachMaxScale = 500.0f;
 
     float _timer = 0.0f;
@@ -39,7 +43,7 @@ public class EnemySpawner : MonoBehaviour
     {
         while (true)
         {
-            float spawnRate = Random.Range(_spawnRateRange.x, _spawnRateRange.y) * _scaleCurve.Evaluate(_timer / _timeToReachMaxScale);
+            float spawnRate = Random.Range(_spawnRateRange.x, _spawnRateRange.y) * _spawnRateCurve.Evaluate(_timer / _timeToReachMaxScale);
             yield return new WaitForSeconds(spawnRate);
 
             for(int i = 0; i < Random.Range(_enemiesAmountRange.x, _enemiesAmountRange.y); i++) SpawnEnemy();
@@ -68,6 +72,16 @@ public class EnemySpawner : MonoBehaviour
 
         spawnPosition += (Vector2)transform.position;
 
-        Instantiate(_enemyPrefab, spawnPosition, Quaternion.identity);
+        GameObject enemy = Instantiate(_enemyPrefab, spawnPosition, Quaternion.identity);
+
+        if(enemy.TryGetComponent(out FollowMovement followMovement))
+        {
+            followMovement.setTarget(_playerTracker.GetNearestPlayer(spawnPosition));
+            followMovement.setSpeed(Random.Range(_speedRange.x, _speedRange.y) * _speedCurve.Evaluate(_timer / _timeToReachMaxScale));
+        }
+        else
+        {
+            Debug.LogError("Prefab does not have FollowMovement component");
+        }
     }
 }
