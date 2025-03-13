@@ -6,68 +6,48 @@
             "id": "24b10a3a-a342-42f1-99e4-ea90db0e85d6",
             "actions": [
                 {
-                    "name": "Right",
-                    "type": "Button",
-                    "id": "43a6815f-1e13-4be0-80c5-6e4e485f96c5",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "Hold",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Left",
-                    "type": "Button",
-                    "id": "ad05604e-0e34-448d-a9d2-689a0f96f3dd",
-                    "expectedControlType": "",
+                    "name": "Rotate",
+                    "type": "Value",
+                    "id": "19ae41d7-a02a-46bd-80c6-607915eedfb3",
+                    "expectedControlType": "Vector3",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
                 {
-                    "name": "",
-                    "id": "74553f5a-b979-4140-b984-b5b6860ba204",
+                    "name": "KeyBoard",
+                    "id": "b2ba6969-aa12-422d-aec5-e8cbe76e6e14",
+                    "path": "3DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "forward",
+                    "id": "e41f7b34-6f5d-45a1-94ff-ed1f7538beaa",
+                    "path": "<Keyboard>/j",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "backward",
+                    "id": "33f081ac-3957-45ce-b904-1fe59ace1a9e",
                     "path": "<Keyboard>/l",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Right",
+                    "action": "Rotate",
                     "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "cd853a50-a1f2-4098-a499-58f942c18be3",
-                    "path": "<Gamepad>/buttonEast",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Right",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "4d6dd1fa-8d7f-4658-9581-c691618004c2",
-                    "path": "<Keyboard>/j",
-                    "interactions": "Hold",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Left",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "dfd72017-0e25-487b-acc7-a0ae4b3c3bc7",
-                    "path": "<Gamepad>/buttonWest",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Left",
-                    "isComposite": false,
-                    "isPartOfComposite": false
+                    "isPartOfComposite": true
                 }
             ]
         },

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RotationComponent : MonoBehaviour
 {
-    [SerializeField] float _rotationOffset = 1.0f;
+    [SerializeField] float _speed = 2.0f;
     Transform _mTransform;
     Vector3 _rotation;
 
@@ -13,23 +13,13 @@ public class RotationComponent : MonoBehaviour
         _mTransform = transform;
     }
 
-    /// <summary>
-    /// Rotates the object rotationOffset towards the setted direction
-    /// </summary>
-    /// <param name="right"></param> direction of rotation
-    public void RotateObject(bool right)
+    public void setRotation(Vector3 newRot)
     {
-        float _aRotation = right 
-                         ? -_rotationOffset 
-                         : _rotationOffset;
-
-        _rotation.z = _aRotation; // Done to avoid keyboard speed issues
+        _rotation = newRot;
     }
 
     private void FixedUpdate()
     {
-        _mTransform.Rotate(_rotation);
-
-        _rotation.z = 0.0f;
+        _mTransform.Rotate(_rotation * _speed);
     }
 }
