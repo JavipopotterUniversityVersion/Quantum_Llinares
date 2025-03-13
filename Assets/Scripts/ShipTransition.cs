@@ -18,6 +18,7 @@ public class ShipTransition : MonoBehaviour
     float _shipDistance;
 
     private void Update() {
+        return;
         if(!divided)
         {
             if(Input.GetKey(KeyCode.E) && Input.GetKey(KeyCode.U))
