@@ -12,6 +12,7 @@ public class ShootComponent : MonoBehaviour
 
     [SerializeField] private GameObject _bulletPrefab;
     [SerializeField] private float _cooldown = 100.0f;
+    [SerializeField] private float _speed = 5.0f;
 
     [SerializeField] private Vector2 _directionOffset;
 
@@ -42,8 +43,11 @@ public class ShootComponent : MonoBehaviour
          if(_canShoot)
          { 
             GameObject bullet = Instantiate(_bulletPrefab, transform.position, Quaternion.identity);
-            IMovementComponent bulletMovement = bullet.GetComponent<IMovementComponent>();
-            if (bulletMovement != null) bulletMovement.SetDirection(transform.up * _directionOffset);
+            
+            if (bullet.TryGetComponent(out IMovementComponent bulletMovement)){ 
+                bulletMovement.SetDirection(transform.up * _directionOffset);
+                bulletMovement.SetSpeed(_speed);
+            }
 
             _stopwatch.Start();
             _canShoot = false;

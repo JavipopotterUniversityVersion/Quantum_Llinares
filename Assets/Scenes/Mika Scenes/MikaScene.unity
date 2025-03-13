@@ -268,7 +268,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1252930529}
-  - component: {fileID: 1252930528}
   - component: {fileID: 1252930527}
   - component: {fileID: 1252930526}
   - component: {fileID: 1252930525}
@@ -390,104 +389,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1252930528
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1252930524}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 2aab8d9ebf956f0478bcfee176f04084, type: 3}
-  m_NotificationBehavior: 2
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents:
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: ba41f74c-f0ab-497b-a331-d53e38057d93
-    m_ActionName: New action map/PlayerLeftShootUp[/Keyboard/w]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 7cd43bc1-4860-40b4-a60f-2b3ce385ea5f
-    m_ActionName: New action map/PlayerLeftShootDown[/Keyboard/s]
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1252930525}
-        m_TargetAssemblyTypeName: RotationComponent, Assembly-CSharp
-        m_MethodName: RotateObject
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: e9175b74-f996-46ec-9e4a-6239e8f585a5
-    m_ActionName: New action map/PlayerLeftRotleft[/Keyboard/a]
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1252930525}
-        m_TargetAssemblyTypeName: RotationComponent, Assembly-CSharp
-        m_MethodName: RotateObject
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-    m_ActionId: 3c558330-85fb-4351-af3b-032ae813e634
-    m_ActionName: New action map/PlayerLeftRotRight[/Keyboard/d]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 641af55d-7d22-467e-bf7e-be39846df8a3
-    m_ActionName: New action map/PlayerRightShootUp[/Keyboard/upArrow]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: efd1a00d-7890-4026-9ac4-836441cef23b
-    m_ActionName: New action map/PlayerRightShootDown[/Keyboard/downArrow]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: befaeb09-4614-4e55-8049-7656472f7719
-    m_ActionName: New action map/PlayerRightRotLeft[/Keyboard/leftArrow]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: c3abedfd-b672-409c-b068-c16dc58ad64a
-    m_ActionName: New action map/PlayerRightRotRight[/Keyboard/rightArrow]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 19bc2eba-0db6-4634-8031-339e982636c2
-    m_ActionName: New action map/PlayerLeftUnion[/Keyboard/e]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: b137bf4a-10c0-42f7-86a7-84084ef2dcc0
-    m_ActionName: New action map/PlayerRightUnion[/Keyboard/l]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: c39d0b0b-670c-432f-bd5c-4d81b2c9baa9
-    m_ActionName: New action map/Pause[/Keyboard/escape]
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: New action map
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
 --- !u!4 &1252930529
 Transform:
   m_ObjectHideFlags: 0
@@ -512,10 +413,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1252930524}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db3b897cf2f0b674c8a7d5082e254bae, type: 3}
+  m_Script: {fileID: 11500000, guid: b451165ea865cd348b010e8733db30df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
+  _rotateRight: {fileID: 2386773512694728676, guid: a27aa268f24258c41a28409ce140c7a6, type: 3}
+  _rotateLeft: {fileID: 7866922437907228862, guid: a27aa268f24258c41a28409ce140c7a6, type: 3}
+  _shootTopCannon: {fileID: 1861417863293616905, guid: a27aa268f24258c41a28409ce140c7a6, type: 3}
+  _shootBottomCannon: {fileID: -8104341288820982089, guid: a27aa268f24258c41a28409ce140c7a6, type: 3}
+  _shipRotation: {fileID: 1252930525}
+  _topCannon: {fileID: 0}
+  _bottomCannon: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

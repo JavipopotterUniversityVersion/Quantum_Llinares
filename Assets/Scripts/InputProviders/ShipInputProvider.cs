@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 public class ShipInputProvider : MonoBehaviour
 {
-    [SerializeField] InputActionReference _rotateRight, _rotateLeft, _shootTopCannon, _shootBottomCannon;
+    [SerializeField] InputActionReference _rotate, _shootTopCannon, _shootBottomCannon;
 
     [SerializeField] RotationComponent _shipRotation;
     [SerializeField] ShootComponent _topCannon, _bottomCannon;
@@ -13,8 +13,7 @@ public class ShipInputProvider : MonoBehaviour
     #region Patron ActionReference
     private void OnEnable()
     {
-        _rotateRight.action.Enable();
-        _rotateLeft.action.Enable();
+        _rotate.action.Enable();
 
         _shootTopCannon.action.Enable();
         _shootBottomCannon.action.Enable();
@@ -22,8 +21,8 @@ public class ShipInputProvider : MonoBehaviour
 
     private void Awake()
     {
-        _rotateRight.action.performed += OnRightInputRecieved;
-        _rotateLeft.action.performed += OnLefttInputRecieved;
+        _rotate.action.performed += OnRotationInputRecieved;
+        _rotate.action.canceled += OnRotationInputStopped;
 
         _shootTopCannon.action.performed += OnShootTopInputRecieved;
         _shootBottomCannon.action.performed += OnShootBottomInputRecieved;
@@ -31,8 +30,8 @@ public class ShipInputProvider : MonoBehaviour
 
     private void OnDisable()
     {
-        _rotateRight.action.performed -= OnRightInputRecieved;
-        _rotateLeft.action.performed -= OnLefttInputRecieved;
+        _rotate.action.performed -= OnRotationInputRecieved;
+        _rotate.action.canceled -= OnRotationInputStopped;
 
         _shootTopCannon.action.performed -= OnShootTopInputRecieved;
         _shootBottomCannon.action.performed -= OnShootBottomInputRecieved;
@@ -40,8 +39,7 @@ public class ShipInputProvider : MonoBehaviour
 
     private void OnDestroy()
     {
-        _rotateRight.action.Disable();
-        _rotateLeft.action.Disable();
+        _rotate.action.Disable();
 
         _shootTopCannon.action.Disable();
         _shootBottomCannon.action.Disable();
@@ -49,8 +47,8 @@ public class ShipInputProvider : MonoBehaviour
     #endregion
 
     #region actions
-    private void OnRightInputRecieved(InputAction.CallbackContext obj) => _shipRotation.RotateObject(true);
-    private void OnLefttInputRecieved(InputAction.CallbackContext obj) => _shipRotation.RotateObject(false);
+    private void OnRotationInputRecieved(InputAction.CallbackContext obj) => _shipRotation.setRotation(obj.action.ReadValue<Vector3>());
+    private void OnRotationInputStopped(InputAction.CallbackContext obj) => _shipRotation.setRotation(Vector3.zero);
 
     private void OnShootTopInputRecieved(InputAction.CallbackContext obj) => _topCannon.Shoot();
     private void OnShootBottomInputRecieved(InputAction.CallbackContext obj) => _bottomCannon.Shoot();
