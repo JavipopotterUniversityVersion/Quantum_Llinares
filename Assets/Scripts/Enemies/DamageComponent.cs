@@ -7,12 +7,8 @@ public class DamageComponent : MonoBehaviour
 {
     [SerializeField] private LayerMask _targetlayer;
     [SerializeField] private float _damage;
-    private Collider2D _collider;
-    // Start is called before the first frame update
-    void Start()
-    {
-        _collider = GetComponent<Collider2D>();
-    }
+    bool _destroyOnHit = true;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
 
@@ -21,6 +17,7 @@ public class DamageComponent : MonoBehaviour
             HealtComponent hc = other.gameObject.GetComponent<HealtComponent>();
             if (hc != null)
             {
+                if(_destroyOnHit) Destroy(gameObject);
                 hc.GetDamage(_damage);
             }
         }
