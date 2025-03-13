@@ -5,6 +5,7 @@ using TreeEditor;
 using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.Rendering;
 
 public class ShootComponent : MonoBehaviour
@@ -15,6 +16,7 @@ public class ShootComponent : MonoBehaviour
     [SerializeField] private float _speed = 5.0f;
 
     [SerializeField] private Vector2 _directionOffset;
+    [SerializeField] UnityEvent _onShoot;
 
     private bool _canShoot = true;
     private Stopwatch _stopwatch = new Stopwatch();
@@ -42,8 +44,9 @@ public class ShootComponent : MonoBehaviour
     public void Shoot(){
          if(_canShoot)
          { 
+            _onShoot.Invoke();
             GameObject bullet = Instantiate(_bulletPrefab, transform.position, Quaternion.identity);
-            
+
             if (bullet.TryGetComponent(out IMovementComponent bulletMovement)){ 
                 bulletMovement.SetDirection(transform.up * _directionOffset);
                 bulletMovement.SetSpeed(_speed);

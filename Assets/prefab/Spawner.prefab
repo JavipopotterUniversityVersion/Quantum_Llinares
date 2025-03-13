@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7426460103805914133}
   - component: {fileID: 5917226431895362916}
+  - component: {fileID: 3781373321984360791}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -47,29 +48,83 @@ MonoBehaviour:
   _spawnRateRange: {x: 2, y: 3}
   _enemiesAmountRange: {x: 1, y: 3}
   _positionRange: {x: 16.54, y: 9.24}
+  _speedRange: {x: 1, y: 1.5}
   _enemyPrefab: {fileID: 7906243196266977034, guid: 497fbd7003d5d3d4396a6e88cbd7fb0f, type: 3}
-  _scaleCurve:
+  _playerTracker: {fileID: 0}
+  _shipTransition: {fileID: 0}
+  _spawnRateCurve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
       time: 0
       value: 1
-      inSlope: -0.4800519
-      outSlope: -0.4800519
-      tangentMode: 0
+      inSlope: -0.5
+      outSlope: -0.5
+      tangentMode: 34
       weightedMode: 0
       inWeight: 0
-      outWeight: 0.07853404
+      outWeight: 0.33333334
     - serializedVersion: 3
       time: 1
       value: 0.5
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
+      inSlope: -0.5
+      outSlope: -0.5
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _speedCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
       weightedMode: 0
       inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 2
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
   _timeToReachMaxScale: 500
+--- !u!114 &3781373321984360791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8697683388467186168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7ce656a916323e489ac3c28009ae6c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5917226431895362916}
+        m_TargetAssemblyTypeName: EnemySpawner, Assembly-CSharp
+        m_MethodName: StartSpawning
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

@@ -87,8 +87,8 @@ public class EnemySpawner : MonoBehaviour
 
         if(enemy.TryGetComponent(out ShipTransitionListener shipTransitionListener))
         {
-            shipTransitionListener.setPlayerTracker(_playerTracker);
             shipTransitionListener.setShipTransition(_shipTransition);
+            shipTransitionListener.setPlayerTracker(_playerTracker);
         }
         else
         {
