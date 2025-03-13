@@ -11,6 +11,7 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] GameObject _enemyPrefab;
 
     [SerializeField] PlayerTracker _playerTracker;
+    [SerializeField] ShipTransition _shipTransition;
 
     [SerializeField] AnimationCurve _spawnRateCurve;
     [SerializeField] AnimationCurve _speedCurve;
@@ -82,6 +83,16 @@ public class EnemySpawner : MonoBehaviour
         else
         {
             Debug.LogError("Prefab does not have FollowMovement component");
+        }
+
+        if(enemy.TryGetComponent(out ShipTransitionListener shipTransitionListener))
+        {
+            shipTransitionListener.setPlayerTracker(_playerTracker);
+            shipTransitionListener.setShipTransition(_shipTransition);
+        }
+        else
+        {
+            Debug.LogError("Prefab does not have ShipTransitionListener component");
         }
     }
 }
