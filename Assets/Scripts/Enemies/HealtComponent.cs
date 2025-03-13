@@ -15,7 +15,7 @@ public class HealtComponent : MonoBehaviour
 
     public void GetDamage(float d){
         _health -=d;
-        if(_health<0) {
+        if(_health<=0) {
             Destroy(this.gameObject);
         }
     }
