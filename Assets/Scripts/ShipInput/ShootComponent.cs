@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using TreeEditor;
 using Unity.Mathematics;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -17,6 +18,15 @@ public class ShootComponent : MonoBehaviour
 
     private bool _canShoot = true;
     private Stopwatch _stopwatch = new Stopwatch();
+
+    public void SetBullet(GameObject obj){
+        _bulletPrefab = obj;
+    }
+    public void SetCooldown(float aux){
+        _cooldown = aux;
+    }
+    public float GetCooldown() => _cooldown;
+
 
     private void Update()
     {
