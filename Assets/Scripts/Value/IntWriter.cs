@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class IntWriter : MonoBehaviour
 {
-    TextMeshProUGUI _text;
+    [SerializeField] TextMeshProUGUI _text;
     [SerializeField] string _prefix;
     [SerializeField] Int _value;
 

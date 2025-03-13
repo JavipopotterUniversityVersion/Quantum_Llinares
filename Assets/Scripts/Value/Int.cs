@@ -18,4 +18,29 @@ public class Int : ScriptableObject
             _onValueChanged.Invoke(_value);
         }
     }
+
+    public void AddValue(int value)
+    {
+        Value += value;
+    }
+
+    public void SubValue(int value)
+    {
+        Value -= value;
+    }
+
+    public void SetValue(int value)
+    {
+        Value = value;
+    }
+
+    public void MultiplyValue(int value)
+    {
+        Value *= value;
+    }
+
+    public void DivideValue(int value)
+    {
+        Value /= value;
+    }
 }
