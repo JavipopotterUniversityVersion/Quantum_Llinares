@@ -81,6 +81,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _collider2D: {fileID: 6581601744543047952}
+  _name: Bullet Change!
+  _poolHandler: {fileID: 11400000, guid: ac8fceff4928d2f45b207d888a8c0020, type: 2}
   _bullet: {fileID: 0}
   _cooldown: 100
 --- !u!114 &-6180600579726727017
