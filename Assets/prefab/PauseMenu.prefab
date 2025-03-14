@@ -222,8 +222,6 @@ GameObject:
   - component: {fileID: 5052302163524617444}
   - component: {fileID: 4518279293149850751}
   - component: {fileID: 2671516898924459925}
-  - component: {fileID: 2885424181543787751}
-  - component: {fileID: 3624923176945012388}
   m_Layer: 5
   m_Name: PauseMenu
   m_TagString: Untagged
@@ -327,64 +325,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acbd1204c35e2084d9eb98acb326927d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseButton: {fileID: 345509971624651599}
   pauseMenu: {fileID: 2240656511621790047}
---- !u!114 &2885424181543787751
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2429383820381406208}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11549184221e37246abdca81fd0a7979, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _onInput:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2671516898924459925}
-        m_TargetAssemblyTypeName: PauseMenuScript, Assembly-CSharp
-        m_MethodName: TogglePause
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _inputAction: {fileID: -4312754014160198347, guid: c0bc507d76d54f84f9d732d7985c924f, type: 3}
---- !u!114 &3624923176945012388
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2429383820381406208}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11549184221e37246abdca81fd0a7979, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _onInput:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2671516898924459925}
-        m_TargetAssemblyTypeName: PauseMenuScript, Assembly-CSharp
-        m_MethodName: TogglePause
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _inputAction: {fileID: -4810807491033434143, guid: dc1f6bcd55eec28439ded1b6f12ce045, type: 3}
 --- !u!1 &3283192586622156816
 GameObject:
   m_ObjectHideFlags: 0

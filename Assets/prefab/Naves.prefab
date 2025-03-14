@@ -191,10 +191,12 @@ MonoBehaviour:
   _shootBottomCannon: {fileID: -8104341288820982089, guid: c0bc507d76d54f84f9d732d7985c924f, type: 3}
   _subdivide1: {fileID: -7343110812630764674, guid: c0bc507d76d54f84f9d732d7985c924f, type: 3}
   _subdivide2: {fileID: -524833553989608128, guid: c0bc507d76d54f84f9d732d7985c924f, type: 3}
+  _pause: {fileID: -4312754014160198347, guid: c0bc507d76d54f84f9d732d7985c924f, type: 3}
   _shipRotation: {fileID: 7300462353861788679}
   _topCannon: {fileID: 5790877416145671978}
   _bottomCannon: {fileID: 5223358974523691330}
   _transitioner: {fileID: 5135379291334372343}
+  _pauseMenu: {fileID: 0}
 --- !u!114 &8080561655259477042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -215,6 +217,7 @@ MonoBehaviour:
   _rightShootTop: {fileID: 4918151720154780804, guid: dc1f6bcd55eec28439ded1b6f12ce045, type: 3}
   _rightShootBottom: {fileID: 1971085471120594229, guid: dc1f6bcd55eec28439ded1b6f12ce045, type: 3}
   _rightEntwine: {fileID: 6532139889869708097, guid: dc1f6bcd55eec28439ded1b6f12ce045, type: 3}
+  _pause: {fileID: -4810807491033434143, guid: dc1f6bcd55eec28439ded1b6f12ce045, type: 3}
   _leftShipRotation: {fileID: 2547205828454074321}
   _rightShipRotation: {fileID: 4938666241048891407}
   _leftTopCannon: {fileID: 1609009597647279356}
@@ -222,6 +225,7 @@ MonoBehaviour:
   _rightTopCannon: {fileID: 8179818161388143394}
   _rightBottomCannon: {fileID: 7612420666057344330}
   _transitioner: {fileID: 5135379291334372343}
+  _pauseMenu: {fileID: 0}
 --- !u!1001 &163393694972686376
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -44,7 +44,6 @@ public class ShipInputProvider : MonoBehaviour
         _subdivide1.action.canceled += _transitioner.PushLeft;
         _subdivide2.action.canceled += _transitioner.PushRight;
 
-        _pause.action.performed += OnPauseMenuInputRecieved;
         _pause.action.canceled += OnPauseMenuInputRecieved;
     }
 
@@ -62,7 +61,6 @@ public class ShipInputProvider : MonoBehaviour
         _subdivide1.action.canceled -= _transitioner.PushLeft;
         _subdivide2.action.canceled -= _transitioner.PushRight;
 
-        _pause.action.performed -= OnPauseMenuInputRecieved;
         _pause.action.canceled -= OnPauseMenuInputRecieved;
     }
     private void OnDisable()
@@ -87,6 +85,6 @@ public class ShipInputProvider : MonoBehaviour
     private void OnShootBottomInputRecieved(InputAction.CallbackContext obj) => _bottomCannon.Shoot();
 
   
-    private void OnPauseMenuInputRecieved(InputAction.CallbackContext obj) => _pauseMenu.Pause();
+    private void OnPauseMenuInputRecieved(InputAction.CallbackContext obj) => _pauseMenu.TogglePause();
     #endregion
 }

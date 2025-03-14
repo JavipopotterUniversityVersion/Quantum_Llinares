@@ -50,7 +50,6 @@ public class SmallShipsInputProvider : MonoBehaviour
         _rightShootBottom.action.performed += OnRightBottomCannon;
         _rightEntwine.action.performed += _transitioner.MergeToLeft;
 
-         _pause.action.performed += OnPauseMenu;
          _pause.action.canceled += OnPauseMenu;
     }
 
@@ -68,7 +67,7 @@ public class SmallShipsInputProvider : MonoBehaviour
         _rightShootBottom.action.performed -= OnRightBottomCannon;
         _rightEntwine.action.performed -= _transitioner.MergeToLeft;
 
-        _pause.action.performed -= OnPauseMenu;
+         _pause.action.canceled += OnPauseMenu;
     }
 
     private void OnDisable()
@@ -95,6 +94,6 @@ public class SmallShipsInputProvider : MonoBehaviour
     private void OnLeftTopCannon(InputAction.CallbackContext obj) => _leftTopCannon.Shoot();
     private void OnLeftBottomCannon(InputAction.CallbackContext obj) => _leftBottomCannon.Shoot();
 
-    private void OnPauseMenu(InputAction.CallbackContext obj) => _pauseMenu.Pause();
+    private void OnPauseMenu(InputAction.CallbackContext obj) => _pauseMenu.TogglePause();
     #endregion
 }
