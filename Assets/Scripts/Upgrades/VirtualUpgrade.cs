@@ -14,7 +14,6 @@ public class VirtualUpgrade : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("a");
         RotationComponent rot = collision.GetComponent<RotationComponent>();
         if(rot!=null){
             ApplyUpgrade(rot.gameObject);
