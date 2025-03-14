@@ -25,7 +25,7 @@ public class LookTowardsTarget : MonoBehaviour
         _mTransform.eulerAngles = new Vector3(0,0,_aAngle * Mathf.Rad2Deg + 90); // Green axis
     }
 
-    void setTarget(Transform newTarget){
+    public void setTarget(Transform newTarget){
         _target = newTarget;
     }
 }

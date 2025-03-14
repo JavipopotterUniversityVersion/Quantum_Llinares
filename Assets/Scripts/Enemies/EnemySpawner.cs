@@ -87,5 +87,10 @@ public class EnemySpawner : MonoBehaviour
             shipTransitionListener.setShipTransition(_shipTransition);
             shipTransitionListener.setPlayerTracker(_playerTracker);
         }
+
+        if(enemy.TryGetComponent(out LookTowardsTarget lookTowardsTarget))
+        {
+            lookTowardsTarget.setTarget(_playerTracker.GetNearestPlayer(spawnPosition));
+        }
     }
 }
