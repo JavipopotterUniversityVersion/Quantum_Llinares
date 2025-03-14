@@ -13,6 +13,8 @@ public class ShootComponent : MonoBehaviour
 
     [SerializeField] private GameObject _bulletPrefab;
     [SerializeField] private float _cooldown = 100.0f;
+    [SerializeField] private float _cooldownfactor = 1.0f;
+    private float _actCooldown = 100.0f;
     [SerializeField] private float _speed = 5.0f;
 
     [SerializeField] private Vector2 _directionOffset;
@@ -26,14 +28,20 @@ public class ShootComponent : MonoBehaviour
     }
     public void SetCooldown(float aux){
         _cooldown = aux;
+        _actCooldown = _cooldown*-_cooldownfactor;
     }
     public float GetCooldown() => _cooldown;
 
+    public void SetCooldownFactor(float aux){
+        _cooldownfactor = aux;
+        _actCooldown = _cooldown*-_cooldownfactor;
+    }
+    public float GetCooldownFactor() => _cooldownfactor;
 
     private void Update()
     {
         if(!_canShoot){
-            if(_stopwatch.ElapsedMilliseconds>= _cooldown) {
+            if(_stopwatch.ElapsedMilliseconds>= _actCooldown) {
                 _canShoot = true;
                 _stopwatch.Stop();
                 _stopwatch.Reset();
