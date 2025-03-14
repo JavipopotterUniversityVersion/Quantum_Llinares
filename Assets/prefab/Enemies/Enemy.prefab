@@ -5145,6 +5145,7 @@ GameObject:
   - component: {fileID: 3937963626311489058}
   - component: {fileID: 8218348296301360197}
   - component: {fileID: 8593115332262815512}
+  - component: {fileID: 4972407509086005931}
   m_Layer: 6
   m_Name: Enemy
   m_TagString: Untagged
@@ -5228,6 +5229,18 @@ MonoBehaviour:
           m_IntArgument: 100
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6231496357344310447}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 100
+          m_FloatArgument: 0
+          m_StringArgument: ENEMY_DEATH
           m_BoolArgument: 0
         m_CallState: 2
   _onDamage:
@@ -5345,3 +5358,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _pointsReference: {fileID: 11400000, guid: d6052043c9c6d9849b272986af72f916, type: 2}
   _poolHandler: {fileID: 11400000, guid: ac8fceff4928d2f45b207d888a8c0020, type: 2}
+--- !u!114 &4972407509086005931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7906243196266977034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be11c302e3949fa4bbe997a37bd3485c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
