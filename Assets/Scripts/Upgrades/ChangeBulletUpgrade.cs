@@ -13,6 +13,7 @@ public class ChangeBulletUpgrade : VirtualUpgrade
        ShootComponent scp = sc.OrderBy(canon => Vector2.Distance(canon.transform.position, transform.position)).First();
         scp.SetBullet(_bullet);
         scp.SetCooldown(_cooldown);
+        Destroy(this.gameObject);
     }
 
 }

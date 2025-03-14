@@ -1,0 +1,152 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &2364458607174303575
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1842664724529187962, guid: 497fbd7003d5d3d4396a6e88cbd7fb0f, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1842664724529187962, guid: 497fbd7003d5d3d4396a6e88cbd7fb0f, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1842664724529187962, guid: 497fbd7003d5d3d4396a6e88cbd7fb0f, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7649529
+      objectReference: {fileID: 0}
+    - target: {fileID: 1842664724529187962, guid: 497fbd7003d5d3d4396a6e88cbd7fb0f, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2877520515491052495, guid: 497fbd7003d5d3d4396a6e88cbd7fb0f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.69812
+      objectReference: {fileID: 0}
+    - target: {fileID: 2877520515491052495, guid: 497fbd7003d5d3d4396a6e88cbd7fb0f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.0115579
+      objectReference: {fileID: 0}
+    - target: {fileID: 2877520515491052495, guid: 497fbd7003d5d3d4396a6e88cbd7fb0f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2877520515491052495, guid: 497fbd7003d5d3d4396a6e88cbd7fb0f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2877520515491052495, guid: 497fbd7003d5d3d4396a6e88cbd7fb0f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2877520515491052495, guid: 497fbd7003d5d3d4396a6e88cbd7fb0f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2877520515491052495, guid: 497fbd7003d5d3d4396a6e88cbd7fb0f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2877520515491052495, guid: 497fbd7003d5d3d4396a6e88cbd7fb0f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2877520515491052495, guid: 497fbd7003d5d3d4396a6e88cbd7fb0f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2877520515491052495, guid: 497fbd7003d5d3d4396a6e88cbd7fb0f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7906243196266977034, guid: 497fbd7003d5d3d4396a6e88cbd7fb0f, type: 3}
+      propertyPath: m_Name
+      value: FixedShooter Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7906243196266977034, guid: 497fbd7003d5d3d4396a6e88cbd7fb0f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5039975214731432855}
+    - targetCorrespondingSourceObject: {fileID: 7906243196266977034, guid: 497fbd7003d5d3d4396a6e88cbd7fb0f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4094421981328602848}
+    - targetCorrespondingSourceObject: {fileID: 7906243196266977034, guid: 497fbd7003d5d3d4396a6e88cbd7fb0f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 300234891397125810}
+    - targetCorrespondingSourceObject: {fileID: 7906243196266977034, guid: 497fbd7003d5d3d4396a6e88cbd7fb0f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2947460205435816954}
+  m_SourcePrefab: {fileID: 100100000, guid: 497fbd7003d5d3d4396a6e88cbd7fb0f, type: 3}
+--- !u!1 &5577885018739091549 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7906243196266977034, guid: 497fbd7003d5d3d4396a6e88cbd7fb0f, type: 3}
+  m_PrefabInstance: {fileID: 2364458607174303575}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5039975214731432855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5577885018739091549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3a17cea316a2fd4db7f0720a5c09d2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  followRef: {fileID: 0}
+  maxOffset: 5
+--- !u!114 &4094421981328602848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5577885018739091549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3313852f80f92424fbcca17fc903ce18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _target: {fileID: 0}
+--- !u!114 &300234891397125810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5577885018739091549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0f9e5c2de4fd154fa5c8292c18af70d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shooter: {fileID: 2947460205435816954}
+  _timeInterval: 1000
+--- !u!114 &2947460205435816954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5577885018739091549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eef2eeef2bf627c4f9b11b07bf57f7cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bulletPrefab: {fileID: 3651275051589894260, guid: 2ca425afe0f9c0b4bb4e0f1e44d07487, type: 3}
+  _cooldown: 100
+  _speed: 5
+  _directionOffset: {x: 1, y: 1}
+  _onShoot:
+    m_PersistentCalls:
+      m_Calls: []
