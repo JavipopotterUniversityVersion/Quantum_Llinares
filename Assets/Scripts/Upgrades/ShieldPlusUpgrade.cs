@@ -8,7 +8,6 @@ public class ShieldPlusUpgrade: VirtualUpgrade
 {
     override public void ApplyUpgrade(GameObject obj)
     {
-        Debug.Log("A");
         ShipHealth h = obj.GetComponent<ShipHealth>();
         int maxShield = h.getMaxShield();
         h.setMaxShield(maxShield+1);
