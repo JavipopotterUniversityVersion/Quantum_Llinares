@@ -96,9 +96,11 @@ public class ShipTransition : MonoBehaviour
         Vector2 fromInitialPosition = from.position;
         for(float i = 0; i < _splitTime; i += Time.deltaTime){
             from.position = Vector2.Lerp(fromInitialPosition, to, i / _splitTime);
+            from.localScale = new Vector3(1, 1 - i / _splitTime, 1);
             yield return new WaitForEndOfFrame();
         }
 
+        from.localScale = Vector3.one;
         from.position = to;
         Ship1.gameObject.SetActive(false);
         Ship2.gameObject.SetActive(false);
