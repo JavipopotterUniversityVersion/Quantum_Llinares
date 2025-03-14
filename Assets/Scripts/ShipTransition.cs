@@ -24,7 +24,7 @@ public class ShipTransition : MonoBehaviour
     private void Update() {
         if(!divided)
         {
-            if(_leftIsPressed && _rightIsPressed)
+            if(Input.GetKey(KeyCode.E) && Input.GetKey(KeyCode.U))
             {
                 Divide();
                 _onDivide.Invoke();
