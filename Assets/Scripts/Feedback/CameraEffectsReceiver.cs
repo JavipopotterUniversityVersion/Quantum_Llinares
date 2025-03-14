@@ -17,6 +17,10 @@ public class CameraEffectsReceiver : MonoBehaviour
         _cameraEffectsHandler.OnCameraShake.AddListener(ShakeCamera);
     }
 
+    private void OnDestroy() {
+        _cameraEffectsHandler.OnCameraShake.RemoveListener(ShakeCamera);
+    }
+
     public void ShakeCamera()
     {
         StartCoroutine(ShakeCameraRoutine(duration, amplitude, frequency));
