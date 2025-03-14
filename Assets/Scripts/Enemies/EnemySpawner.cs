@@ -81,19 +81,11 @@ public class EnemySpawner : MonoBehaviour
             followMovement.setTarget(_playerTracker.GetNearestPlayer(spawnPosition));
             followMovement.setSpeed(Random.Range(_speedRange.x, _speedRange.y) * _speedCurve.Evaluate(_timer / _timeToReachMaxScale));
         }
-        else
-        {
-            Debug.LogError("Prefab does not have FollowMovement component");
-        }
 
         if(enemy.TryGetComponent(out ShipTransitionListener shipTransitionListener))
         {
             shipTransitionListener.setShipTransition(_shipTransition);
             shipTransitionListener.setPlayerTracker(_playerTracker);
-        }
-        else
-        {
-            Debug.LogError("Prefab does not have ShipTransitionListener component");
         }
     }
 }

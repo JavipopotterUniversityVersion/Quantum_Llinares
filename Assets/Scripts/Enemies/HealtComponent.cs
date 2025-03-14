@@ -18,10 +18,10 @@ public class HealtComponent : MonoBehaviour
 
     public void GetDamage(float d){
         _health -=d;
-        _onDamage.Invoke();
 
         if(_health<=0) {
             _onDeath.Invoke();
         }
+        else _onDamage.Invoke();
     }
 }
