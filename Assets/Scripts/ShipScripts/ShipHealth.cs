@@ -1,23 +1,96 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Runtime.InteropServices.WindowsRuntime;
+using UnityEditor.IMGUI.Controls;
 using UnityEngine;
+using UnityEngine.Assertions;
 
 public class ShipHealth : MonoBehaviour
 {
-    int _shield;
-    int _currentLife;
-    int _totalLife;
-    int _divLife;
-    
-    // Start is called before the first frame update
+    private Stopwatch _watch = new Stopwatch();
+    [SerializeField] private float _recoverShieldInterval = 10000;
+    [SerializeField] private bool _shieldAvailable = true;
+
+    private int _currentLife;
+    [SerializeField] int _totalLife = 1;
+
+    private int _currentShield;
+    [SerializeField] int _totalShield = 1;
+
     void Start()
     {
-        
+        _currentLife = _totalLife;
+        _currentLife = _totalShield;
+        _watch.Start();
+    }
+    #region setters
+    /// <summary>
+    /// Sets the current Life. Ignores the life total
+    /// </summary>
+    /// <param name="newLife"></param> New Life
+    public void setLife(int newLife) => _currentLife = newLife;
+    public void setMaxLife(int newLife) => _totalLife = newLife;
+    /// <summary>
+    /// Sets the current Shield. Ignores the shield total
+    /// </summary>
+    /// <param name="newShield"></param> New Shield
+    public void setShield(int newShield) => _currentShield = newShield;
+    public void setMaxShield(int newShield) => _totalShield = newShield;
+    #endregion
+    #region getters
+    public int getLife() {return _currentLife;}
+    public int getMaxLife() {return _totalLife;}
+    public int getShield() {return _currentShield;}
+    public int getMaxShield() {return _totalShield;}
+    #endregion
+    public void setLifeToMax() => _currentLife = _totalLife;
+    public void setShieldToMax() => _currentShield = _totalShield;
+
+    /// <summary>
+    /// Used exclusively to add life
+    /// </summary>
+    /// <param name="extraLife"></param> Life to add
+    public void addLife(int extraLife){
+        Assert.IsTrue(extraLife >= 0);
+        _currentLife += extraLife;
+        if(_currentLife > _totalLife) _currentLife = _totalLife;
     }
 
-    // Update is called once per frame
+    /// <summary>
+    /// Used exclusively to add shield
+    /// </summary>
+    /// <param name="extraShield"></param> shield to add
+    public void addShield(int extraShield){
+        Assert.IsTrue(extraShield >= 0);
+        _currentShield += extraShield;
+        if(_currentShield > _totalShield) _currentShield = _totalShield;
+    }
+
+    /// <summary>
+    /// Recovers 1 shield if it's not maxed
+    /// </summary>
+    /// <returns></returns> returns true if the shield was recovered
+    public bool recoverShield(){
+        if(_currentShield < _totalShield){
+            _currentShield++;
+            return true;
+        }
+        return false;
+    }
+
+    public void takeDamage(){
+        if(_currentShield > 1 && _shieldAvailable) _currentShield--;
+        else _currentLife--;
+        _watch.Restart();
+    }
+
     void Update()
     {
-        
+        if(_shieldAvailable && _currentShield < _totalShield && _watch.ElapsedMilliseconds >= _recoverShieldInterval){
+            recoverShield();
+            _watch.Restart();
+        }
     }
 }
