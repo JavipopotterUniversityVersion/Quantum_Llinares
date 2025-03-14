@@ -5144,6 +5144,7 @@ GameObject:
   - component: {fileID: 9074751197983204209}
   - component: {fileID: 3937963626311489058}
   - component: {fileID: 8218348296301360197}
+  - component: {fileID: 8593115332262815512}
   m_Layer: 6
   m_Name: Enemy
   m_TagString: Untagged
@@ -5217,9 +5218,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: d6052043c9c6d9849b272986af72f916, type: 2}
-        m_TargetAssemblyTypeName: Int, Assembly-CSharp
-        m_MethodName: AddValue
+      - m_Target: {fileID: 8593115332262815512}
+        m_TargetAssemblyTypeName: PointsHandler, Assembly-CSharp
+        m_MethodName: AddPoints
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5318,3 +5319,17 @@ MonoBehaviour:
   _targetMask:
     serializedVersion: 2
     m_Bits: 8
+--- !u!114 &8593115332262815512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7906243196266977034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f59dd6146658854eb956e3724be373e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pointsReference: {fileID: 11400000, guid: d6052043c9c6d9849b272986af72f916, type: 2}
+  _poolHandler: {fileID: 11400000, guid: ac8fceff4928d2f45b207d888a8c0020, type: 2}
