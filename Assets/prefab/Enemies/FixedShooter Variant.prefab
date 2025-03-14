@@ -132,7 +132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _bulletPrefab: {fileID: 3651275051589894260, guid: 2ca425afe0f9c0b4bb4e0f1e44d07487, type: 3}
-  _cooldown: 100
+  _cooldown: 200
   _cooldownfactor: 1
   damagefactor: 0
   _speed: 5

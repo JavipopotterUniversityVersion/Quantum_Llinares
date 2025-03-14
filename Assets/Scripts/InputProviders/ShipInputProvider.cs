@@ -6,11 +6,13 @@ using UnityEngine.InputSystem;
 
 public class ShipInputProvider : MonoBehaviour
 {
-    [SerializeField] InputActionReference _rotate, _shootTopCannon, _shootBottomCannon, _subdivide1, _subdivide2;
+    [SerializeField] InputActionReference _rotate, _shootTopCannon, _shootBottomCannon, _subdivide1, _subdivide2, _pause;
 
     [SerializeField] RotationComponent _shipRotation;
     [SerializeField] ShootComponent _topCannon, _bottomCannon;
     [SerializeField] ShipTransition _transitioner;
+
+    [SerializeField] PauseMenuScript _pauseMenu;
 
     private int _subdivisionAttempts = 0;
 
@@ -24,6 +26,8 @@ public class ShipInputProvider : MonoBehaviour
 
         _subdivide1.action.Enable();
         _subdivide2.action.Enable();
+
+        _pause.action.Enable();
     }
 
     private void Awake()
@@ -39,6 +43,9 @@ public class ShipInputProvider : MonoBehaviour
 
         _subdivide1.action.canceled += _transitioner.PushLeft;
         _subdivide2.action.canceled += _transitioner.PushRight;
+
+        _pause.action.performed += OnPauseMenuInputRecieved;
+        _pause.action.canceled += OnPauseMenuInputRecieved;
     }
 
     private void OnDestroy()
@@ -54,6 +61,9 @@ public class ShipInputProvider : MonoBehaviour
 
         _subdivide1.action.canceled -= _transitioner.PushLeft;
         _subdivide2.action.canceled -= _transitioner.PushRight;
+
+        _pause.action.performed -= OnPauseMenuInputRecieved;
+        _pause.action.canceled -= OnPauseMenuInputRecieved;
     }
     private void OnDisable()
     {
@@ -64,6 +74,7 @@ public class ShipInputProvider : MonoBehaviour
 
         _subdivide1.action.Disable();
         _subdivide2.action.Disable();
+        _pause.action.Disable();
     }
 
     #endregion
@@ -74,5 +85,8 @@ public class ShipInputProvider : MonoBehaviour
 
     private void OnShootTopInputRecieved(InputAction.CallbackContext obj) => _topCannon.Shoot();
     private void OnShootBottomInputRecieved(InputAction.CallbackContext obj) => _bottomCannon.Shoot();
+
+  
+    private void OnPauseMenuInputRecieved(InputAction.CallbackContext obj) => _pauseMenu.Pause();
     #endregion
 }

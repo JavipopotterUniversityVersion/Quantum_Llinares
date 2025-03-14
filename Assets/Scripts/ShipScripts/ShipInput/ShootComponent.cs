@@ -61,6 +61,7 @@ public class ShootComponent : MonoBehaviour
             GameObject bullet = Instantiate(_bulletPrefab, transform.position, Quaternion.identity);
 
             if (bullet.TryGetComponent(out IMovementComponent bulletMovement)){ 
+                _directionOffset += new Vector2(UnityEngine.Random.Range(-0.1f, 0.1f), UnityEngine.Random.Range(-0.1f, 0.1f));
                 bulletMovement.SetDirection(transform.up * _directionOffset);
                 bulletMovement.SetSpeed(_speed);
             }

@@ -21,4 +21,12 @@ public class MoveToTarget : MonoBehaviour
             _mTransform.position = Vector3.MoveTowards(_mTransform.position, _targetPoint, _speed * Time.deltaTime);
         }
     }
+
+    public void SetTarget(Vector2 newTarget){
+        _targetPoint = new Vector3(newTarget.x, newTarget.y, 0);
+    }
+
+    public bool TargetReached(){
+        return _mTransform.position == _targetPoint;
+    }
 }

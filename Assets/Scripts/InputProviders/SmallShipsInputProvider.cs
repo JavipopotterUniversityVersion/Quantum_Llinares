@@ -11,9 +11,15 @@ public class SmallShipsInputProvider : MonoBehaviour
     [SerializeField]
     InputActionReference _rightRotate, _rightShootTop, _rightShootBottom, _rightEntwine;
 
+    [SerializeField]
+
+    InputActionReference _pause;
+
     [SerializeField] RotationComponent _leftShipRotation, _rightShipRotation;
     [SerializeField] ShootComponent _leftTopCannon, _leftBottomCannon, _rightTopCannon, _rightBottomCannon;
     [SerializeField] ShipTransition _transitioner;
+
+    [SerializeField] PauseMenuScript _pauseMenu;
 
     private void OnEnable()
     {
@@ -26,6 +32,8 @@ public class SmallShipsInputProvider : MonoBehaviour
         _rightShootTop.action.Enable();
         _rightShootBottom.action.Enable();
         _rightEntwine.action.Enable();
+
+        _pause.action.Enable();
     }
 
     private void Awake()
@@ -41,6 +49,9 @@ public class SmallShipsInputProvider : MonoBehaviour
         _rightShootTop.action.performed += OnRightTopCannon;
         _rightShootBottom.action.performed += OnRightBottomCannon;
         _rightEntwine.action.performed += _transitioner.MergeToLeft;
+
+         _pause.action.performed += OnPauseMenu;
+         _pause.action.canceled += OnPauseMenu;
     }
 
     private void OnDestroy()
@@ -56,6 +67,8 @@ public class SmallShipsInputProvider : MonoBehaviour
         _rightShootTop.action.performed -= OnRightTopCannon;
         _rightShootBottom.action.performed -= OnRightBottomCannon;
         _rightEntwine.action.performed -= _transitioner.MergeToLeft;
+
+        _pause.action.performed -= OnPauseMenu;
     }
 
     private void OnDisable()
@@ -69,6 +82,8 @@ public class SmallShipsInputProvider : MonoBehaviour
         _rightShootTop.action.Disable();
         _rightShootBottom.action.Disable();
         _rightEntwine.action.Disable();
+        
+        _pause.action.Disable();
     }
 
     #region actions
@@ -80,5 +95,6 @@ public class SmallShipsInputProvider : MonoBehaviour
     private void OnLeftTopCannon(InputAction.CallbackContext obj) => _leftTopCannon.Shoot();
     private void OnLeftBottomCannon(InputAction.CallbackContext obj) => _leftBottomCannon.Shoot();
 
+    private void OnPauseMenu(InputAction.CallbackContext obj) => _pauseMenu.Pause();
     #endregion
 }
