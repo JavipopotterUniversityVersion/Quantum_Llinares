@@ -22,5 +22,10 @@ public class DamageComponent : MonoBehaviour
             }
         }
     }
+    public float GetDamage() => _damage;
+
+    public void SetDamage(float d){
+        _damage = d;
+    }
 
 }
