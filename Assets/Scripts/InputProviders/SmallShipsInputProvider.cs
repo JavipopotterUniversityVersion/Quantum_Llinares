@@ -31,11 +31,13 @@ public class SmallShipsInputProvider : MonoBehaviour
     private void Awake()
     {
         _leftRotate.action.performed += OnLeftRotate;
+        _leftRotate.action.canceled += OnLeftRotate;
         _leftShootTop.action.performed += OnLeftTopCannon;
         _leftShootBottom.action.performed += OnLeftBottomCannon;
         _leftEntwine.action.performed += _transitioner.MergeToRight;
 
         _rightRotate.action.performed += OnRightRotate;
+        _rightRotate.action.canceled += OnRightRotate;
         _rightShootTop.action.performed += OnRightTopCannon;
         _rightShootBottom.action.performed += OnRightBottomCannon;
         _rightEntwine.action.performed += _transitioner.MergeToLeft;
@@ -44,11 +46,13 @@ public class SmallShipsInputProvider : MonoBehaviour
     private void OnDestroy()
     {
         _leftRotate.action.performed -= OnLeftRotate;
+        _leftRotate.action.canceled -= OnLeftRotate;
         _leftShootTop.action.performed -= OnLeftTopCannon;
         _leftShootBottom.action.performed -= OnLeftBottomCannon;
         _leftEntwine.action.performed -= _transitioner.MergeToRight;
 
         _rightRotate.action.performed -= OnRightRotate;
+        _rightRotate.action.canceled -= OnRightRotate;
         _rightShootTop.action.performed -= OnRightTopCannon;
         _rightShootBottom.action.performed -= OnRightBottomCannon;
         _rightEntwine.action.performed -= _transitioner.MergeToLeft;
