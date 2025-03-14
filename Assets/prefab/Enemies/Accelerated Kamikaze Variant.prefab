@@ -14,7 +14,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3707270307722240751, guid: bae5f90bd9d926d488d4ae1709f19db6, type: 3}
       propertyPath: maxOffset
-      value: 0.08
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 5544087575926912647, guid: bae5f90bd9d926d488d4ae1709f19db6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -93,4 +93,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf3f181245309014499388d3d5a6e6da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  acceleration: 0.05
+  acceleration: 0.0075

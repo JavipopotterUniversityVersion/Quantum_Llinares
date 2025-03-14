@@ -82,4 +82,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   followRef: {fileID: 0}
-  maxOffset: 0
+  maxOffset: 0.35

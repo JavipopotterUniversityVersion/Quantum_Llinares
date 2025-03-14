@@ -8,7 +8,7 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] Vector2Int _enemiesAmountRange;
     [SerializeField] Vector2 _positionRange;
     [SerializeField] Vector2 _speedRange;
-    [SerializeField] GameObject _enemyPrefab;
+    [SerializeField] GameObject[] _enemyPrefabs;
 
     [SerializeField] PlayerTracker _playerTracker;
     [SerializeField] ShipTransition _shipTransition;
@@ -17,7 +17,7 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] AnimationCurve _speedCurve;
     [SerializeField] float _timeToReachMaxScale = 500.0f;
     [SerializeField] Transform _entitesContainer;
-
+    
     float _timer = 0.0f;
 
     private void OnDrawGizmos() {
@@ -74,7 +74,7 @@ public class EnemySpawner : MonoBehaviour
 
         spawnPosition += (Vector2)transform.position;
 
-        GameObject enemy = Instantiate(_enemyPrefab, spawnPosition, Quaternion.identity, _entitesContainer);
+        GameObject enemy = Instantiate(_enemyPrefabs[Random.Range(0, _enemyPrefabs.Length)], spawnPosition, Quaternion.identity, _entitesContainer);
 
         if(enemy.TryGetComponent(out FollowMovement followMovement))
         {

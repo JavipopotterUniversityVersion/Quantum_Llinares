@@ -26,6 +26,10 @@ public class FollowMovement : MonoBehaviour
         {
             myTransform.position = Vector2.MoveTowards(myTransform.position, followRef.position, speed * Time.deltaTime);
         }
+        if (followRef != null && distanceToTarget < maxOffset)
+        {
+            myTransform.position = Vector2.MoveTowards(myTransform.position, followRef.position, -speed * Time.deltaTime);
+        }
     }
 
     public void setTarget(Transform target)
