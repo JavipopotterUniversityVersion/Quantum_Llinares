@@ -11,8 +11,12 @@ public class ShipTransition : MonoBehaviour
     [SerializeField] Transform MainShip;
     [SerializeField] Transform Ship1;
     [SerializeField] Transform Ship2;
+    
     [SerializeField] UnityEvent _onDivide;
     public UnityEvent OnDivide => _onDivide;
+    [SerializeField] UnityEvent _onMerge;
+    public UnityEvent OnMerge => _onMerge;
+
     [SerializeField] Transform _entitiesContainer;
     [SerializeField] float _splitTime = 0.5f;
     [SerializeField] float _mergeTime = 0.5f;
@@ -58,12 +62,12 @@ public class ShipTransition : MonoBehaviour
     }
 
     public void PushLeft(InputAction.CallbackContext context){
-        Debug.Log("Izquierda está de acuerdo");
+        Debug.Log("Izquierda estï¿½ de acuerdo");
         _leftIsPressed = context.ReadValue<float>() > 0;
     }
 
     public void PushRight(InputAction.CallbackContext context){
-        Debug.Log("Derecha está de acuerdo");
+        Debug.Log("Derecha estï¿½ de acuerdo");
         _rightIsPressed = context.ReadValue<float>() > 0;
     }
 
