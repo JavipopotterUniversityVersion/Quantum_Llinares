@@ -49,7 +49,11 @@ MonoBehaviour:
   _enemiesAmountRange: {x: 1, y: 3}
   _positionRange: {x: 16.54, y: 9.24}
   _speedRange: {x: 2, y: 3}
-  _enemyPrefab: {fileID: 7906243196266977034, guid: 497fbd7003d5d3d4396a6e88cbd7fb0f, type: 3}
+  _enemyPrefabs:
+  - {fileID: 7937766621003793940, guid: 1429066c1b56553458f587eb8215ff33, type: 3}
+  - {fileID: 5577885018739091549, guid: cd6a13bd4b495b3469a265c22b818f02, type: 3}
+  - {fileID: 479371278125242946, guid: bae5f90bd9d926d488d4ae1709f19db6, type: 3}
+  - {fileID: 4909643306945397228, guid: bf3d7cd372d53d544a8943a80427c9e0, type: 3}
   _playerTracker: {fileID: 0}
   _shipTransition: {fileID: 0}
   _spawnRateCurve:

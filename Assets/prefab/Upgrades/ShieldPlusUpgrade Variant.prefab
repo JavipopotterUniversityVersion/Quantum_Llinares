@@ -86,6 +86,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _collider2D: {fileID: 5436770126251007991}
+  _name: +Shield!
+  _poolHandler: {fileID: 11400000, guid: ac8fceff4928d2f45b207d888a8c0020, type: 2}
 --- !u!114 &5806998624803724954
 MonoBehaviour:
   m_ObjectHideFlags: 0

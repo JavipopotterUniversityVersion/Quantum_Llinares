@@ -6,12 +6,15 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEditor.IMGUI.Controls;
 using UnityEngine;
 using UnityEngine.Assertions;
+using UnityEngine.Events;
 
-public class ShipHealth : MonoBehaviour
+public class ShipHealth : MonoBehaviour, IDamageable
 {
     private Stopwatch _watch = new Stopwatch();
     [SerializeField] private float _recoverShieldInterval = 10000;
     [SerializeField] private bool _shieldAvailable = true;
+    [SerializeField] UnityEvent _onGetDamage;
+    [SerializeField] UnityEvent _onDeath;
 
     private int _currentLife;
     [SerializeField] int _totalLife = 1;
@@ -80,9 +83,13 @@ public class ShipHealth : MonoBehaviour
         return false;
     }
 
-    public void takeDamage(){
+    public void GetDamage(float d){
         if(_currentShield > 1 && _shieldAvailable) _currentShield--;
         else _currentLife--;
+
+        if(_currentLife <= 0) _onDeath.Invoke();
+        else _onGetDamage.Invoke();
+
         _watch.Restart();
     }
 

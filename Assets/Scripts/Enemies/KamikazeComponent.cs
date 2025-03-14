@@ -4,13 +4,10 @@ using UnityEngine;
 
 public class KamikazeComponent : MonoBehaviour
 {
-    [SerializeField] private LayerMask _targetMask;
-
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-        if ((_targetMask & (1 << collision.gameObject.layer)) != 0)
+    private void OnTriggerEnter2D(Collider2D other) {
+        if(other.TryGetComponent(out ShipHealth shipHealth))
         {
-            collision.gameObject.GetComponent<ShipHealth>().takeDamage();
+            shipHealth.GetDamage(1);
             Destroy(gameObject);
         }
     }

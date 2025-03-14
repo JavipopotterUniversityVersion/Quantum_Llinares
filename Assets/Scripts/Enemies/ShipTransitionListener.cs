@@ -11,7 +11,9 @@ public class ShipTransitionListener : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        followMovement = GetComponent<FollowMovement>();
+        if(TryGetComponent(out followMovement) == false){
+            Destroy(this);
+        }
     }
 
     // Update is called once per frame

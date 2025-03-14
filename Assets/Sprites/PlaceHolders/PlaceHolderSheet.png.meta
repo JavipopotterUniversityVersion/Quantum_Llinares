@@ -105,7 +105,7 @@ TextureImporter:
         width: 64
         height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -147,7 +147,7 @@ TextureImporter:
         width: 16
         height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -168,7 +168,7 @@ TextureImporter:
         width: 52
         height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -176,6 +176,48 @@ TextureImporter:
       bones: []
       spriteID: a57cac20a2c695e4489c903a1e00030c
       internalID: -606899251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlaceHolderSheet_4
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 17
+        width: 41
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c0a504cb8c99314fa72a0409387f242
+      internalID: -1509025869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlaceHolderSheet_5
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 23
+        width: 53
+        height: 69
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ad9d7bd0c4787c41915ae0ca361c02f
+      internalID: 1535428743
       vertices: []
       indices: 
       edges: []
@@ -195,6 +237,8 @@ TextureImporter:
       PlaceHolderSheet_1: 484579733
       PlaceHolderSheet_2: 804996592
       PlaceHolderSheet_3: -606899251
+      PlaceHolderSheet_4: -1509025869
+      PlaceHolderSheet_5: 1535428743
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
