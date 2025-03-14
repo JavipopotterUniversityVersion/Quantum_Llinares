@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3005716259935018367
 RectTransform:
   m_ObjectHideFlags: 0
@@ -36,8 +36,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 804, y: 516}
+  m_SizeDelta: {x: 103.9336, y: 18.5244}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3379235415830012596
 CanvasRenderer:
@@ -222,6 +222,8 @@ GameObject:
   - component: {fileID: 5052302163524617444}
   - component: {fileID: 4518279293149850751}
   - component: {fileID: 2671516898924459925}
+  - component: {fileID: 2885424181543787751}
+  - component: {fileID: 3624923176945012388}
   m_Layer: 5
   m_Name: PauseMenu
   m_TagString: Untagged
@@ -327,6 +329,62 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseButton: {fileID: 345509971624651599}
   pauseMenu: {fileID: 2240656511621790047}
+--- !u!114 &2885424181543787751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2429383820381406208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11549184221e37246abdca81fd0a7979, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onInput:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2671516898924459925}
+        m_TargetAssemblyTypeName: PauseMenuScript, Assembly-CSharp
+        m_MethodName: TogglePause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _inputAction: {fileID: -4312754014160198347, guid: c0bc507d76d54f84f9d732d7985c924f, type: 3}
+--- !u!114 &3624923176945012388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2429383820381406208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11549184221e37246abdca81fd0a7979, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onInput:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2671516898924459925}
+        m_TargetAssemblyTypeName: PauseMenuScript, Assembly-CSharp
+        m_MethodName: TogglePause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _inputAction: {fileID: -4810807491033434143, guid: dc1f6bcd55eec28439ded1b6f12ce045, type: 3}
 --- !u!1 &3283192586622156816
 GameObject:
   m_ObjectHideFlags: 0
@@ -1136,8 +1194,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Pause
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e0eca5f6773e5df459280135be6b0f4f, type: 2}
+  m_sharedMaterial: {fileID: 3778192762462162918, guid: e0eca5f6773e5df459280135be6b0f4f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1161,8 +1219,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 13.9
+  m_fontSizeBase: 13.9
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

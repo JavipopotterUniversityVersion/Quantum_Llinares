@@ -7,6 +7,7 @@ using UnityEngine;
 
 namespace LeaderboardCreatorEditor
 {
+    #if UNITY_EDITOR
     public class LeaderboardCreatorWindow : EditorWindow
     {
         [System.Serializable]
@@ -329,4 +330,6 @@ namespace LeaderboardCreatorEditor
             Debug.Log($"[Leaderboard Creator] {message}");
         }
     }
+
+    #endif
 }

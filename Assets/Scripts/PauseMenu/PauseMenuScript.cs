@@ -7,6 +7,7 @@ public class PauseMenuScript : MonoBehaviour
 {
     [SerializeField] private GameObject pauseButton;
     [SerializeField] private GameObject pauseMenu;
+    
     public void Pause()
     {
         Time.timeScale = 0.0f;
@@ -19,10 +20,16 @@ public class PauseMenuScript : MonoBehaviour
         pauseButton.SetActive(true);
         pauseMenu.SetActive(false);
     }
+
+    public void TogglePause()
+    {
+        if (Time.timeScale == 0.0f) Resume();
+        else Pause();
+    }
+
     public void Quit()
     {
-        Debug.Log("Application closed.");
-        Application.Quit();
+        SceneManager.LoadScene("MainMenu");
     }
     public void Restart()
     {
