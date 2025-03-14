@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class PointsHandler : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] Int _pointsReference;
+    [SerializeField] PoolHandler _poolHandler;
 
-    // Update is called once per frame
-    void Update()
+    public void AddPoints(int points)
     {
-        
+        _pointsReference.AddValue(points);
+        _poolHandler.OnShowTextEffect.Invoke(transform.position, points.ToString());
     }
 }
