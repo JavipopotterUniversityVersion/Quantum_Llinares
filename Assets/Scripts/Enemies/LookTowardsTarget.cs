@@ -22,7 +22,7 @@ public class LookTowardsTarget : MonoBehaviour
         float _aTan = _aTargetVector.y/_aTargetVector.x;
         float _aAngle = Mathf.Atan(_aTan);
 
-        _mTransform.eulerAngles = new Vector3(0,0,_aAngle * Mathf.Rad2Deg);
+        _mTransform.eulerAngles = new Vector3(0,0,_aAngle * Mathf.Rad2Deg + 90); // Green axis
     }
 
     void setTarget(Transform newTarget){
