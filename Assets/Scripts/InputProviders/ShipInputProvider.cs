@@ -1,14 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class ShipInputProvider : MonoBehaviour
 {
-    [SerializeField] InputActionReference _rotate, _shootTopCannon, _shootBottomCannon;
+    [SerializeField] InputActionReference _rotate, _shootTopCannon, _shootBottomCannon, _subdivide1, _subdivide2;
 
     [SerializeField] RotationComponent _shipRotation;
     [SerializeField] ShootComponent _topCannon, _bottomCannon;
+    [SerializeField] ShipTransition _transitioner;
+
+    private int _subdivisionAttempts = 0;
 
     #region Patron ActionReference
     private void OnEnable()
@@ -17,6 +21,9 @@ public class ShipInputProvider : MonoBehaviour
 
         _shootTopCannon.action.Enable();
         _shootBottomCannon.action.Enable();
+
+        _subdivide1.action.Enable();
+        _subdivide2.action.Enable();
     }
 
     private void Awake()
@@ -26,23 +33,38 @@ public class ShipInputProvider : MonoBehaviour
 
         _shootTopCannon.action.performed += OnShootTopInputRecieved;
         _shootBottomCannon.action.performed += OnShootBottomInputRecieved;
+
+        _subdivide1.action.performed += _transitioner.PushLeft;
+        _subdivide2.action.performed += _transitioner.PushRight;
+
+        _subdivide1.action.canceled += _transitioner.PushLeft;
+        _subdivide2.action.canceled += _transitioner.PushRight;
     }
 
     private void OnDisable()
+    {
+        _rotate.action.Disable();
+
+        _shootTopCannon.action.Disable();
+        _shootBottomCannon.action.Disable();
+
+        _subdivide1.action.Disable();
+        _subdivide2.action.Disable();
+    }
+
+    private void OnDestroy()
     {
         _rotate.action.performed -= OnRotationInputRecieved;
         _rotate.action.canceled -= OnRotationInputStopped;
 
         _shootTopCannon.action.performed -= OnShootTopInputRecieved;
         _shootBottomCannon.action.performed -= OnShootBottomInputRecieved;
-    }
 
-    private void OnDestroy()
-    {
-        _rotate.action.Disable();
+        _subdivide1.action.performed -= _transitioner.PushLeft;
+        _subdivide2.action.performed -= _transitioner.PushRight;
 
-        _shootTopCannon.action.Disable();
-        _shootBottomCannon.action.Disable();
+        _subdivide1.action.canceled -= _transitioner.PushLeft;
+        _subdivide2.action.canceled -= _transitioner.PushRight;
     }
     #endregion
 
