@@ -4983,7 +4983,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 845d2c06f9fc7b640b4bdc2f56800b63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 3
+  _health: 30
   _onDeath:
     m_PersistentCalls:
       m_Calls:
@@ -5026,9 +5026,9 @@ MonoBehaviour:
           m_StringArgument: GET_DAMAGE
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: LivebarComponent, Assembly-CSharp
-        m_MethodName: ChangeBar
+      - m_Target: {fileID: 11400000, guid: 28e727b33fc0b794585190d10f71eb55, type: 2}
+        m_TargetAssemblyTypeName: CameraEffectsHandler, Assembly-CSharp
+        m_MethodName: ShakeCamera
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
