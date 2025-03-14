@@ -7,20 +7,25 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
+using UnityEngine.UI;
 
 public class DialogueInterpreter : MonoBehaviour
 {
+    [SerializeField] TextMeshProUGUI _nameText;
     [SerializeField] TextMeshProUGUI[] _channels;
     int channelIndex = 0;
     TextMeshProUGUI _text => _channels[channelIndex];
+    [SerializeField] StringContainer _dialogue;
 
     [SerializeField] float timeBetweenChars = 0.05f;
     [SerializeField] float timeBetweenLines = 1.0f;
     [SerializeField] UnityEvent _onCharWritten;
-    [SerializeField] SpriteRenderer sr;
+    [SerializeField] Image sr;
     [SerializeField] SerializableDictionary<string, Sprite> spriteDictionary;
-    [SerializeField] Volume volume;
     SceneLoader sceneLoader;
+
+    [SerializeField] UnityEvent _onDialogueStart;
+    [SerializeField] UnityEvent _onDialogueEnd;
 
     [SerializeField] SerializableDictionary<string, UnityEvent> events;
     bool _stop;
@@ -33,6 +38,12 @@ public class DialogueInterpreter : MonoBehaviour
     private void Awake() {
         sceneLoader = GetComponent<SceneLoader>();
         foreach(var dialogue in dialogues) dialogueDictionary.Add(dialogue.name, dialogue);
+
+        _dialogue.OnValueChanged.AddListener(StartDialogue);
+    }
+
+    private void OnDestroy() {
+        _dialogue.OnValueChanged.RemoveListener(StartDialogue);
     }
 
     public void StartDialogue(StringContainer dialogue) => StartCoroutine(StartDialogueRoutine(dialogue.Value));
@@ -41,6 +52,7 @@ public class DialogueInterpreter : MonoBehaviour
 
     IEnumerator StartDialogueRoutine(string dialogue)
     {   
+        _onDialogueStart.Invoke();
         channelIndex = 0;
         string[] lines = dialogue.Split($"---");
 
@@ -74,6 +86,7 @@ public class DialogueInterpreter : MonoBehaviour
         }
 
          _text.maxVisibleCharacters = 0;
+        _onDialogueEnd.Invoke();
     }
 
     public void Next(InputAction.CallbackContext context) => _stop = false;
@@ -124,5 +137,6 @@ public class DialogueInterpreter : MonoBehaviour
             container.SetValue(dialogueDictionary[dialogueName]);
         }
         else if(value == "charTime") timeBetweenChars = float.Parse(arg);
+        else if(value == "name") _nameText.text = arg;
     }
 }
