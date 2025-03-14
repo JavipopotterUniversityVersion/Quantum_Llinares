@@ -5207,18 +5207,6 @@ MonoBehaviour:
   _onDeath:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7906243196266977034}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 8593115332262815512}
         m_TargetAssemblyTypeName: PointsHandler, Assembly-CSharp
         m_MethodName: AddPoints
@@ -5235,6 +5223,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
         m_MethodName: Play
         m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 100
+          m_FloatArgument: 0
+          m_StringArgument: ENEMY_DEATH
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 28e727b33fc0b794585190d10f71eb55, type: 2}
+        m_TargetAssemblyTypeName: CameraEffectsHandler, Assembly-CSharp
+        m_MethodName: ShakeCamera
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
