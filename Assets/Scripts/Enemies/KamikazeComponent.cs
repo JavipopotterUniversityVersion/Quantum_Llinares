@@ -8,9 +8,9 @@ public class KamikazeComponent : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if ((_targetMask & (1 << collision.gameObject.layer)) != 0)
+        if(collision.TryGetComponent(out ShipHealth shipHealth))
         {
-            collision.gameObject.GetComponent<ShipHealth>().takeDamage();
+            shipHealth.GetDamage(1);
             Destroy(gameObject);
         }
     }
