@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b57c8e60ee890ed4ea19cb9657a9175a, type: 3}
   m_Name: Tururu
   m_EditorClassIdentifier: 
-  clips: []
+  clips:
+  - {fileID: 8300000, guid: f2108b11c11595140a066895da527409, type: 3}
   _localVolume: 1
-  pitch: {x: 1, y: 1}
+  pitch: {x: 1, y: 1.05}
   playIndex: 0
   playOrder: 0
   _loop: 0

@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b57c8e60ee890ed4ea19cb9657a9175a, type: 3}
   m_Name: Ururut
   m_EditorClassIdentifier: 
-  clips: []
+  clips:
+  - {fileID: 8300000, guid: 0b7bb21a49949714f9f99816a999699b, type: 3}
   _localVolume: 1
-  pitch: {x: -1, y: -1}
+  pitch: {x: 1, y: 1.05}
   playIndex: 0
   playOrder: 0
   _loop: 0
