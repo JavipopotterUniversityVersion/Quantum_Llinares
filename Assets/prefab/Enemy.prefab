@@ -4920,6 +4920,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7789914429884750288}
+  - {fileID: 2731454949644864078}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1647640759035994780
@@ -4929,7 +4930,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7906243196266977034}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f3a17cea316a2fd4db7f0720a5c09d2c, type: 3}
   m_Name: 
@@ -5025,6 +5026,18 @@ MonoBehaviour:
           m_StringArgument: GET_DAMAGE
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 4630328587107508243}
+        m_TargetAssemblyTypeName: LivebarComponent, Assembly-CSharp
+        m_MethodName: ChangeBar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: GET_DAMAGE
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!58 &5157598089552995002
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5084,3 +5097,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f51cc7621ad351d43b37898aa77f1229, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &8247789633984798695
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2731454949644864078}
+  m_Layer: 6
+  m_Name: bar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2731454949644864078
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8247789633984798695}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2120194160511375938}
+  - {fileID: 3335198988099640166}
+  m_Father: {fileID: 2877520515491052495}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
