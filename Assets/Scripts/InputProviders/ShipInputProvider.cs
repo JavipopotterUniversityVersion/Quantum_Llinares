@@ -41,17 +41,6 @@ public class ShipInputProvider : MonoBehaviour
         _subdivide2.action.canceled += _transitioner.PushRight;
     }
 
-    private void OnDisable()
-    {
-        _rotate.action.Disable();
-
-        _shootTopCannon.action.Disable();
-        _shootBottomCannon.action.Disable();
-
-        _subdivide1.action.Disable();
-        _subdivide2.action.Disable();
-    }
-
     private void OnDestroy()
     {
         _rotate.action.performed -= OnRotationInputRecieved;
@@ -66,6 +55,17 @@ public class ShipInputProvider : MonoBehaviour
         _subdivide1.action.canceled -= _transitioner.PushLeft;
         _subdivide2.action.canceled -= _transitioner.PushRight;
     }
+    private void OnDisable()
+    {
+        _rotate.action.Disable();
+
+        _shootTopCannon.action.Disable();
+        _shootBottomCannon.action.Disable();
+
+        _subdivide1.action.Disable();
+        _subdivide2.action.Disable();
+    }
+
     #endregion
 
     #region actions
