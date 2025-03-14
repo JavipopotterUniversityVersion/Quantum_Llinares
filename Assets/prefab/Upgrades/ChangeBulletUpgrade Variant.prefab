@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4102769029003165084
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8250681620275442507, guid: 035719d9bdb0f774e837c4778f657478, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.7974742
+      objectReference: {fileID: 0}
+    - target: {fileID: 8250681620275442507, guid: 035719d9bdb0f774e837c4778f657478, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.43577826
+      objectReference: {fileID: 0}
+    - target: {fileID: 8250681620275442507, guid: 035719d9bdb0f774e837c4778f657478, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8250681620275442507, guid: 035719d9bdb0f774e837c4778f657478, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8250681620275442507, guid: 035719d9bdb0f774e837c4778f657478, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8250681620275442507, guid: 035719d9bdb0f774e837c4778f657478, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8250681620275442507, guid: 035719d9bdb0f774e837c4778f657478, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8250681620275442507, guid: 035719d9bdb0f774e837c4778f657478, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8250681620275442507, guid: 035719d9bdb0f774e837c4778f657478, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8250681620275442507, guid: 035719d9bdb0f774e837c4778f657478, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382205978422956235, guid: 035719d9bdb0f774e837c4778f657478, type: 3}
+      propertyPath: m_Name
+      value: ChangeBulletUpgrade Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8382205978422956235, guid: 035719d9bdb0f774e837c4778f657478, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4624577072815816900}
+    - targetCorrespondingSourceObject: {fileID: 8382205978422956235, guid: 035719d9bdb0f774e837c4778f657478, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -6180600579726727017}
+  m_SourcePrefab: {fileID: 100100000, guid: 035719d9bdb0f774e837c4778f657478, type: 3}
+--- !u!1 &5529405892530498903 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8382205978422956235, guid: 035719d9bdb0f774e837c4778f657478, type: 3}
+  m_PrefabInstance: {fileID: 4102769029003165084}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4624577072815816900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5529405892530498903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8ff03f62eb75045a584f242e6212b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _collider2D: {fileID: 6581601744543047952}
+  _name: Bullet Change!
+  _poolHandler: {fileID: 11400000, guid: ac8fceff4928d2f45b207d888a8c0020, type: 2}
+  _bullet: {fileID: 0}
+  _cooldown: 100
+--- !u!114 &-6180600579726727017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5529405892530498903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3a17cea316a2fd4db7f0720a5c09d2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  followRef: {fileID: 0}
+  maxOffset: 5
+--- !u!58 &6581601744543047952 stripped
+CircleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 7185912513423301772, guid: 035719d9bdb0f774e837c4778f657478, type: 3}
+  m_PrefabInstance: {fileID: 4102769029003165084}
+  m_PrefabAsset: {fileID: 0}

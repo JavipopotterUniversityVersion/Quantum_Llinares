@@ -32,5 +32,6 @@ public class EffectsPool : MonoBehaviour
         textEffect.transform.position = position;
         textEffect.text = text;
         textEffect.gameObject.SetActive(true);
+        _textEffectPool.Enqueue(textEffect);
     } 
 }

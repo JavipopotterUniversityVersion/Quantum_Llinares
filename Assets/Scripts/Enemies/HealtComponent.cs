@@ -5,7 +5,12 @@ using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class HealtComponent : MonoBehaviour
+public interface IDamageable
+{
+    void GetDamage(float d);
+}
+
+public class HealtComponent : MonoBehaviour, IDamageable
 {
 
     [SerializeField] float _health = 1.0f;
@@ -18,10 +23,10 @@ public class HealtComponent : MonoBehaviour
 
     public void GetDamage(float d){
         _health -=d;
-        _onDamage.Invoke();
 
         if(_health<=0) {
             _onDeath.Invoke();
         }
+        else _onDamage.Invoke();
     }
 }

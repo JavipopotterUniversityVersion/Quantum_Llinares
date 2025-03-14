@@ -14,7 +14,7 @@ public class DamageComponent : MonoBehaviour
 
         if ((_targetlayer & (1 << other.gameObject.layer)) != 0)
         {
-            HealtComponent hc = other.gameObject.GetComponent<HealtComponent>();
+            IDamageable hc = other.gameObject.GetComponent<IDamageable>();
             if (hc != null)
             {
                 if(_destroyOnHit) Destroy(gameObject);

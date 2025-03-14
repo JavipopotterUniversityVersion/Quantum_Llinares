@@ -9,6 +9,7 @@ public class ChangeCoolDownUpgrade : VirtualUpgrade
     {
         ShootComponent sc = obj.GetComponentInChildren<ShootComponent>();
         sc.SetCooldownFactor(sc.GetCooldownFactor() * CooldownReduce);
+        Destroy(this.gameObject);
     }
 
 }

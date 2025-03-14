@@ -25,8 +25,10 @@ public class ShipTransition : MonoBehaviour
     bool _leftIsPressed = false;
     bool _rightIsPressed = false;
 
+    bool _canChange = true;
+
     private void Update() {
-        if(!divided)
+        if(!divided && _canChange)
         {
             if(_leftIsPressed && _rightIsPressed)
             {
@@ -34,28 +36,17 @@ public class ShipTransition : MonoBehaviour
                 _onDivide.Invoke();
             }
         }
-        else
-        {
-            if(Input.GetKeyDown(KeyCode.E))
-            {
-                StartCoroutine(Merge(Ship2, Ship1.position));
-            }
-            else if(Input.GetKeyDown(KeyCode.U))
-            {
-                StartCoroutine(Merge(Ship1, Ship2.position));
-            }
-        }
     }
 
     public void MergeToRight(InputAction.CallbackContext context){
-        if(divided)
+        if(divided && _canChange)
         {
             StartCoroutine(Merge(Ship2, Ship1.position));
         }
     }
 
     public void MergeToLeft(InputAction.CallbackContext context){
-        if(divided)
+        if(divided && _canChange)
         {
             StartCoroutine(Merge(Ship1, Ship2.position));
         }
@@ -81,6 +72,8 @@ public class ShipTransition : MonoBehaviour
     }
 
     void Divide() { 
+        _canChange = false;
+
         Ship1.gameObject.SetActive(true);
         Ship2.gameObject.SetActive(true);
         MainShip.gameObject.SetActive(false);
@@ -89,9 +82,12 @@ public class ShipTransition : MonoBehaviour
         Ship2.position = MainShip.position + Vector3.left * _shipDistance;
 
         divided = true;
+        _canChange = true;
     }
 
     IEnumerator Merge(Transform from, Vector2 to){
+        _canChange = false;
+
         _onMerge.Invoke();
         Vector2 fromInitialPosition = from.position;
         for(float i = 0; i < _splitTime; i += Time.deltaTime){
@@ -117,5 +113,6 @@ public class ShipTransition : MonoBehaviour
         }
 
         divided = false;
+        _canChange = true;
     }
 }
