@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.InputSystem;
 
 public class ShipTransition : MonoBehaviour
 {
@@ -17,11 +18,13 @@ public class ShipTransition : MonoBehaviour
     [SerializeField] float _mergeTime = 0.5f;
     float _shipDistance;
 
+    bool _leftIsPressed = false;
+    bool _rightIsPressed = false;
+
     private void Update() {
-        return;
         if(!divided)
         {
-            if(Input.GetKey(KeyCode.E) && Input.GetKey(KeyCode.U))
+            if(_leftIsPressed && _rightIsPressed)
             {
                 Divide();
                 _onDivide.Invoke();
@@ -38,6 +41,28 @@ public class ShipTransition : MonoBehaviour
                 StartCoroutine(Merge(Ship1, Ship2.position));
             }
         }
+    }
+
+    void MergeToRight(InputAction.CallbackContext context){
+        if(divided)
+        {
+            StartCoroutine(Merge(Ship2, Ship1.position));
+        }
+    }
+
+    void MergeToLeft(InputAction.CallbackContext context){
+        if(divided)
+        {
+            StartCoroutine(Merge(Ship1, Ship2.position));
+        }
+    }
+
+    void PushLeft(InputAction.CallbackContext context){
+        _leftIsPressed = context.ReadValue<float>() > 0;
+    }
+
+    void PushRight(InputAction.CallbackContext context){
+        _rightIsPressed = context.ReadValue<float>() > 0;
     }
 
     // Start is called before the first frame update
