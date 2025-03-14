@@ -54,8 +54,9 @@ Material:
     m_Ints: []
     m_Floats:
     - _EnableExternalAlpha: 0
+    - _ScrollSpeed: 0.5
     m_Colors:
-    - _Color: {r: 0.34851742, g: 0.24792448, b: 0.5999999, a: 1}
+    - _Color: {r: 0.1342215, g: 0.09823423, b: 0.23773581, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []

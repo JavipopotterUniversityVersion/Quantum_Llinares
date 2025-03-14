@@ -13,6 +13,12 @@ public class ShootComponent : MonoBehaviour
 
     [SerializeField] private GameObject _bulletPrefab;
     [SerializeField] private float _cooldown = 100.0f;
+    [SerializeField] private float _cooldownfactor = 1.0f;
+
+    [SerializeField] private float damagefactor;
+
+    private float actbulletdamage = 10.0f;
+    private float _actCooldown = 100.0f;
     [SerializeField] private float _speed = 5.0f;
 
     [SerializeField] private Vector2 _directionOffset;
@@ -23,17 +29,25 @@ public class ShootComponent : MonoBehaviour
 
     public void SetBullet(GameObject obj){
         _bulletPrefab = obj;
+        damagefactor += 0.1f;
+        actbulletdamage = obj.GetComponent<DamageComponent>().GetDamage()* damagefactor;
     }
     public void SetCooldown(float aux){
         _cooldown = aux;
+        _actCooldown = _cooldown*-_cooldownfactor;
     }
     public float GetCooldown() => _cooldown;
 
+    public void SetCooldownFactor(float aux){
+        _cooldownfactor = aux;
+        _actCooldown = _cooldown*-_cooldownfactor;
+    }
+    public float GetCooldownFactor() => _cooldownfactor;
 
     private void Update()
     {
         if(!_canShoot){
-            if(_stopwatch.ElapsedMilliseconds>= _cooldown) {
+            if(_stopwatch.ElapsedMilliseconds>= _actCooldown) {
                 _canShoot = true;
                 _stopwatch.Stop();
                 _stopwatch.Reset();
@@ -51,7 +65,7 @@ public class ShootComponent : MonoBehaviour
                 bulletMovement.SetDirection(transform.up * _directionOffset);
                 bulletMovement.SetSpeed(_speed);
             }
-
+            bullet.GetComponent<DamageComponent>().SetDamage(actbulletdamage);
             _stopwatch.Start();
             _canShoot = false;
          }
