@@ -24,7 +24,7 @@ public class ShipTransition : MonoBehaviour
     private void Update() {
         if(!divided)
         {
-            if(Input.GetKey(KeyCode.E) && Input.GetKey(KeyCode.U))
+            if(_leftIsPressed && _rightIsPressed)
             {
                 Divide();
                 _onDivide.Invoke();
@@ -43,25 +43,27 @@ public class ShipTransition : MonoBehaviour
         }
     }
 
-    void MergeToRight(InputAction.CallbackContext context){
+    public void MergeToRight(InputAction.CallbackContext context){
         if(divided)
         {
             StartCoroutine(Merge(Ship2, Ship1.position));
         }
     }
 
-    void MergeToLeft(InputAction.CallbackContext context){
+    public void MergeToLeft(InputAction.CallbackContext context){
         if(divided)
         {
             StartCoroutine(Merge(Ship1, Ship2.position));
         }
     }
 
-    void PushLeft(InputAction.CallbackContext context){
+    public void PushLeft(InputAction.CallbackContext context){
+        Debug.Log("Izquierda está de acuerdo");
         _leftIsPressed = context.ReadValue<float>() > 0;
     }
 
-    void PushRight(InputAction.CallbackContext context){
+    public void PushRight(InputAction.CallbackContext context){
+        Debug.Log("Derecha está de acuerdo");
         _rightIsPressed = context.ReadValue<float>() > 0;
     }
 
@@ -74,7 +76,7 @@ public class ShipTransition : MonoBehaviour
         Ship2.transform.SetParent(_entitiesContainer);
     }
 
-    void Divide(){
+    void Divide() { 
         Ship1.gameObject.SetActive(true);
         Ship2.gameObject.SetActive(true);
         MainShip.gameObject.SetActive(false);
