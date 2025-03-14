@@ -11,7 +11,7 @@ public class ShipTransition : MonoBehaviour
     [SerializeField] Transform MainShip;
     [SerializeField] Transform Ship1;
     [SerializeField] Transform Ship2;
-    
+
     [SerializeField] UnityEvent _onDivide;
     public UnityEvent OnDivide => _onDivide;
     [SerializeField] UnityEvent _onMerge;
@@ -92,6 +92,7 @@ public class ShipTransition : MonoBehaviour
     }
 
     IEnumerator Merge(Transform from, Vector2 to){
+        _onMerge.Invoke();
         Vector2 fromInitialPosition = from.position;
         for(float i = 0; i < _splitTime; i += Time.deltaTime){
             from.position = Vector2.Lerp(fromInitialPosition, to, i / _splitTime);
