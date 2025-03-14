@@ -6,6 +6,7 @@ using UnityEngine;
 public class VirtualUpgrade : MonoBehaviour
 {   
     [SerializeField] private Collider2D _collider2D;
+    [SerializeField] private String name;
 
     private void Start()
     {
