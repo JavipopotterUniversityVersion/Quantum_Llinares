@@ -48,7 +48,7 @@ MonoBehaviour:
   _spawnRateRange: {x: 2, y: 3}
   _enemiesAmountRange: {x: 1, y: 3}
   _positionRange: {x: 16.54, y: 9.24}
-  _speedRange: {x: 1, y: 1.5}
+  _speedRange: {x: 2, y: 3}
   _enemyPrefab: {fileID: 7906243196266977034, guid: 497fbd7003d5d3d4396a6e88cbd7fb0f, type: 3}
   _playerTracker: {fileID: 0}
   _shipTransition: {fileID: 0}
@@ -101,6 +101,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _timeToReachMaxScale: 500
+  _entitesContainer: {fileID: 0}
 --- !u!114 &3781373321984360791
 MonoBehaviour:
   m_ObjectHideFlags: 0
