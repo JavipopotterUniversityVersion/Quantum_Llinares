@@ -5245,6 +5245,18 @@ MonoBehaviour:
           m_StringArgument: GET_DAMAGE
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 28e727b33fc0b794585190d10f71eb55, type: 2}
+        m_TargetAssemblyTypeName: CameraEffectsHandler, Assembly-CSharp
+        m_MethodName: ShakeCamera
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: GET_DAMAGE
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!58 &5157598089552995002
 CircleCollider2D:
   m_ObjectHideFlags: 0
