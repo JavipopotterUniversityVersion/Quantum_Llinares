@@ -22,6 +22,8 @@ public class ShipTransition : MonoBehaviour
     [SerializeField] float _mergeTime = 0.5f;
     float _shipDistance;
 
+    [SerializeField] UpdatesManager _updatesManager;
+
     bool _leftIsPressed = false;
     bool _rightIsPressed = false;
 
@@ -41,6 +43,8 @@ public class ShipTransition : MonoBehaviour
     public void MergeToRight(InputAction.CallbackContext context){
         if(divided && _canChange)
         {
+            //LLamar al manager de updates para que gestione cosas si se encuentra un upgrade en el ship
+            //_updatesManager.OnShipMerged();
             StartCoroutine(Merge(Ship2, Ship1.position));
         }
     }
@@ -48,6 +52,9 @@ public class ShipTransition : MonoBehaviour
     public void MergeToLeft(InputAction.CallbackContext context){
         if(divided && _canChange)
         {
+            //LLamar al manager de updates para que gestione cosas si se encuentra un upgrade en el ship
+            ShootComponent[] sC = Ship2.GetComponentsInChildren<ShootComponent>();
+            _updatesManager.OnShipMerged(sC);
             StartCoroutine(Merge(Ship1, Ship2.position));
         }
     }
