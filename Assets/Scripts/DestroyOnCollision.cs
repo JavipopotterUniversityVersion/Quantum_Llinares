@@ -11,6 +11,7 @@ public class DestroyOnCollision : MonoBehaviour
         if ((_targetMask & (1 << collision.gameObject.layer)) != 0)
         {
             Destroy(gameObject);
+            Destroy(collision.gameObject);
         }
     }
 }
