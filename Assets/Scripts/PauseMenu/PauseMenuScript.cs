@@ -37,4 +37,8 @@ public class PauseMenuScript : MonoBehaviour
         string sceneName = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene(sceneName);
     }
+
+    private void OnDestroy() {
+        Time.timeScale = 1.0f;
+    }
 }

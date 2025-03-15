@@ -550,6 +550,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1391166956}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: Unfade
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &1107130968
 Transform:
   m_ObjectHideFlags: 0
@@ -757,6 +769,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: acbd1204c35e2084d9eb98acb326927d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1391166956 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5594656714898043786, guid: e35cba16c346b1f48a4a6ab4ce318b37, type: 3}
+  m_PrefabInstance: {fileID: 1391166954}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71e2b140ef4d06943ba9f335ecfea22b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1664763895
