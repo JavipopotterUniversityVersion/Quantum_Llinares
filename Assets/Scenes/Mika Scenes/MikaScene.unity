@@ -271,6 +271,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Naves
       objectReference: {fileID: 0}
+    - target: {fileID: 5790877416145671978, guid: 823fe3f68e7b649448abd64201299415, type: 3}
+      propertyPath: _bulletPrefab
+      value: 
+      objectReference: {fileID: 3318481468163168672, guid: f055875974a257746b4ed2687c960d33, type: 3}
     - target: {fileID: 8860647101128480432, guid: 823fe3f68e7b649448abd64201299415, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.38571435
