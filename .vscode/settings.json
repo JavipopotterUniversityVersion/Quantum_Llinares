@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Nave_Division_Dispara_Mogollon.sln"
+    "dotnet.defaultSolution": "Quantum_Llinares.sln"
 }
