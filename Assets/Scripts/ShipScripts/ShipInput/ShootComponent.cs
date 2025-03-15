@@ -33,7 +33,7 @@ public class ShootComponent : MonoBehaviour
     public void SetBullet(GameObject obj){
         _bulletPrefab = obj;
         damagefactor += 0.1f;
-        actbulletdamage = obj.GetComponent<DamageComponent>().GetDamage()* damagefactor;
+        actbulletdamage = obj.GetComponent<IDamager>().GetDamage()* damagefactor;
     }
     public void SetCooldown(float aux){
         _cooldown = aux;
@@ -69,7 +69,8 @@ public class ShootComponent : MonoBehaviour
                 bulletMovement.SetDirection(transform.up * _directionOffset);
                 bulletMovement.SetSpeed(_speed);
             }
-            bullet.GetComponent<DamageComponent>().SetDamage(actbulletdamage);
+            else if(bullet.TryGetComponent<FadeWithTime>(out FadeWithTime fadeWithTime)) bullet.transform.rotation = transform.rotation;
+            bullet.GetComponent<IDamager>().SetDamage(actbulletdamage);
             _stopwatch.Start();
             _canShoot = false;
          }

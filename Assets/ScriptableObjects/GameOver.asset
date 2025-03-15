@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0feb3da2357dc9a4299ee629f35ebde3, type: 3}
   m_Name: GameOver
   m_EditorClassIdentifier: 
-  _value: 0
+  _value: 1

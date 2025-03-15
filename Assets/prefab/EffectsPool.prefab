@@ -46,4 +46,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _textEffectPrefab: {fileID: 7575821415778741905, guid: c1e28f15a9af22144a866da544845e79, type: 3}
   _textEffectPoolSize: 10
+  _poolObjects:
+    list:
+    - Key: {fileID: 5588895782012766780, guid: 37c4a698c54e099459f4ca938083b5fe, type: 3}
+      Value:
+        size: 10
   _poolHandler: {fileID: 11400000, guid: ac8fceff4928d2f45b207d888a8c0020, type: 2}
