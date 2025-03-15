@@ -17,11 +17,16 @@ public class DeathMenuControl : MonoBehaviour
 
     public IEnumerator ActiveDeathMenu(){
       
+        Time.timeScale = 0;
         _background.SetActive(true);
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSecondsRealtime(1);
         _score.SetActive(true);
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSecondsRealtime(1);
       _bretry.SetActive(true);
       _breturn.SetActive(true);
+    }
+
+    private void OnDestroy() {
+        Time.timeScale = 1;
     }
 }
