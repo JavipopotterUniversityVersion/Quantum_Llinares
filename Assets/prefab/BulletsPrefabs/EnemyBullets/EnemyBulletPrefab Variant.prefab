@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &3792857382192262786
+--- !u!1001 &1842964394149901173
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -8,9 +8,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7669023027533713891, guid: 4252c4f624f6370419dee9256283c1e8, type: 3}
+      propertyPath: _targetMask.m_Bits
+      value: 256
+      objectReference: {fileID: 0}
     - target: {fileID: 2178542794338595228, guid: 4252c4f624f6370419dee9256283c1e8, type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2178542794338595228, guid: 4252c4f624f6370419dee9256283c1e8, type: 3}
       propertyPath: m_Color.g
@@ -18,19 +22,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2178542794338595228, guid: 4252c4f624f6370419dee9256283c1e8, type: 3}
       propertyPath: m_Color.r
-      value: 0.8423648
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2302943045943625015, guid: 4252c4f624f6370419dee9256283c1e8, type: 3}
+      propertyPath: _targetlayer.m_Bits
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3114354635972571905, guid: 4252c4f624f6370419dee9256283c1e8, type: 3}
       propertyPath: m_Name
-      value: FollowingBulletPrefab Variant
+      value: EnemyBulletPrefab Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 3114354635972571905, guid: 4252c4f624f6370419dee9256283c1e8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8589873882471852758, guid: 4252c4f624f6370419dee9256283c1e8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.6280537
+      value: -0.0475
       objectReference: {fileID: 0}
     - target: {fileID: 8589873882471852758, guid: 4252c4f624f6370419dee9256283c1e8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.630251
+      value: -0.0063
       objectReference: {fileID: 0}
     - target: {fileID: 8589873882471852758, guid: 4252c4f624f6370419dee9256283c1e8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -64,32 +76,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 9154246233534521630, guid: 4252c4f624f6370419dee9256283c1e8, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3114354635972571905, guid: 4252c4f624f6370419dee9256283c1e8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7920144611060147916}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4252c4f624f6370419dee9256283c1e8, type: 3}
---- !u!1 &2277280703080422787 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3114354635972571905, guid: 4252c4f624f6370419dee9256283c1e8, type: 3}
-  m_PrefabInstance: {fileID: 3792857382192262786}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &7920144611060147916
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2277280703080422787}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15c76da96cc36aa4984d92ddb91a39bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  followRef: {fileID: 0}
-  maxOffset: 0
-  radius: 5
