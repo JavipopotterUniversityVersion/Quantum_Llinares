@@ -7,7 +7,7 @@ using UnityEngine.Events;
 public class Bool : ScriptableObject
 {
     [SerializeField] private bool _value;
-    UnityEvent _onValueChanged;
+    UnityEvent _onValueChanged = new UnityEvent();
     public UnityEvent OnValueChanged => _onValueChanged;
 
     public bool Value

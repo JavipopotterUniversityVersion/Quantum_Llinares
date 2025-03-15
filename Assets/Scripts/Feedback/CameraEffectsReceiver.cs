@@ -31,7 +31,7 @@ public class CameraEffectsReceiver : MonoBehaviour
         CinemachineBasicMultiChannelPerlin noise = _virtualCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
         noise.m_AmplitudeGain = amplitude;
         noise.m_FrequencyGain = frequency;
-        yield return new WaitForSeconds(duration);
+        yield return new WaitForSecondsRealtime(duration);
         noise.m_AmplitudeGain = 0;
         noise.m_FrequencyGain = 0;
     }

@@ -11,6 +11,11 @@ public class IntWriter : MonoBehaviour
 
     private void OnEnable() {
         _value.OnValueChanged.AddListener(OnIntChanged);
+        OnIntChanged(_value.Value);
+    }
+
+    private void OnDisable() {
+        _value.OnValueChanged.RemoveListener(OnIntChanged);
     }
 
     public void OnIntChanged(int value) {
