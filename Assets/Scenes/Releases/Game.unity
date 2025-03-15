@@ -187,9 +187,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8382779354250804420, guid: 14a071d5b68c78646a8095919564e324, type: 3}
+      propertyPath: _playerTracker
+      value: 
+      objectReference: {fileID: 1070160179}
+    - target: {fileID: 8382779354250804420, guid: 14a071d5b68c78646a8095919564e324, type: 3}
       propertyPath: _EntitiesContainer
       value: 
       objectReference: {fileID: 1665847971}
+    - target: {fileID: 8382779354250804420, guid: 14a071d5b68c78646a8095919564e324, type: 3}
+      propertyPath: _shipTransitionListener
+      value: 
+      objectReference: {fileID: 1070160180}
     - target: {fileID: 8697683388467186168, guid: 14a071d5b68c78646a8095919564e324, type: 3}
       propertyPath: m_Name
       value: Spawner

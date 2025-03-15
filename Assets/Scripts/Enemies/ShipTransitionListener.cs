@@ -29,6 +29,7 @@ public class ShipTransitionListener : MonoBehaviour
     }
 
     public void OnDisable(){
+        print(gameObject.name + " disabled");
         shipTransition.OnDivide.RemoveListener(ChangeRef);
     }
 

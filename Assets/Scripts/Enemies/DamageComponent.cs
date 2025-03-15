@@ -7,7 +7,7 @@ public class DamageComponent : MonoBehaviour
 {
     [SerializeField] private LayerMask _targetlayer;
     [SerializeField] private float _damage;
-    bool _destroyOnHit = true;
+    [SerializeField] bool _destroyOnHit = true;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
