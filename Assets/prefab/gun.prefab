@@ -47,7 +47,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _bulletPrefab: {fileID: 3114354635972571905, guid: 4252c4f624f6370419dee9256283c1e8, type: 3}
-  _cooldown: 100
+  _cooldown: 350
+  _cooldownfactor: 1
+  damagefactor: 0
   _speed: 5
   _directionOffset: {x: 1, y: 1}
   _onShoot:

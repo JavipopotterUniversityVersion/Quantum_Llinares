@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
@@ -9,6 +10,7 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] Vector2 _positionRange;
     [SerializeField] Vector2 _speedRange;
     [SerializeField] GameObject[] _enemyPrefabs;
+    [SerializeField] GameObject[] _enemiesToSpawn;
 
     [SerializeField] PlayerTracker _playerTracker;
     [SerializeField] ShipTransition _shipTransition;
@@ -27,18 +29,29 @@ public class EnemySpawner : MonoBehaviour
 
     private void Update() {
         _timer += Time.deltaTime;
+
+        if (_timer >= 5.0f && !_enemiesToSpawn.Contains(_enemyPrefabs[0])) {
+            _enemiesToSpawn = _enemiesToSpawn.Append(_enemyPrefabs[0]).ToArray();
+            StartCoroutine(SpawnEnemies());
+        }
+
+        if (_timer >= 10.0f && !_enemiesToSpawn.Contains(_enemyPrefabs[1])) {
+            _enemiesToSpawn = _enemiesToSpawn.Append(_enemyPrefabs[1]).ToArray();
+        }
+
+        if (_timer >= 20.0f && !_enemiesToSpawn.Contains(_enemyPrefabs[2])) {
+            _enemiesToSpawn = _enemiesToSpawn.Append(_enemyPrefabs[2]).ToArray();
+        }
+
+        // if (_timer >= 30.0f && !_enemiesToSpawn.Contains(_enemyPrefabs[3])) {
+            // _enemiesToSpawn = _enemiesToSpawn.Append(_enemyPrefabs[3]).ToArray();
+        // }
     }
 
     public void Restart()
     {
         StopCoroutine(SpawnEnemies());
         _timer = 0.0f;
-    }
-
-    [ContextMenu("Start Spawning")]
-    public void StartSpawning()
-    {
-        StartCoroutine(SpawnEnemies());
     }
 
     IEnumerator SpawnEnemies()
@@ -74,7 +87,7 @@ public class EnemySpawner : MonoBehaviour
 
         spawnPosition += (Vector2)transform.position;
 
-        GameObject enemy = Instantiate(_enemyPrefabs[Random.Range(0, _enemyPrefabs.Length)], spawnPosition, Quaternion.identity, _entitesContainer);
+        GameObject enemy = Instantiate(_enemiesToSpawn[Random.Range(0, _enemiesToSpawn.Length)], spawnPosition, Quaternion.identity, _entitesContainer);
 
         if(enemy.TryGetComponent(out FollowMovement followMovement))
         {
