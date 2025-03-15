@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7426460103805914133}
   - component: {fileID: 5917226431895362916}
+  - component: {fileID: 2681339897010390751}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -107,3 +108,26 @@ MonoBehaviour:
     m_RotationOrder: 4
   _timeToReachMaxScale: 500
   _entitesContainer: {fileID: 0}
+--- !u!114 &2681339897010390751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8697683388467186168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8016754b01481e94caec6bfd75d63454, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _upgradesPrefabs:
+  - {fileID: 5529405892530498903, guid: d08243828aa63064a8c377041eb1e08c, type: 3}
+  - {fileID: 3706095031333907312, guid: b05b9570d638782408d68602ca382e50, type: 3}
+  - {fileID: 1382524432699730996, guid: 7907723480a274347852a17f2d418d1b, type: 3}
+  - {fileID: 6672548119257453488, guid: 8e8e11bfbf4ae4c468db99826f89a8ac, type: 3}
+  _upgradePos:
+  - {x: 6, y: 10}
+  - {x: 6, y: -10}
+  - {x: -6, y: 10}
+  - {x: -6, y: -10}
+  _upgradespawnRate: 1
