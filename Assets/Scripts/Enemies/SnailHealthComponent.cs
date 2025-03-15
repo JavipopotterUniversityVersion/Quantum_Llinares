@@ -5,9 +5,7 @@ public class SnailHealthComponent : MonoBehaviour, IDamageable
     [SerializeField] private PlayerTracker _tracker;
     [SerializeField] private float _pushFactor = 1.0f;
 
-    private void Awake() {
-        _tracker = GetComponent<ShipTransitionListener>().GetPlayerTracker();
-    }
+    public void SetTracker(PlayerTracker t) { _tracker = t; }
 
     public float PushFactor {  get { return _pushFactor; } set {  _pushFactor = value; } }
     public void GetDamage(float d)
