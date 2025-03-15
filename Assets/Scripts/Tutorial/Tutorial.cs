@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Tutorial : MonoBehaviour
 {
     [SerializeField] StringContainer _container;
+
+    public UnityEvent ShootingLearned, DivisionLearned, EntwiningLearned;
 
     [SerializeField] String[] _dialogs;
 

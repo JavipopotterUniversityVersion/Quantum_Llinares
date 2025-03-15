@@ -19,5 +19,6 @@ public class FecundoSpawner : MonoBehaviour
         
         fecundoTransform.GetComponent<ShipTransitionListener>().setPlayerTracker(_playerTracker);
         fecundoTransform.GetComponent<ShipTransitionListener>().setShipTransition(_shipTransitionListener);
+        fecundoTransform.GetComponent<SnailHealthComponent>().SetTracker(_playerTracker);
     }
 }

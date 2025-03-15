@@ -122,7 +122,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _upgradesPrefabs:
-  - {fileID: 5529405892530498903, guid: d08243828aa63064a8c377041eb1e08c, type: 3}
   - {fileID: 3706095031333907312, guid: b05b9570d638782408d68602ca382e50, type: 3}
   - {fileID: 1382524432699730996, guid: 7907723480a274347852a17f2d418d1b, type: 3}
   - {fileID: 6672548119257453488, guid: 8e8e11bfbf4ae4c468db99826f89a8ac, type: 3}
@@ -146,4 +145,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _fecundo: {fileID: 6946917313029292768, guid: ea765f8ef44c3614c87acc31e21656d7, type: 3}
   _EntitiesContainer: {fileID: 0}
+  _shipTransitionListener: {fileID: 0}
+  _playerTracker: {fileID: 0}
   _spawnRadius: 150
