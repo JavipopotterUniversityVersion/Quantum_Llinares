@@ -8,6 +8,9 @@ public class ShipTransitionListener : MonoBehaviour
     ShipTransition shipTransition;
     FollowMovement followMovement;
     PlayerTracker playerTracker;
+    public PlayerTracker GetPlayerTracker(){
+        return playerTracker;
+    }
     // Start is called before the first frame update
     void Start()
     {
