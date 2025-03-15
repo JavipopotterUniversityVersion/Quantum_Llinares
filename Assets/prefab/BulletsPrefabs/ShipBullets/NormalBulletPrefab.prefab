@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 8273809270365348982}
   - component: {fileID: -2878882359552167770}
   - component: {fileID: -7669023027533713891}
+  - component: {fileID: 7131714733778438176}
   m_Layer: 8
   m_Name: NormalBulletPrefab
   m_TagString: Untagged
@@ -323,3 +324,31 @@ MonoBehaviour:
   _targetMask:
     serializedVersion: 2
     m_Bits: 64
+  _onDestroy:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7131714733778438176}
+        m_TargetAssemblyTypeName: PoolTaker, Assembly-CSharp
+        m_MethodName: TakeFromPool
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 5588895782012766780, guid: 37c4a698c54e099459f4ca938083b5fe, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &7131714733778438176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3114354635972571905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3be170b7cf9a4b042b80001a9ee5a8e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _poolHandler: {fileID: 11400000, guid: ac8fceff4928d2f45b207d888a8c0020, type: 2}

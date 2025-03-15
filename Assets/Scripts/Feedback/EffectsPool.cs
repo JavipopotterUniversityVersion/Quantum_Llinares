@@ -6,10 +6,10 @@ using UnityEngine;
 public class EffectsPool : MonoBehaviour
 {
     [System.Serializable]
-    struct PoolObject
+    class PoolObject
     {
-        public int size;
-        public Queue<GameObject> pool;
+        public int size = 10;
+        public Queue<GameObject> pool = new Queue<GameObject>();
     }
 
     [SerializeField] GameObject _textEffectPrefab;
@@ -31,7 +31,6 @@ public class EffectsPool : MonoBehaviour
         foreach(KeyValuePair<GameObject, PoolObject> entry in _poolObjects)
         {
             PoolObject poolObject = entry.Value;
-            poolObject.pool = new Queue<GameObject>();
             for (int i = 0; i < poolObject.size; i++)
             {
                 GameObject obj = Instantiate(entry.Key, transform);
