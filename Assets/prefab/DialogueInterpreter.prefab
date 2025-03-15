@@ -133,7 +133,11 @@ MonoBehaviour:
       m_Calls: []
   sr: {fileID: 7534782074561367411}
   spriteDictionary:
-    list: []
+    list:
+    - Key: pilar
+      Value: {fileID: 21300000, guid: a3df36682877a3140b5208e37324de3d, type: 3}
+    - Key: nina
+      Value: {fileID: 21300000, guid: c596d29de255e5e409ef1a691f1a0a07, type: 3}
   _onDialogueStart:
     m_PersistentCalls:
       m_Calls:
@@ -165,7 +169,39 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   events:
-    list: []
+    list:
+    - Key: ZombieTalk
+      Value:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: de4fa5780ef96cd4aa0cf1868df14802, type: 2}
+            m_TargetAssemblyTypeName: AudioPlayer, Assembly-CSharp
+            m_MethodName: Play
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+    - Key: AlienTalk
+      Value:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: f74bca6e87c3f1748bec1a2a052a66e6, type: 2}
+            m_TargetAssemblyTypeName: AudioPlayer, Assembly-CSharp
+            m_MethodName: Play
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
   dialogues: []
 --- !u!114 &9054761198289898762
 MonoBehaviour:
@@ -514,7 +550,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 789778749, guid: b7ab544e7efd6274496642f31347d707, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c596d29de255e5e409ef1a691f1a0a07, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
