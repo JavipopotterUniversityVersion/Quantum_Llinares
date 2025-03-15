@@ -9,7 +9,7 @@ public interface IDamageable
     void GetDamage(float d);
 }
 
-public class HealtComponent : MonoBehaviour, IDamageable
+public class HealthComponent : MonoBehaviour, IDamageable
 {
 
     [SerializeField] float _health = 1.0f;

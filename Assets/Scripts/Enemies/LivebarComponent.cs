@@ -5,7 +5,7 @@ using UnityEngine;
 public class LivebarComponent : MonoBehaviour
 {
     Transform _mtransform;
-    HealtComponent hc;
+    HealthComponent hc;
     float _iniSize;
     float inihealth;
     // Start is called before the first frame update
@@ -13,7 +13,7 @@ public class LivebarComponent : MonoBehaviour
     {
         _mtransform = GetComponent<Transform>();
         _iniSize = _mtransform.localScale.x;
-        hc = GetComponentInParent<HealtComponent>();
+        hc = GetComponentInParent<HealthComponent>();
         inihealth =hc.GetHealth();
     }
     public void ChangeBar(){
