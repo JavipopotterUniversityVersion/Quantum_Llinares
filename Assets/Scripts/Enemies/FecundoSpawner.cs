@@ -5,6 +5,8 @@ using UnityEngine;
 public class FecundoSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject _fecundo, _EntitiesContainer;
+    [SerializeField] ShipTransition _shipTransitionListener;
+    [SerializeField] PlayerTracker _playerTracker;
 
     [SerializeField] private float _spawnRadius = 20.0f;
 
@@ -15,5 +17,7 @@ public class FecundoSpawner : MonoBehaviour
         Transform fecundoTransform = Instantiate(_fecundo, direction, Quaternion.identity).GetComponent<Transform>();
         fecundoTransform.parent = _EntitiesContainer.transform;
         
+        fecundoTransform.GetComponent<ShipTransitionListener>().setPlayerTracker(_playerTracker);
+        fecundoTransform.GetComponent<ShipTransitionListener>().setShipTransition(_shipTransitionListener);
     }
 }

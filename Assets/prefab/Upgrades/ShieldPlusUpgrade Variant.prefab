@@ -59,9 +59,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8382205978422956235, guid: 035719d9bdb0f774e837c4778f657478, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8979585606405525740}
-    - targetCorrespondingSourceObject: {fileID: 8382205978422956235, guid: 035719d9bdb0f774e837c4778f657478, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5806998624803724954}
   m_SourcePrefab: {fileID: 100100000, guid: 035719d9bdb0f774e837c4778f657478, type: 3}
 --- !u!58 &5436770126251007991 stripped
 CircleCollider2D:
@@ -88,17 +85,3 @@ MonoBehaviour:
   _collider2D: {fileID: 5436770126251007991}
   _name: +Shield!
   _poolHandler: {fileID: 11400000, guid: ac8fceff4928d2f45b207d888a8c0020, type: 2}
---- !u!114 &5806998624803724954
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6672548119257453488}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3a17cea316a2fd4db7f0720a5c09d2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  followRef: {fileID: 0}
-  maxOffset: 5
