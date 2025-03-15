@@ -22,12 +22,20 @@ public class ShipTransition : MonoBehaviour
     [SerializeField] float _mergeTime = 0.5f;
     float _shipDistance;
 
-    [SerializeField] UpdatesManager _updatesManager;
+    UpdatesManager _mainShipUpdatesManager;
+    UpdatesManager _ship1UpdatesManager;
+    UpdatesManager _ship2UpdatesManager;
 
     bool _leftIsPressed = false;
     bool _rightIsPressed = false;
 
     bool _canChange = true;
+
+    private void Awake() {
+        _mainShipUpdatesManager = MainShip.GetComponent<UpdatesManager>();
+        _ship1UpdatesManager = Ship1.GetComponent<UpdatesManager>();
+        _ship2UpdatesManager = Ship2.GetComponent<UpdatesManager>();
+    }
 
     private void Update() {
         if(!divided && _canChange)
@@ -44,7 +52,8 @@ public class ShipTransition : MonoBehaviour
         if(divided && _canChange)
         {
             //LLamar al manager de updates para que gestione cosas si se encuentra un upgrade en el ship
-            //_updatesManager.OnShipMerged();
+             ShootComponent[] sC = Ship1.GetComponentsInChildren<ShootComponent>();
+            _mainShipUpdatesManager.OnShipMerged(sC);
             StartCoroutine(Merge(Ship2, Ship1.position));
         }
     }
@@ -54,7 +63,7 @@ public class ShipTransition : MonoBehaviour
         {
             //LLamar al manager de updates para que gestione cosas si se encuentra un upgrade en el ship
             ShootComponent[] sC = Ship2.GetComponentsInChildren<ShootComponent>();
-            _updatesManager.OnShipMerged(sC);
+            _mainShipUpdatesManager.OnShipMerged(sC);
             StartCoroutine(Merge(Ship1, Ship2.position));
         }
     }
@@ -87,6 +96,9 @@ public class ShipTransition : MonoBehaviour
 
         Ship1.position = MainShip.position + Vector3.right * _shipDistance;
         Ship2.position = MainShip.position + Vector3.left * _shipDistance;
+
+        _ship1UpdatesManager.OnShipMerged(MainShip.GetComponentsInChildren<ShootComponent>());
+        _ship2UpdatesManager.OnShipMerged(MainShip.GetComponentsInChildren<ShootComponent>());
 
         divided = true;
         _canChange = true;

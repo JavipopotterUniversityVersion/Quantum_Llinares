@@ -215,6 +215,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2424077856643583647, guid: 26d04ccedbd96464fbc9f52268c493d3, type: 3}
+      propertyPath: _inputField
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7053863296207537446, guid: 26d04ccedbd96464fbc9f52268c493d3, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -295,6 +299,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7660305203102409744, guid: 26d04ccedbd96464fbc9f52268c493d3, type: 3}
+      propertyPath: _leadboard
+      value: 
+      objectReference: {fileID: 560815356}
     - target: {fileID: 7872009004253560908, guid: 26d04ccedbd96464fbc9f52268c493d3, type: 3}
       propertyPath: m_Name
       value: DeathMenu
@@ -509,6 +517,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cff4a65fd6d602f46b67efdb7d9d5ce4, type: 3}
+--- !u!1 &560815356 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7673494871904261222, guid: 26d04ccedbd96464fbc9f52268c493d3, type: 3}
+  m_PrefabInstance: {fileID: 249074087}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &701918135
 GameObject:
   m_ObjectHideFlags: 0
@@ -1649,6 +1662,10 @@ PrefabInstance:
     - target: {fileID: 2224786719891222688, guid: 7b8ffce9a349cdf4dae3b230f245e29f, type: 3}
       propertyPath: m_Name
       value: DialogueInterpreter
+      objectReference: {fileID: 0}
+    - target: {fileID: 8375181201881131706, guid: 7b8ffce9a349cdf4dae3b230f245e29f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
