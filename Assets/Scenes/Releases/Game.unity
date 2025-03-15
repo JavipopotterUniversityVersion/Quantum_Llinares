@@ -130,6 +130,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -4867876014962704901, guid: 14a071d5b68c78646a8095919564e324, type: 3}
+      propertyPath: _EntitiesContainer
+      value: 
+      objectReference: {fileID: 1665847971}
     - target: {fileID: 5917226431895362916, guid: 14a071d5b68c78646a8095919564e324, type: 3}
       propertyPath: _playerTracker
       value: 
