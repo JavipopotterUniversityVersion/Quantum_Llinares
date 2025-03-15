@@ -10,11 +10,10 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] Vector2 _positionRange;
     [SerializeField] Vector2 _speedRange;
 
-    [SerializeField] float _upgradespawnRate = 1.0f;
+    
     [SerializeField] GameObject[] _enemyPrefabs;
     [SerializeField] GameObject[] _enemiesToSpawn;
 
-    [SerializeField] GameObject[] _upgradesPrefabs;
 
     [SerializeField] PlayerTracker _playerTracker;
     [SerializeField] ShipTransition _shipTransition;
@@ -66,19 +65,8 @@ public class EnemySpawner : MonoBehaviour
     public void StartSpawning()
     {
         StartCoroutine(SpawnEnemies());
-        StartCoroutine(SpawnUpgrades());
     }
-    IEnumerator SpawnUpgrades(){
-        
-       while (true)
-        { 
-            print("entro");
-            yield return new WaitForSeconds(_upgradespawnRate);
-            print("termino de esperar");
-            SpawnUpgrade();
-           
-        }
-    }
+   
     IEnumerator SpawnEnemies()
     {
         while (true)
@@ -89,29 +77,7 @@ public class EnemySpawner : MonoBehaviour
             for(int i = 0; i < Random.Range(_enemiesAmountRange.x, _enemiesAmountRange.y); i++) SpawnEnemy();
         }
     }
-    private void SpawnUpgrade(){
-        bool isVertical = Random.Range(0, 2) == 0;
-        Vector2 spawnPosition;
-
-        if(isVertical)
-        {
-            bool isLeft = Random.Range(0, 2) == 0;
-
-            if(isLeft) spawnPosition = new Vector2(-_positionRange.x, Random.Range(-_positionRange.y, _positionRange.y));
-            else spawnPosition = new Vector2(_positionRange.x, Random.Range(-_positionRange.y, _positionRange.y));
-        }
-        else
-        {
-            bool isTop = Random.Range(0, 2) == 0;
-
-            if(isTop) spawnPosition = new Vector2(Random.Range(-_positionRange.x, _positionRange.x), _positionRange.y);
-            else spawnPosition = new Vector2(Random.Range(-_positionRange.x, _positionRange.x), -_positionRange.y);
-        }
-
-        spawnPosition += (Vector2)transform.position;
-        print(_upgradesPrefabs.Length);
-          GameObject _upgrades = Instantiate(_upgradesPrefabs[Random.Range(0, _upgradesPrefabs.Length)], spawnPosition, Quaternion.identity, _entitesContainer);
-    }
+   
     void SpawnEnemy()
     {
         bool isVertical = Random.Range(0, 2) == 0;

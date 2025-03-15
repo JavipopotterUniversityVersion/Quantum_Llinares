@@ -143,6 +143,26 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1665847972}
     - target: {fileID: 5917226431895362916, guid: 14a071d5b68c78646a8095919564e324, type: 3}
+      propertyPath: _upgradesPrefabs.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5917226431895362916, guid: 14a071d5b68c78646a8095919564e324, type: 3}
+      propertyPath: _upgradesPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 5529405892530498903, guid: d08243828aa63064a8c377041eb1e08c, type: 3}
+    - target: {fileID: 5917226431895362916, guid: 14a071d5b68c78646a8095919564e324, type: 3}
+      propertyPath: _upgradesPrefabs.Array.data[1]
+      value: 
+      objectReference: {fileID: 3706095031333907312, guid: b05b9570d638782408d68602ca382e50, type: 3}
+    - target: {fileID: 5917226431895362916, guid: 14a071d5b68c78646a8095919564e324, type: 3}
+      propertyPath: _upgradesPrefabs.Array.data[2]
+      value: 
+      objectReference: {fileID: 1382524432699730996, guid: 7907723480a274347852a17f2d418d1b, type: 3}
+    - target: {fileID: 5917226431895362916, guid: 14a071d5b68c78646a8095919564e324, type: 3}
+      propertyPath: _upgradesPrefabs.Array.data[3]
+      value: 
+      objectReference: {fileID: 6672548119257453488, guid: 8e8e11bfbf4ae4c468db99826f89a8ac, type: 3}
+    - target: {fileID: 5917226431895362916, guid: 14a071d5b68c78646a8095919564e324, type: 3}
       propertyPath: _speedUpgradesCurve.m_Curve.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -285,6 +305,10 @@ PrefabInstance:
     - target: {fileID: 8697683388467186168, guid: 14a071d5b68c78646a8095919564e324, type: 3}
       propertyPath: m_Name
       value: Spawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 8697683388467186168, guid: 14a071d5b68c78646a8095919564e324, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
