@@ -83,7 +83,7 @@ public class ShipHealth : MonoBehaviour, IDamageable
     }
 
     public void GetDamage(float d){
-        if(_currentShield > 1 && _shieldAvailable) _currentShield--;
+        if(_currentShield > 0 && _shieldAvailable) _currentShield--;
         else _currentLife--;
 
         if(_currentLife <= 0) _onDeath.Invoke();
