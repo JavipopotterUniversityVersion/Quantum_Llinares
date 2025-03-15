@@ -142,6 +142,106 @@ PrefabInstance:
       propertyPath: _entitesContainer
       value: 
       objectReference: {fileID: 1665847972}
+    - target: {fileID: 5917226431895362916, guid: 14a071d5b68c78646a8095919564e324, type: 3}
+      propertyPath: _speedUpgradesCurve.m_Curve.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5917226431895362916, guid: 14a071d5b68c78646a8095919564e324, type: 3}
+      propertyPath: _spawnUpgradesRateCurve.m_Curve.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5917226431895362916, guid: 14a071d5b68c78646a8095919564e324, type: 3}
+      propertyPath: _speedUpgradesCurve.m_Curve.Array.data[0].time
+      value: 0.0016441345
+      objectReference: {fileID: 0}
+    - target: {fileID: 5917226431895362916, guid: 14a071d5b68c78646a8095919564e324, type: 3}
+      propertyPath: _speedUpgradesCurve.m_Curve.Array.data[1].time
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5917226431895362916, guid: 14a071d5b68c78646a8095919564e324, type: 3}
+      propertyPath: _speedUpgradesCurve.m_Curve.Array.data[0].value
+      value: -0.0047187805
+      objectReference: {fileID: 0}
+    - target: {fileID: 5917226431895362916, guid: 14a071d5b68c78646a8095919564e324, type: 3}
+      propertyPath: _speedUpgradesCurve.m_Curve.Array.data[1].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5917226431895362916, guid: 14a071d5b68c78646a8095919564e324, type: 3}
+      propertyPath: _speedUpgradesCurve.m_Curve.Array.data[0].inSlope
+      value: 1.0063734
+      objectReference: {fileID: 0}
+    - target: {fileID: 5917226431895362916, guid: 14a071d5b68c78646a8095919564e324, type: 3}
+      propertyPath: _speedUpgradesCurve.m_Curve.Array.data[1].inSlope
+      value: 1.0063734
+      objectReference: {fileID: 0}
+    - target: {fileID: 5917226431895362916, guid: 14a071d5b68c78646a8095919564e324, type: 3}
+      propertyPath: _spawnUpgradesRateCurve.m_Curve.Array.data[1].time
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5917226431895362916, guid: 14a071d5b68c78646a8095919564e324, type: 3}
+      propertyPath: _speedUpgradesCurve.m_Curve.Array.data[0].outSlope
+      value: 1.0063734
+      objectReference: {fileID: 0}
+    - target: {fileID: 5917226431895362916, guid: 14a071d5b68c78646a8095919564e324, type: 3}
+      propertyPath: _speedUpgradesCurve.m_Curve.Array.data[1].inWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 5917226431895362916, guid: 14a071d5b68c78646a8095919564e324, type: 3}
+      propertyPath: _speedUpgradesCurve.m_Curve.Array.data[1].outSlope
+      value: 1.0063734
+      objectReference: {fileID: 0}
+    - target: {fileID: 5917226431895362916, guid: 14a071d5b68c78646a8095919564e324, type: 3}
+      propertyPath: _spawnUpgradesRateCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5917226431895362916, guid: 14a071d5b68c78646a8095919564e324, type: 3}
+      propertyPath: _spawnUpgradesRateCurve.m_Curve.Array.data[1].value
+      value: 0.009433746
+      objectReference: {fileID: 0}
+    - target: {fileID: 5917226431895362916, guid: 14a071d5b68c78646a8095919564e324, type: 3}
+      propertyPath: _speedUpgradesCurve.m_Curve.Array.data[0].outWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 5917226431895362916, guid: 14a071d5b68c78646a8095919564e324, type: 3}
+      propertyPath: _spawnUpgradesRateCurve.m_Curve.Array.data[0].inSlope
+      value: -0.99056625
+      objectReference: {fileID: 0}
+    - target: {fileID: 5917226431895362916, guid: 14a071d5b68c78646a8095919564e324, type: 3}
+      propertyPath: _spawnUpgradesRateCurve.m_Curve.Array.data[1].inSlope
+      value: -0.99056625
+      objectReference: {fileID: 0}
+    - target: {fileID: 5917226431895362916, guid: 14a071d5b68c78646a8095919564e324, type: 3}
+      propertyPath: _speedUpgradesCurve.m_Curve.Array.data[0].tangentMode
+      value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 5917226431895362916, guid: 14a071d5b68c78646a8095919564e324, type: 3}
+      propertyPath: _speedUpgradesCurve.m_Curve.Array.data[1].tangentMode
+      value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 5917226431895362916, guid: 14a071d5b68c78646a8095919564e324, type: 3}
+      propertyPath: _spawnUpgradesRateCurve.m_Curve.Array.data[0].outSlope
+      value: -0.99056625
+      objectReference: {fileID: 0}
+    - target: {fileID: 5917226431895362916, guid: 14a071d5b68c78646a8095919564e324, type: 3}
+      propertyPath: _spawnUpgradesRateCurve.m_Curve.Array.data[1].inWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 5917226431895362916, guid: 14a071d5b68c78646a8095919564e324, type: 3}
+      propertyPath: _spawnUpgradesRateCurve.m_Curve.Array.data[1].outSlope
+      value: -0.99056625
+      objectReference: {fileID: 0}
+    - target: {fileID: 5917226431895362916, guid: 14a071d5b68c78646a8095919564e324, type: 3}
+      propertyPath: _spawnUpgradesRateCurve.m_Curve.Array.data[0].outWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 5917226431895362916, guid: 14a071d5b68c78646a8095919564e324, type: 3}
+      propertyPath: _spawnUpgradesRateCurve.m_Curve.Array.data[0].tangentMode
+      value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 5917226431895362916, guid: 14a071d5b68c78646a8095919564e324, type: 3}
+      propertyPath: _spawnUpgradesRateCurve.m_Curve.Array.data[1].tangentMode
+      value: 34
+      objectReference: {fileID: 0}
     - target: {fileID: 7426460103805914133, guid: 14a071d5b68c78646a8095919564e324, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
