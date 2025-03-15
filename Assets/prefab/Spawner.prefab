@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7426460103805914133}
   - component: {fileID: 5917226431895362916}
+  - component: {fileID: -4867876014962704901}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -48,6 +49,7 @@ MonoBehaviour:
   _enemiesAmountRange: {x: 1, y: 2}
   _positionRange: {x: 16.54, y: 9.24}
   _speedRange: {x: 2, y: 3}
+  _upgradespawnRate: 1
   _enemyPrefabs:
   - {fileID: 479371278125242946, guid: bae5f90bd9d926d488d4ae1709f19db6, type: 3}
   - {fileID: 4909643306945397228, guid: bf3d7cd372d53d544a8943a80427c9e0, type: 3}
@@ -55,6 +57,7 @@ MonoBehaviour:
   - {fileID: 5577885018739091549, guid: cd6a13bd4b495b3469a265c22b818f02, type: 3}
   - {fileID: 3895045847988204597, guid: 0ae43d4f92097bf4aaf17f6a0b08b8b5, type: 3}
   _enemiesToSpawn: []
+  _upgradesPrefabs: []
   _playerTracker: {fileID: 0}
   _shipTransition: {fileID: 0}
   _spawnRateCurve:
@@ -107,3 +110,17 @@ MonoBehaviour:
     m_RotationOrder: 4
   _timeToReachMaxScale: 500
   _entitesContainer: {fileID: 0}
+--- !u!114 &-4867876014962704901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8697683388467186168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb664f35404673946b605bb990c97d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _fecundo: {fileID: 6946917313029292768, guid: ea765f8ef44c3614c87acc31e21656d7, type: 3}
+  _spawnRadius: 200
