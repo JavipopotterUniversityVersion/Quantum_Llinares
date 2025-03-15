@@ -5,10 +5,19 @@ using UnityEngine;
 
 public class EffectsPool : MonoBehaviour
 {
+    [System.Serializable]
+    struct PoolObject
+    {
+        public int size;
+        public Queue<GameObject> pool;
+    }
+
     [SerializeField] GameObject _textEffectPrefab;
     [SerializeField] int _textEffectPoolSize = 10;
-
     Queue<TextMeshPro> _textEffectPool = new Queue<TextMeshPro>();
+
+    [SerializeField] SerializableDictionary<GameObject, PoolObject> _poolObjects;
+
     [SerializeField] PoolHandler _poolHandler;
 
     private void Awake() {
@@ -19,11 +28,35 @@ public class EffectsPool : MonoBehaviour
             textEffect.gameObject.SetActive(false);
         }
 
+        foreach(KeyValuePair<GameObject, PoolObject> entry in _poolObjects)
+        {
+            PoolObject poolObject = entry.Value;
+            poolObject.pool = new Queue<GameObject>();
+            for (int i = 0; i < poolObject.size; i++)
+            {
+                GameObject obj = Instantiate(entry.Key, transform);
+                poolObject.pool.Enqueue(obj);
+                obj.SetActive(false);
+            }
+            _poolObjects[entry.Key] = poolObject;
+        }
+
         _poolHandler.OnShowTextEffect.AddListener(ShowTextEffect);
+        _poolHandler.OnGetFromPool.AddListener(GetFromPool);
+    }
+
+    public void GetFromPool(GameObject obj, Vector3 position)
+    {
+        PoolObject poolObject = _poolObjects[obj];
+        GameObject pooledObject = poolObject.pool.Dequeue();
+        pooledObject.transform.position = position;
+        pooledObject.SetActive(true);
+        poolObject.pool.Enqueue(pooledObject);
     }
 
     private void OnDestroy() {
         _poolHandler.OnShowTextEffect.RemoveListener(ShowTextEffect);
+        _poolHandler.OnGetFromPool.RemoveListener(GetFromPool);
     }
 
     public void ShowTextEffect(Vector3 position, string text)
