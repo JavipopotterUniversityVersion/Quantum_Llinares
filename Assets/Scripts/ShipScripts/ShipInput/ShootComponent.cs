@@ -26,6 +26,10 @@ public class ShootComponent : MonoBehaviour
     private bool _canShoot = true;
     private Stopwatch _stopwatch = new Stopwatch();
 
+    private void Start()
+    {
+        _actCooldown = _cooldown*_cooldownfactor;
+    }
     public void SetBullet(GameObject obj){
         _bulletPrefab = obj;
         damagefactor += 0.1f;
