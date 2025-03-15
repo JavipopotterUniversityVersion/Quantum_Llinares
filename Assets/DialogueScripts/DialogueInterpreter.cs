@@ -82,7 +82,7 @@ public class DialogueInterpreter : MonoBehaviour
             _stop = true;
             yield return new WaitWhile(() => _stop);
             if(Input.GetKey(KeyCode.Tab)) yield return null;
-            else yield return new WaitForSeconds(waitTime);
+            //else yield return new WaitForSeconds(waitTime);
         }
 
          _text.maxVisibleCharacters = 0;

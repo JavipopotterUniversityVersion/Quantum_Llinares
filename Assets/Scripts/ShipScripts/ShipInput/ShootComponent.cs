@@ -40,7 +40,7 @@ public class ShootComponent : MonoBehaviour
         _actCooldown = _cooldown*-_cooldownfactor;
     }
     public float GetCooldown() => _cooldown;
-
+    public GameObject GetBullet() { return _bulletPrefab; }
     public void SetCooldownFactor(float aux){
         _cooldownfactor = aux;
         _actCooldown = _cooldown*-_cooldownfactor;

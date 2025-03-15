@@ -33,7 +33,7 @@ public class EnemySpawner : MonoBehaviour
     private void Update() {
         _timer += Time.deltaTime;
 
-        if (!_enemiesToSpawn.Contains(_enemyPrefabs[0]) && _timer >= 3.5f) {
+        if (!_enemiesToSpawn.Contains(_enemyPrefabs[0]) && _timer >= 1.5f) {
             _enemiesToSpawn = _enemiesToSpawn.Append(_enemyPrefabs[0]).ToArray();
             StartCoroutine(SpawnEnemies());
         }
