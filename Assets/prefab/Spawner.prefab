@@ -49,7 +49,6 @@ MonoBehaviour:
   _enemiesAmountRange: {x: 1, y: 2}
   _positionRange: {x: 16.54, y: 9.24}
   _speedRange: {x: 2, y: 3}
-  _upgradespawnRate: 1
   _enemyPrefabs:
   - {fileID: 479371278125242946, guid: bae5f90bd9d926d488d4ae1709f19db6, type: 3}
   - {fileID: 4909643306945397228, guid: bf3d7cd372d53d544a8943a80427c9e0, type: 3}
@@ -57,7 +56,6 @@ MonoBehaviour:
   - {fileID: 5577885018739091549, guid: cd6a13bd4b495b3469a265c22b818f02, type: 3}
   - {fileID: 3895045847988204597, guid: 0ae43d4f92097bf4aaf17f6a0b08b8b5, type: 3}
   _enemiesToSpawn: []
-  _upgradesPrefabs: []
   _playerTracker: {fileID: 0}
   _shipTransition: {fileID: 0}
   _spawnRateCurve:
@@ -132,4 +130,4 @@ MonoBehaviour:
   - {x: 6, y: -10}
   - {x: -6, y: 10}
   - {x: -6, y: -10}
-  _upgradespawnRate: 1
+  _upgradespawnRate: 25
