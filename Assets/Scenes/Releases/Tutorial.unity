@@ -132,7 +132,6 @@ GameObject:
   m_Component:
   - component: {fileID: 101145551}
   - component: {fileID: 101145552}
-  - component: {fileID: 101145553}
   m_Layer: 0
   m_Name: TutorialManager
   m_TagString: Untagged
@@ -168,26 +167,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _container: {fileID: 11400000, guid: 0feb63281527d1647b835d7c1d6e0af6, type: 2}
+  ShootingLearned:
+    m_PersistentCalls:
+      m_Calls: []
+  DivisionLearned:
+    m_PersistentCalls:
+      m_Calls: []
+  EntwiningLearned:
+    m_PersistentCalls:
+      m_Calls: []
   _dialogs: []
---- !u!114 &101145553
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 101145550}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c709a26fac7240e42a9049e7c27fcb75, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _bool: {fileID: 0}
-  _onTrue:
-    m_PersistentCalls:
-      m_Calls: []
-  _onFalse:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1001 &177572768
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -283,6 +272,10 @@ PrefabInstance:
     - target: {fileID: 2224786719891222688, guid: 7b8ffce9a349cdf4dae3b230f245e29f, type: 3}
       propertyPath: m_Name
       value: DialogueInterpreter
+      objectReference: {fileID: 0}
+    - target: {fileID: 8375181201881131706, guid: 7b8ffce9a349cdf4dae3b230f245e29f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
