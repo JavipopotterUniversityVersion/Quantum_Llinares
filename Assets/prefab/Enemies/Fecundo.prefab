@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3255452341238687691}
   - component: {fileID: 2028692076905557086}
   - component: {fileID: 5400604452362906376}
+  - component: {fileID: 6685552029122434856}
   m_Layer: 6
   m_Name: Fecundo
   m_TagString: Untagged
@@ -184,3 +185,15 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.52
+--- !u!114 &6685552029122434856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6946917313029292768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59ffc33aecd70f84dbc6a7c63d0c1453, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
