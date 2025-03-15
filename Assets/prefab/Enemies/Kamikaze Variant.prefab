@@ -52,6 +52,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5157598089552995002, guid: 497fbd7003d5d3d4396a6e88cbd7fb0f, type: 3}
+      propertyPath: m_Radius
+      value: 0.75
+      objectReference: {fileID: 0}
     - target: {fileID: 7906243196266977034, guid: 497fbd7003d5d3d4396a6e88cbd7fb0f, type: 3}
       propertyPath: m_Name
       value: Kamikaze Variant
@@ -82,4 +86,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   followRef: {fileID: 0}
-  maxOffset: 0.35
+  maxOffset: 0
