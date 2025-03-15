@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class DamageComponent : MonoBehaviour
+public class DamageComponent : MonoBehaviour, IDamager
 {
     [SerializeField] private LayerMask _targetlayer;
     [SerializeField] private float _damage;
