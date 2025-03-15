@@ -30,22 +30,26 @@ public class EnemySpawner : MonoBehaviour
     private void Update() {
         _timer += Time.deltaTime;
 
-        if (_timer >= 5.0f && !_enemiesToSpawn.Contains(_enemyPrefabs[0])) {
+        if (_timer >= 3.5f && !_enemiesToSpawn.Contains(_enemyPrefabs[0])) {
             _enemiesToSpawn = _enemiesToSpawn.Append(_enemyPrefabs[0]).ToArray();
             StartCoroutine(SpawnEnemies());
         }
 
-        if (_timer >= 10.0f && !_enemiesToSpawn.Contains(_enemyPrefabs[1])) {
+        if (_timer >= 15.0f && !_enemiesToSpawn.Contains(_enemyPrefabs[1])) {
             _enemiesToSpawn = _enemiesToSpawn.Append(_enemyPrefabs[1]).ToArray();
         }
 
-        if (_timer >= 20.0f && !_enemiesToSpawn.Contains(_enemyPrefabs[2])) {
+        if (_timer >= 30.0f && !_enemiesToSpawn.Contains(_enemyPrefabs[2])) {
             _enemiesToSpawn = _enemiesToSpawn.Append(_enemyPrefabs[2]).ToArray();
         }
 
-        // if (_timer >= 30.0f && !_enemiesToSpawn.Contains(_enemyPrefabs[3])) {
-            // _enemiesToSpawn = _enemiesToSpawn.Append(_enemyPrefabs[3]).ToArray();
-        // }
+        if (_timer >= 40.0f && !_enemiesToSpawn.Contains(_enemyPrefabs[3])) {
+            _enemiesToSpawn = _enemiesToSpawn.Append(_enemyPrefabs[3]).ToArray();
+        }
+
+        if (_timer >= 50.0f && !_enemiesToSpawn.Contains(_enemyPrefabs[4])) {
+            _enemiesToSpawn = _enemiesToSpawn.Append(_enemyPrefabs[4]).ToArray();
+        }
     }
 
     public void Restart()

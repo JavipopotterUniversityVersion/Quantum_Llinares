@@ -53,6 +53,7 @@ MonoBehaviour:
   - {fileID: 4909643306945397228, guid: bf3d7cd372d53d544a8943a80427c9e0, type: 3}
   - {fileID: 7937766621003793940, guid: 1429066c1b56553458f587eb8215ff33, type: 3}
   - {fileID: 5577885018739091549, guid: cd6a13bd4b495b3469a265c22b818f02, type: 3}
+  - {fileID: 3895045847988204597, guid: 0ae43d4f92097bf4aaf17f6a0b08b8b5, type: 3}
   _enemiesToSpawn: []
   _playerTracker: {fileID: 0}
   _shipTransition: {fileID: 0}
