@@ -86,6 +86,7 @@ GameObject:
   m_Component:
   - component: {fileID: 51515516727689686}
   - component: {fileID: 1534959950074058336}
+  - component: {fileID: 9054761198289898762}
   m_Layer: 0
   m_Name: DialogueInterpreter
   m_TagString: Untagged
@@ -166,6 +167,20 @@ MonoBehaviour:
   events:
     list: []
   dialogues: []
+--- !u!114 &9054761198289898762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2224786719891222688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60201284aa6eb224597c2f16cbc0158f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _goNext: {fileID: 8553092213008369472, guid: 4e645be9204d48241a5097f107dc0585, type: 3}
+  _interpreter: {fileID: 1534959950074058336}
 --- !u!1 &3111315441883273584
 GameObject:
   m_ObjectHideFlags: 0

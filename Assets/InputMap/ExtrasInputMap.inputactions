@@ -1,0 +1,56 @@
+{
+    "name": "ExtrasInputMap",
+    "maps": [
+        {
+            "name": "Dialogue",
+            "id": "770c7867-2779-4536-98cb-7a0c9923f73c",
+            "actions": [
+                {
+                    "name": "Next",
+                    "type": "Button",
+                    "id": "151c5167-3a2d-4972-ad20-ffefa61a3a93",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "411974c8-26bb-4454-942d-98868a7934ce",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Next",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0fc24cd9-a776-47ee-af23-12610dffccb3",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Next",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9867ac1b-eb8f-4ce9-8035-c3faec109d09",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Next",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
