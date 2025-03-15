@@ -23,7 +23,7 @@ public class FollowingMovementComponent : MonoBehaviour
             int index = 0;
             while (!found && index < hit.Length)
             {
-                if(hit[index].GetComponent<HealtComponent>())
+                if(hit[index].GetComponent<HealthComponent>())
                 {
                     found = true;
                     followRef = hit[index].transform;

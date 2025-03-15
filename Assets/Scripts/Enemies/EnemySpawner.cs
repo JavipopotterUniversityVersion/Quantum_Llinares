@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
@@ -11,6 +12,7 @@ public class EnemySpawner : MonoBehaviour
 
     [SerializeField] float _upgradespawnRate = 1.0f;
     [SerializeField] GameObject[] _enemyPrefabs;
+    [SerializeField] GameObject[] _enemiesToSpawn;
 
     [SerializeField] GameObject[] _upgradesPrefabs;
 
@@ -31,6 +33,27 @@ public class EnemySpawner : MonoBehaviour
 
     private void Update() {
         _timer += Time.deltaTime;
+
+        if (_timer >= 3.5f && !_enemiesToSpawn.Contains(_enemyPrefabs[0])) {
+            _enemiesToSpawn = _enemiesToSpawn.Append(_enemyPrefabs[0]).ToArray();
+            StartCoroutine(SpawnEnemies());
+        }
+
+        if (_timer >= 15.0f && !_enemiesToSpawn.Contains(_enemyPrefabs[1])) {
+            _enemiesToSpawn = _enemiesToSpawn.Append(_enemyPrefabs[1]).ToArray();
+        }
+
+        if (_timer >= 30.0f && !_enemiesToSpawn.Contains(_enemyPrefabs[2])) {
+            _enemiesToSpawn = _enemiesToSpawn.Append(_enemyPrefabs[2]).ToArray();
+        }
+
+        if (_timer >= 40.0f && !_enemiesToSpawn.Contains(_enemyPrefabs[3])) {
+            _enemiesToSpawn = _enemiesToSpawn.Append(_enemyPrefabs[3]).ToArray();
+        }
+
+        if (_timer >= 50.0f && !_enemiesToSpawn.Contains(_enemyPrefabs[4])) {
+            _enemiesToSpawn = _enemiesToSpawn.Append(_enemyPrefabs[4]).ToArray();
+        }
     }
 
     public void Restart()
@@ -111,7 +134,7 @@ public class EnemySpawner : MonoBehaviour
 
         spawnPosition += (Vector2)transform.position;
 
-        GameObject enemy = Instantiate(_enemyPrefabs[Random.Range(0, _enemyPrefabs.Length)], spawnPosition, Quaternion.identity, _entitesContainer);
+        GameObject enemy = Instantiate(_enemiesToSpawn[Random.Range(0, _enemiesToSpawn.Length)], spawnPosition, Quaternion.identity, _entitesContainer);
 
         if(enemy.TryGetComponent(out FollowMovement followMovement))
         {
