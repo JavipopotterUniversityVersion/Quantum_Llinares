@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class ContinuousDamage : MonoBehaviour, IDamager
 {
-    [SerializeField] private float _continuousDamage = 0.01f;
+    [SerializeField] private float _continuousDamage = 1f;
     [SerializeField] private LayerMask _targetlayer;
 
     void OnTriggerStay2D(Collider2D collision)
