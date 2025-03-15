@@ -13,6 +13,8 @@ public class UpdatesManager : MonoBehaviour
         {
             toBeUpdated[i].SetBullet(Updates[i].GetBullet());
             toBeUpdated[i].SetCooldown(Updates[i].GetCooldown());
+            toBeUpdated[i].SetCooldownFactor(Updates[i].GetCooldownFactor());
+            toBeUpdated[i].GetComponent<SpriteRenderer>().sprite = Updates[i].GetBullet().GetComponent<SpriteRenderer>().sprite;
         }
     }
 }
