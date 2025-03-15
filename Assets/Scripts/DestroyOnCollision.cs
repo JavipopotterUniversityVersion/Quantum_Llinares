@@ -14,7 +14,6 @@ public class DestroyOnCollision : MonoBehaviour
         {
             _onDestroy.Invoke();
             Destroy(gameObject);
-            Destroy(collision.gameObject);
         }
     }
 }

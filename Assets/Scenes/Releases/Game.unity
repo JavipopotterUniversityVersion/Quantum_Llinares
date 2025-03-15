@@ -1663,6 +1663,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogueInterpreter
       objectReference: {fileID: 0}
+    - target: {fileID: 8375181201881131706, guid: 7b8ffce9a349cdf4dae3b230f245e29f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
