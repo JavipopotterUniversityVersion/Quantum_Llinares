@@ -9,6 +9,8 @@ public class DeathMenuControl : MonoBehaviour
     [SerializeField] GameObject _score;
     [SerializeField] GameObject _bretry;
     [SerializeField] GameObject _breturn;
+
+    [SerializeField] GameObject _leadboard;
     public void StartMenuCorrutine()
     {
           print("me LLamo");
@@ -24,6 +26,7 @@ public class DeathMenuControl : MonoBehaviour
         yield return new WaitForSecondsRealtime(1);
       _bretry.SetActive(true);
       _breturn.SetActive(true);
+      _leadboard.SetActive(true);
     }
 
     private void OnDestroy() {
