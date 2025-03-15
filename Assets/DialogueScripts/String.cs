@@ -5,4 +5,7 @@ public class String : ScriptableObject
 {
     [SerializeField] [TextArea(30, 90)] string _value;
     public string Value => _value;
+    public void Set(string s){
+        _value = s;
+    }
 }

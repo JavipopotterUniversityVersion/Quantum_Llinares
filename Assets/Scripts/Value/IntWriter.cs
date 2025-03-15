@@ -13,7 +13,7 @@ public class IntWriter : MonoBehaviour
         _value.OnValueChanged.AddListener(OnIntChanged);
     }
 
-    void OnIntChanged(int value) {
-        _text.text = _prefix + value.ToString();
+    public void OnIntChanged(int value) {
+        _text.text = _prefix + _value.Value.ToString();
     }
 }

@@ -11,10 +11,12 @@ public class DeathMenuControl : MonoBehaviour
     [SerializeField] GameObject _breturn;
     public void StartMenuCorrutine()
     {
+          print("me LLamo");
         StartCoroutine(ActiveDeathMenu());
     }
 
     public IEnumerator ActiveDeathMenu(){
+      
         _background.SetActive(true);
         yield return new WaitForSeconds(1);
         _score.SetActive(true);
