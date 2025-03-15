@@ -122,6 +122,16 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &630407352 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2093526051904771534, guid: 823fe3f68e7b649448abd64201299415, type: 3}
+  m_PrefabInstance: {fileID: 2055656156}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &690311053 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8853344769111147024, guid: 823fe3f68e7b649448abd64201299415, type: 3}
+  m_PrefabInstance: {fileID: 2055656156}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &815295467
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -365,6 +375,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4919294127149713632, guid: ea765f8ef44c3614c87acc31e21656d7, type: 3}
+      propertyPath: _ships.Array.data[0]
+      value: 
+      objectReference: {fileID: 1965715192}
+    - target: {fileID: 4919294127149713632, guid: ea765f8ef44c3614c87acc31e21656d7, type: 3}
+      propertyPath: _ships.Array.data[1]
+      value: 
+      objectReference: {fileID: 690311053}
+    - target: {fileID: 4919294127149713632, guid: ea765f8ef44c3614c87acc31e21656d7, type: 3}
+      propertyPath: _ships.Array.data[2]
+      value: 
+      objectReference: {fileID: 630407352}
     - target: {fileID: 5858319062996204670, guid: ea765f8ef44c3614c87acc31e21656d7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.8285283
@@ -414,6 +436,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea765f8ef44c3614c87acc31e21656d7, type: 3}
+--- !u!4 &1965715192 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6558577215184524824, guid: 823fe3f68e7b649448abd64201299415, type: 3}
+  m_PrefabInstance: {fileID: 2055656156}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2055656156
 PrefabInstance:
   m_ObjectHideFlags: 0
