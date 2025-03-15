@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b57c8e60ee890ed4ea19cb9657a9175a, type: 3}
   m_Name: GuturalVoice
   m_EditorClassIdentifier: 
-  clips: []
+  clips:
+  - {fileID: 8300000, guid: 8f6d4d7e87f240a4faa0ac5ff0940929, type: 3}
+  - {fileID: 8300000, guid: 7bb4d328be09a6b4fb788756b64c070e, type: 3}
+  - {fileID: 8300000, guid: a48fe6d89b8165745a89ce2ebfdcafde, type: 3}
   _localVolume: 1
   pitch: {x: 1, y: 1}
   playIndex: 0
