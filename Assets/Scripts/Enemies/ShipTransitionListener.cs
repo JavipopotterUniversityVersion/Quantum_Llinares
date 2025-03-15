@@ -17,6 +17,8 @@ public class ShipTransitionListener : MonoBehaviour
         if(TryGetComponent(out followMovement) == false){
             Destroy(this);
         }
+
+        followMovement.setTarget(playerTracker.GetNearestPlayer(transform.position));
     }
 
     // Update is called once per frame
