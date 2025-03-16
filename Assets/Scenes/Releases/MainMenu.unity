@@ -853,7 +853,7 @@ MonoBehaviour:
   _onStart:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: a64864b0073bebc459eeb5a9b8cced52, type: 2}
+      - m_Target: {fileID: 11400000, guid: 06a8f43c5cc61894c9af97bf095ca29d, type: 2}
         m_TargetAssemblyTypeName: AudioPlayer, Assembly-CSharp
         m_MethodName: Play
         m_Mode: 1
@@ -895,7 +895,7 @@ MonoBehaviour:
   _onDisable:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: a64864b0073bebc459eeb5a9b8cced52, type: 2}
+      - m_Target: {fileID: 11400000, guid: 06a8f43c5cc61894c9af97bf095ca29d, type: 2}
         m_TargetAssemblyTypeName: AudioPlayer, Assembly-CSharp
         m_MethodName: Stop
         m_Mode: 1
@@ -2094,6 +2094,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6099895043539406035, guid: cf65b88b29580034bbf122ffd16a2640, type: 3}
+      propertyPath: _mainTheme
+      value: 
+      objectReference: {fileID: 11400000, guid: a64864b0073bebc459eeb5a9b8cced52, type: 2}
+    - target: {fileID: 6099895043539406035, guid: cf65b88b29580034bbf122ffd16a2640, type: 3}
+      propertyPath: _mainChannel
+      value: 
+      objectReference: {fileID: 11400000, guid: 06a8f43c5cc61894c9af97bf095ca29d, type: 2}
+    - target: {fileID: 6099895043539406035, guid: cf65b88b29580034bbf122ffd16a2640, type: 3}
+      propertyPath: _galicianTheme
+      value: 
+      objectReference: {fileID: 11400000, guid: 18df8ce8d6a08d54fa471ea3afc32863, type: 2}
     - target: {fileID: 6383803374140851793, guid: cf65b88b29580034bbf122ffd16a2640, type: 3}
       propertyPath: m_Name
       value: LanguageDropDown
