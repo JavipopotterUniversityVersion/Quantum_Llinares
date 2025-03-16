@@ -136,6 +136,14 @@ PrefabInstance:
       propertyPath: m_UpdateMode
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7983134663913226704, guid: 823fe3f68e7b649448abd64201299415, type: 3}
+      propertyPath: _withShield
+      value: 
+      objectReference: {fileID: 21300000, guid: 4232a03a2a2033d409eeadb2641074e3, type: 3}
+    - target: {fileID: 7983134663913226704, guid: 823fe3f68e7b649448abd64201299415, type: 3}
+      propertyPath: _withoutShield
+      value: 
+      objectReference: {fileID: -276608470, guid: 73d921aa6bca99b469cd6686143a2bc8, type: 3}
     - target: {fileID: 8688816542265036821, guid: 823fe3f68e7b649448abd64201299415, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.377
