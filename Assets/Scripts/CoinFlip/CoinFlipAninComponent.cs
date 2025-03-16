@@ -4,12 +4,27 @@ using UnityEngine;
 
 public class CoinFlipAninComponent : MonoBehaviour
 {
-    [SerializeField] Animation _bad;
-    [SerializeField] Animation _good;
+
+    [SerializeField] Animator _coin;
+
+    void Start()
+    {
+        playCoinAnimation(true);
+    }
     public void playCoinAnimation(bool t){
-        if(t){
-            _good.Play();
+        if(!t){
+            _coin.Play("coinbad");
         }
-        else _bad.Play();
+        else _coin.Play("coingood");
+    }
+    public void StartAnimation()
+    {
+         //Time.timeScale = 0.0f;
+    }
+    public void EndAnimation()
+    {
+        this.gameObject.SetActive(false);
+        // Time.timeScale = 1.0f;
+        
     }
 }
