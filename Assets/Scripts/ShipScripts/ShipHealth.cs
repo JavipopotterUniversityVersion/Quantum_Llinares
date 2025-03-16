@@ -15,6 +15,10 @@ public class ShipHealth : MonoBehaviour, IDamageable
     [SerializeField] UnityEvent _onGetDamage;
     [SerializeField] UnityEvent _onDeath;
 
+    [SerializeField] private Sprite _withShield, _withoutShield;
+
+    SpriteRenderer _sr;
+
     private int _currentLife;
     [SerializeField] int _totalLife = 1;
 
@@ -23,8 +27,11 @@ public class ShipHealth : MonoBehaviour, IDamageable
 
     void Start()
     {
+        _sr = GetComponentInChildren<SpriteRenderer>();
         _currentLife = _totalLife;
         _currentLife = _totalShield;
+
+        if(_shieldAvailable && _withShield != null) _sr.sprite = _withShield;
         _watch.Start();
     }
     #region setters
@@ -88,6 +95,9 @@ public class ShipHealth : MonoBehaviour, IDamageable
 
         if(_currentLife <= 0) _onDeath.Invoke();
         else _onGetDamage.Invoke();
+
+        if(_currentShield == 0 && _withoutShield != null) _sr.sprite = _withoutShield;
+        else if(_withShield != null) _sr.sprite = _withShield;
 
         _watch.Restart();
     }

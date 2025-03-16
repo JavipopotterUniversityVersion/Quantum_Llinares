@@ -16,6 +16,10 @@ PrefabInstance:
       propertyPath: _sprite
       value: 
       objectReference: {fileID: -1802857825, guid: 6f89f0f2d47546449ad4aad06567b530, type: 3}
+    - target: {fileID: 4624577072815816900, guid: d08243828aa63064a8c377041eb1e08c, type: 3}
+      propertyPath: _cooldown
+      value: 1000
+      objectReference: {fileID: 0}
     - target: {fileID: 5363709683350212311, guid: d08243828aa63064a8c377041eb1e08c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.83
