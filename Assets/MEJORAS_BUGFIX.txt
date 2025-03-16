@@ -15,22 +15,22 @@ Leyenda:
 -- Hay problema con el láser y el caracol (CHECK)
 - Que el caracol se vea cómo se aleja (CHECK)
 
--- Tiene que verse mejor qué hace cada mejora 
+-- Tiene que verse mejor qué hace cada mejora
 - Recomiendo que las mejoras se muevan de carril con el entrelazamiento (CHECK)
 
 
 - Debería poder seleccionarse las opciones de retry, return (final) y resume, restart y quit (pausa) con el mando/teclado (CHECK)
 +- Ocultar ratón al detectar mando? O al menos al iniciar una run. Volver a mostrarlo tras la muerte del jugador/coinflip
-+- Meter cooldown para gatillos de mando
+- Meter cooldown para gatillos de mando (CHECK)
 - Problema baja el cielo al presionar muchas veces ESC cuando mueres (NO SE ARREGLA)
 
 
 - Forma de acceder al tutorial, añadir a bucle de juego (CHECK)
-+- Título mainmenu tiene que hacer fadeout 
+- Título mainmenu tiene que hacer fadeout (CHECK)
 
 
 - El escudo debería empezar activo desde el principio(? (CHECK)
-+- Representación visual de cuándo tienes escudo y cuándo no, podríamos incluso ponerlo encima de la nave como un Sprite
+- Representación visual de cuándo tienes escudo y cuándo no, podríamos incluso ponerlo encima de la nave como un Sprite (CHECK)
 - Se pierde el escudo que tenías cuando se vuelven a juntar las naves (CHECK)
 
 
@@ -43,6 +43,7 @@ Leyenda:
 - Cuando se juntan o se separan las naves pueden morir, arreglar (CHECK)
 - Las naves cambian de tamaño al conseguir mejoras y separarse (CHECK)
 - Se desconfigura el cooldown de la nave cuando se separan y se vuelven a juntar (CHECK)
+
 
 +- Coinflip
 
