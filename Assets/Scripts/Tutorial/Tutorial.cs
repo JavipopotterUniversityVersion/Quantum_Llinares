@@ -30,7 +30,7 @@ public class Tutorial : MonoBehaviour
     private void Start()
     {
         if (_languageSelector.Language == LanguageSelector.Languages.GALLEGO) _dialogs = _galicianDialogs;
-        else _dialogs = _galicianDialogs;
+        else _dialogs = _spanishDialogs;
         StartCoroutine(TutorialCoroutine());
     }
 
