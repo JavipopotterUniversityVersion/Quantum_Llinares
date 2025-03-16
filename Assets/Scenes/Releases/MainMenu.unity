@@ -661,8 +661,8 @@ RectTransform:
   - {fileID: 1704423921}
   - {fileID: 777859773}
   - {fileID: 494919435}
-  - {fileID: 2120190574}
   - {fileID: 3417259548729142606}
+  - {fileID: 2120190574}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1354,8 +1354,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -21, y: 27.940002}
-  m_SizeDelta: {x: 343.2, y: 268.32}
+  m_AnchoredPosition: {x: -18.19, y: 27.940002}
+  m_SizeDelta: {x: 337.58, y: 268.32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2120190575
 MonoBehaviour:
@@ -1836,6 +1836,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: LanguageDropDown
       objectReference: {fileID: 0}
+    - target: {fileID: 6398176514026081934, guid: cf65b88b29580034bbf122ffd16a2640, type: 3}
+      propertyPath: m_Options.m_Options.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6398176514026081934, guid: cf65b88b29580034bbf122ffd16a2640, type: 3}
+      propertyPath: m_Options.m_Options.Array.data[2].m_Text
+      value: Valenciano
+      objectReference: {fileID: 0}
+    - target: {fileID: 6398176514026081934, guid: cf65b88b29580034bbf122ffd16a2640, type: 3}
+      propertyPath: m_Options.m_Options.Array.data[2].m_Image
+      value: 
+      objectReference: {fileID: 21300000, guid: 0ccf0235e2d758744bbc990b204a6132, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
