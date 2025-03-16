@@ -655,6 +655,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ChangeBulletUpgradeFollowing Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 3927084212328764426, guid: 8f4bd52dec9ac6f468fdead619ccba01, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4246445076119009689, guid: 8f4bd52dec9ac6f468fdead619ccba01, type: 3}
       propertyPath: entitiesContainer
       value: 
@@ -1095,9 +1099,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 475736782}
   - {fileID: 1151901101}
   - {fileID: 1753036870}
+  - {fileID: 475736782}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1753036870 stripped
