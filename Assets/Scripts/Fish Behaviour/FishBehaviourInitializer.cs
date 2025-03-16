@@ -13,6 +13,7 @@ public class FishBehaviourInitializer : CSLuaScript
        void Start()
     {
         _mMoveToTarget = GetComponent<MoveToTarget>();
+        _mMoveToTarget.SetTarget(new Vector2(UnityEngine.Random.Range(-9, 9), UnityEngine.Random.Range(-5, 5)));
 
         _script = ScriptRunner.Instance.GetScript();
 

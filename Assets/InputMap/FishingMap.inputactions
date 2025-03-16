@@ -1,0 +1,34 @@
+{
+    "name": "FishingMap",
+    "maps": [
+        {
+            "name": "FishingRod",
+            "id": "f5296d4a-5d31-44b1-acc4-ccab360612ac",
+            "actions": [
+                {
+                    "name": "Drop/Pull",
+                    "type": "Button",
+                    "id": "65fa35ed-c8d0-432f-bef6-d4b3599f043e",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "c70d2575-c879-40c5-be3c-b948ecc9cb36",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Drop/Pull",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

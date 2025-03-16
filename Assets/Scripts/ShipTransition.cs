@@ -108,7 +108,12 @@ public class ShipTransition : MonoBehaviour
         Ship1.GetComponent<Collider2D>().enabled = true;
         Ship2.GetComponent<Collider2D>().enabled = true;
 
+        StartCoroutine(setCanChange());
         divided = true;
+    }
+
+    IEnumerator setCanChange(){
+        yield return new WaitForSeconds(1.5f);
         _canChange = true;
     }
 
@@ -146,13 +151,12 @@ public class ShipTransition : MonoBehaviour
             yield return new WaitForEndOfFrame();
         }
 
-        
 
         Ship2.GetComponent<Collider2D>().enabled = true;
         Ship1.GetComponent<Collider2D>().enabled = true;
 
 
+        StartCoroutine(setCanChange());
         divided = false;
-        _canChange = true;
     }
 }
