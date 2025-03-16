@@ -60,6 +60,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ChangeBulletUpgradeLaser Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 6581601744543047952, guid: 3a2ae02b9c078954480c9ba12b9374b2, type: 3}
+      propertyPath: m_Radius
+      value: 0.7
+      objectReference: {fileID: 0}
     - target: {fileID: 7716765712861443094, guid: 3a2ae02b9c078954480c9ba12b9374b2, type: 3}
       propertyPath: m_Sprite
       value: 

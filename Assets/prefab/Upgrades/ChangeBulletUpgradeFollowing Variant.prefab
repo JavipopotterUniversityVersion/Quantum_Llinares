@@ -60,6 +60,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ChangeBulletUpgradeFollowing Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 6581601744543047952, guid: d08243828aa63064a8c377041eb1e08c, type: 3}
+      propertyPath: m_Radius
+      value: 0.7
+      objectReference: {fileID: 0}
     - target: {fileID: 7716765712861443094, guid: d08243828aa63064a8c377041eb1e08c, type: 3}
       propertyPath: m_Sprite
       value: 
