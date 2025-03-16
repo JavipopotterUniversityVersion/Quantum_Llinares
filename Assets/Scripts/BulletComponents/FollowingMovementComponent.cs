@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class FollowingMovementComponent : MonoBehaviour
 {
@@ -11,30 +13,33 @@ public class FollowingMovementComponent : MonoBehaviour
     [SerializeField] float radius = 5;
     float distanceToTarget;
 
+    [SerializeField] private GameObject _entitiesContainer;
 
     // Start is called before the first frame update
     void Start()
     {
         myTransform = transform;
-        Collider2D[] hit = Physics2D.OverlapCircleAll(transform.position, radius);
-        if(hit.Length > 0)
-        {
-            bool found = false;
-            int index = 0;
-            while (!found && index < hit.Length)
-            {
-                HealthComponent hc;
-                if(hit[index].TryGetComponent(out hc))
-                {
-                    found = true;
-                    followRef = hit[index].transform;
-                }
-                else
-                {
-                    index++;
-                }
-            }
-        }
+        //Collider2D[] hit = Physics2D.OverlapCircleAll(transform.position, radius);
+        //if(hit.Length > 0)
+        //{
+        //    bool found = false;
+        //    int index = 0;
+        //    while (!found && index < hit.Length)
+        //    {
+        //        HealthComponent hc;
+        //        if(hit[index].TryGetComponent(out hc))
+        //        {
+        //            found = true;
+        //            followRef = hit[index].transform;
+        //        }
+        //        else
+        //        {
+        //            index++;
+        //        }
+        //    }
+        //}
+
+        _entitiesContainer = GameObject.FindGameObjectWithTag("EntitiesContainer");
     }
     private void OnDrawGizmos()
     {
@@ -44,12 +49,20 @@ public class FollowingMovementComponent : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        distanceToTarget = Vector2.Distance(myTransform.position, followRef.position);
 
-        if (followRef != null && distanceToTarget > maxOffset)
+        if (followRef != null)
         {
-            myTransform.position = Vector2.MoveTowards(myTransform.position, followRef.position, speed * Time.deltaTime);
+            Vector3 direction = (followRef.position - myTransform.position).normalized;
+            myTransform.position += direction * speed * Time.deltaTime;
+
+            Debug.Log(direction);
         }
+        else
+        {
+            FindTarget();
+            myTransform.position += myTransform.up * speed * Time.deltaTime;
+        }
+        
     }
 
     public void setTarget(Transform target)
@@ -75,5 +88,11 @@ public class FollowingMovementComponent : MonoBehaviour
     public float getSpeed()
     {
         return speed;
+    }
+
+    private void FindTarget()
+    {
+        Transform[] possibleTargets = _entitiesContainer.GetComponentsInChildren<Transform>();
+        followRef = possibleTargets.OrderBy(enemy => Vector2.Distance(enemy.position, transform.position)).First();
     }
 }
