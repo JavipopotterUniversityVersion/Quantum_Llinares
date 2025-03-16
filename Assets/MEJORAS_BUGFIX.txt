@@ -1,0 +1,35 @@
+- Una vez muerto se puede abrir el menú de pausa (y se actualiza el juego con la nave muerta)
+
+- Las FollowBullets rompen el juego
+
+- Comprobar si la BoomerangBullet funciona como se quiere (CHECK)
+
+- El láser no mata a los enemigos (balancear daño) (CHECK)
+
+- Arreglar visual láser (al separar las naves el láser queda feo sobre la pantalla) (yo lo cambiaría para que fuese una mejora temporal y que el láser salga todo el rato por el cañón del jugador)
+
+- Hay problema con el láser y el caracol
+
+- Láser no destruye balas (bug o feature? antiintuitivo)
+
+- Tiene que verse mejor qué hace cada mejora
+
+- Recomiendo que las mejoras no se muevan de carril con el entrelazamiento
+
+- Debería poder seleccionarse las opciones de retry, return (final) y resume, restart y quit (pausa) con el mando/teclado
+
+- El escudo debería empezar activo desde el principio(?
+
+- ChangeBulletUpgrade estaría bien que en vez de calcular la distancia al cañón se lo aplique al cañón que esté usando NormalBulletPrefab, y si no al más antiguo
+
+- Representación visual de cuándo tienes escudo y cuándo no, podríamos incluso ponerlo encima de la nave como un Sprite
+
+- Bajar sonido disparo (demasiado alto/agresivo, suavizar(? )
+
+- Cuando se juntan o se separan las naves pueden morir, arreglar
+
+- Se desconfigura el cooldown de la nave cuando se separan y se vuelven a juntar
+
+- Las naves cambian de tamaño al conseguir mejoras
+
+- Al principio de cada ronda se disparan dos balas, la normal y una random que no sale de la nave
