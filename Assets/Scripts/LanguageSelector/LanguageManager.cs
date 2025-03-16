@@ -16,7 +16,9 @@ public class LanguageManager : MonoBehaviour
     {
         _mdropdown = GetComponent<TMP_Dropdown>();
         _mdropdown.onValueChanged.AddListener(ChangeLanguage);
-        ChangeLanguage(0);
+
+        _mainChannel.Play(_mainTheme);
+        _mSelector.Language = (LanguageSelector.Languages)1;
     }
     public void ChangeLanguage(int value){
         if(_mSelector.Language != LanguageSelector.Languages.GALLEGO && value == 1)  _mainChannel.Play(_galicianTheme);
