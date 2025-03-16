@@ -14,7 +14,7 @@ public class ShootComponent : MonoBehaviour
     [SerializeField] private float _cooldown = 100.0f;
     [SerializeField] private float _cooldownfactor = 1.0f;
 
-    [SerializeField] private float damagefactor;
+    [SerializeField] private float damagefactor = 1;
 
     private float actbulletdamage = 10.0f;
     private float _actCooldown = 100.0f;
@@ -32,8 +32,6 @@ public class ShootComponent : MonoBehaviour
     }
     public void SetBullet(GameObject obj){
         _bulletPrefab = obj;
-        damagefactor += 0.1f;
-        actbulletdamage = obj.GetComponent<IDamager>().GetDamage()* damagefactor;
     }
     public void SetCooldown(float aux){
         _cooldown = aux;
@@ -75,7 +73,7 @@ public class ShootComponent : MonoBehaviour
                 bulletMovement.SetSpeed(_speed);
             }
             else if(bullet.TryGetComponent<FadeWithTime>(out FadeWithTime fadeWithTime)) bullet.transform.rotation = transform.rotation;
-            bullet.GetComponent<IDamager>().SetDamage(actbulletdamage);
+            bullet.GetComponent<IDamager>().SetDamage(actbulletdamage * damagefactor);
             _stopwatch.Start();
             _canShoot = false;
          }

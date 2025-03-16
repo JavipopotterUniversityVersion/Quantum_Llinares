@@ -1296,10 +1296,6 @@ PrefabInstance:
       propertyPath: _pauseMenu
       value: 
       objectReference: {fileID: 1391166955}
-    - target: {fileID: 5147505090114833612, guid: dcf65f3a7b95071408ea7387f8b3a847, type: 3}
-      propertyPath: _smallShip
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6003581576874761132, guid: dcf65f3a7b95071408ea7387f8b3a847, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
