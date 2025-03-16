@@ -14,7 +14,7 @@ public class UpgradeSpawner : MonoBehaviour
     {
         StartCoroutine(SpawnUpgrades());
     }
-    private void SpawnUpgrade()
+    public void SpawnUpgrade()
     {
         bool isVertical = Random.Range(0, 2) == 0;
         Vector2 spawnPosition = _upgradePos[Random.Range(0, _upgradePos.Length)];

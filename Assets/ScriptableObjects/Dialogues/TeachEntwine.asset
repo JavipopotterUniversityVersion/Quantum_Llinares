@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7582aae0121391847b8f1f41a4ad0621, type: 3}
+  m_Name: TeachEntwine
+  m_EditorClassIdentifier: 
+  _value: "<c:nina><name:Glorp><event:AlienTalk> Vale, ahora es importante que tom\xE9is
+    una decisi\xF3n: \n---\n<c:nina><name:Glorp><event:AlienTalk>Solo una de las
+    ramas cu\xE1nticas puede sobrevivir. Debemos unirnos antes de que llegue la pr\xF3xima
+    mejora.\n---\n<c:nina><name:Glorp><event:AlienTalk>El jugador que quiera dejar
+    su rama atr\xE1s tiene que pulsar el bot\xF3n de superposici\xF3n cu\xE1ntica
+    y se unir\xE1 al otro, conservando su mejora.\n---\n<c:pilar><name:ChapoNoco><event:ZombieTalk>El
+    bot\xF3n es el mismo que el de separaci\xF3n, hasta vosotros pod\xE9is hacerlo...
+    Vamos, elegidme a m\xED.\n---\n<c:nina><name:Glorp><event:AlienTalk> No, \xA1elegidme
+    a m\xED!<event:end>\n"
