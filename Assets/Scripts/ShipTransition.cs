@@ -146,13 +146,15 @@ public class ShipTransition : MonoBehaviour
             yield return new WaitForEndOfFrame();
         }
 
-        
 
         Ship2.GetComponent<Collider2D>().enabled = true;
         Ship1.GetComponent<Collider2D>().enabled = true;
 
 
+        for (float c1 = 0; c1 < _mergeTime * 2; c1 += Time.deltaTime){
+            _canChange = true;
+            yield return new WaitForEndOfFrame();
+        }
         divided = false;
-        _canChange = true;
     }
 }
