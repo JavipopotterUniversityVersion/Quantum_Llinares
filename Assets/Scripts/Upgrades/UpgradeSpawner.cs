@@ -37,9 +37,9 @@ public class UpgradeSpawner : MonoBehaviour
 
         while (true)
         {
-            print("entro");
+            // print("entro");
             yield return new WaitForSeconds(_upgradespawnRate);
-            print("termino de esperar");
+            // print("termino de esperar");
             SpawnUpgrade();
 
         }
