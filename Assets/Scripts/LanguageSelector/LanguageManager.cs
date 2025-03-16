@@ -10,6 +10,8 @@ public class LanguageManager : MonoBehaviour
 {
     private TMP_Dropdown _mdropdown;
     [SerializeField] LanguageSelector _mSelector;
+    [SerializeField] AudioChannel _mainChannel;
+    [SerializeField] AudioPlayer _galicianTheme, _mainTheme;
     void Start()
     {
         _mdropdown = GetComponent<TMP_Dropdown>();
@@ -17,7 +19,9 @@ public class LanguageManager : MonoBehaviour
         ChangeLanguage(0);
     }
     public void ChangeLanguage(int value){
+        if(_mSelector.Language != LanguageSelector.Languages.GALLEGO && value == 1)  _mainChannel.Play(_galicianTheme);
+        else if(_mSelector.Language == LanguageSelector.Languages.GALLEGO) _mainChannel.Play(_mainTheme);
+
         _mSelector.Language = (LanguageSelector.Languages) value;
-        Debug.Log((LanguageSelector.Languages) value);
     }
 }
