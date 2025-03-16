@@ -34,12 +34,13 @@ public class LeadBoardControl : MonoBehaviour
         }
         
         public void UploadEntry()
-        {
+        { if(_usernameInputField.Value != ""){
             Leaderboards.Myleaderboard.UploadNewEntry(_usernameInputField.Value, Score, isSuccessful =>
             {
                 if (isSuccessful)
                     LoadEntries();
             });
+        }
         }
         public void UploadName(){
             print("cambio de nombre");
