@@ -69,12 +69,12 @@ public class ShipTransition : MonoBehaviour
     }
 
     public void PushLeft(InputAction.CallbackContext context){
-        Debug.Log("Izquierda est� de acuerdo");
+        // Debug.Log("Izquierda est� de acuerdo");
         _leftIsPressed = context.ReadValue<float>() > 0;
     }
 
     public void PushRight(InputAction.CallbackContext context){
-        Debug.Log("Derecha est� de acuerdo");
+        // Debug.Log("Derecha est� de acuerdo");
         _rightIsPressed = context.ReadValue<float>() > 0;
     }
 
