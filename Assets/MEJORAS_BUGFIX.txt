@@ -20,7 +20,7 @@ Leyenda:
 
 
 - Debería poder seleccionarse las opciones de retry, return (final) y resume, restart y quit (pausa) con el mando/teclado (CHECK)
-+- Ocultar ratón al detectar mando? O al menos al iniciar una run. Volver a mostrarlo tras la muerte del jugador/coinflip
+- Ocultar ratón al detectar mando? O al menos al iniciar una run. Volver a mostrarlo tras la muerte del jugador/coinflip (NO SE ARREGLA)
 - Meter cooldown para gatillos de mando (CHECK)
 - Problema baja el cielo al presionar muchas veces ESC cuando mueres (NO SE ARREGLA)
 
@@ -33,7 +33,7 @@ Leyenda:
 - El escudo debería empezar activo desde el principio(? (CHECK)
 - Representación visual de cuándo tienes escudo y cuándo no, podríamos incluso ponerlo encima de la nave como un Sprite (CHECK)
 - Se pierde el escudo que tenías cuando se vuelven a juntar las naves (CHECK)
-+- Animación romper y aparecer escudo (que sea la misma para ambas, como un flash)
+- Animación romper y aparecer escudo (que sea la misma para ambas, como un flash) (CHECK)
 
 
 - ChangeBulletUpgrade estaría bien que en vez de calcular la distancia al cañón se lo aplique al cañón que esté usando NormalBulletPrefab, y si no al más antiguo (NO SE ARREGLA)

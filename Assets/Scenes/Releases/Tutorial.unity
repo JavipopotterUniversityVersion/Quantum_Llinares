@@ -179,6 +179,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e7c583fe9d006b242bcdcee17fce5090, type: 2}
   - {fileID: 11400000, guid: 6247d09ed8323664e9ddaf08289e7105, type: 2}
   - {fileID: 11400000, guid: de86fca5a2f1a874d864b47115a8f130, type: 2}
+  _valencianDialogs:
+  - {fileID: 11400000, guid: bab7afff5308a664a8c114a44cce3ece, type: 2}
+  - {fileID: 11400000, guid: 4be05c168bc3a204f948336233c2aacf, type: 2}
+  - {fileID: 11400000, guid: 03c70792d37a0404b9b5b2f3a9a1750a, type: 2}
+  - {fileID: 11400000, guid: a26846df80152a64f95521f7943c0b94, type: 2}
+  - {fileID: 11400000, guid: 31912d50da29b7743aeb430172b56255, type: 2}
   _languageSelector: {fileID: 11400000, guid: 6f35a69e94d699c4c82832ea737b7cbf, type: 2}
 --- !u!1001 &177572768
 PrefabInstance:
