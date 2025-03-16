@@ -1098,30 +1098,6 @@ PrefabInstance:
       propertyPath: _upgradePos.Array.data[3].y
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 2681339897010390751, guid: 14a071d5b68c78646a8095919564e324, type: 3}
-      propertyPath: _upgradesPrefabs.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2681339897010390751, guid: 14a071d5b68c78646a8095919564e324, type: 3}
-      propertyPath: _upgradesPrefabs.Array.data[0]
-      value: 
-      objectReference: {fileID: 7057608418160848823, guid: 9703e6feb20ed284cab2e7f68e9be7d1, type: 3}
-    - target: {fileID: 2681339897010390751, guid: 14a071d5b68c78646a8095919564e324, type: 3}
-      propertyPath: _upgradesPrefabs.Array.data[1]
-      value: 
-      objectReference: {fileID: 3927084212328764426, guid: 8f4bd52dec9ac6f468fdead619ccba01, type: 3}
-    - target: {fileID: 2681339897010390751, guid: 14a071d5b68c78646a8095919564e324, type: 3}
-      propertyPath: _upgradesPrefabs.Array.data[2]
-      value: 
-      objectReference: {fileID: 4888454957618411135, guid: 553cfefdf3db83b4b8aa3f233c63de60, type: 3}
-    - target: {fileID: 2681339897010390751, guid: 14a071d5b68c78646a8095919564e324, type: 3}
-      propertyPath: _upgradesPrefabs.Array.data[3]
-      value: 
-      objectReference: {fileID: 3706095031333907312, guid: b05b9570d638782408d68602ca382e50, type: 3}
-    - target: {fileID: 2681339897010390751, guid: 14a071d5b68c78646a8095919564e324, type: 3}
-      propertyPath: _upgradesPrefabs.Array.data[4]
-      value: 
-      objectReference: {fileID: 6672548119257453488, guid: 8e8e11bfbf4ae4c468db99826f89a8ac, type: 3}
     - target: {fileID: 5917226431895362916, guid: 14a071d5b68c78646a8095919564e324, type: 3}
       propertyPath: _playerTracker
       value: 
@@ -1195,6 +1171,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
+    - {fileID: 5917226431895362916, guid: 14a071d5b68c78646a8095919564e324, type: 3}
     - {fileID: 8382779354250804420, guid: 14a071d5b68c78646a8095919564e324, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
