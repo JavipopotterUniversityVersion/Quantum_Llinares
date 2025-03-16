@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7582aae0121391847b8f1f41a4ad0621, type: 3}
+  m_Name: ByeBye
+  m_EditorClassIdentifier: 
+  _value: "<c:nina><name:Glorp><event:AlienTalk>Creo que ya est\xE1is preparados
+    para luchar contra los enemigos.\n---\n<c:nina><name:Glorp><event:AlienTalk>
+    Nuestros caminos se separan aqu\xED, pero nosotras siempre estaremos en las naves
+    con vosotros, \xA1juntas!\n---\n<c:pilar><name:ChapoNoco><event:ZombieTalk> O
+    con suerte separadas...<event:tutorialFinished>\n"
