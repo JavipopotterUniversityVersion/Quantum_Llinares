@@ -26,7 +26,7 @@ public class Fishes : ScriptableObject
     }
     public Dictionary<string, GameObject> getFishDict() => _fishDict;
 
-    void OnEnable()
+    public void Init()
     {
         _fishDict = new Dictionary<string, GameObject>();
         foreach(var fish in _fishes){

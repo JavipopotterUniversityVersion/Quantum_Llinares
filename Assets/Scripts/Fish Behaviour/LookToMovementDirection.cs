@@ -16,8 +16,6 @@ public class LookToMovementDirection : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float _aTan = _mMovComponent.GetDirection().y/_mMovComponent.GetDirection().x;
-        float _aAngle = Mathf.Atan(_aTan);
-        _mTransform.eulerAngles = new Vector3(0,0,_aAngle * Mathf.Rad2Deg); // Green axis
+        _mTransform.up = _mMovComponent.GetDirection();
     }
 }

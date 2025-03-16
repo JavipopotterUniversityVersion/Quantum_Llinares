@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine.Utility;
 using UnityEngine;
 
 public class MoveToTarget : MonoBehaviour, IMovementComponent
@@ -33,7 +34,8 @@ public class MoveToTarget : MonoBehaviour, IMovementComponent
     public Vector3 getTarget() => _targetPoint;
     
     public Vector2 GetDirection(){
-        return Vector2.MoveTowards(_mTransform.position, _targetPoint, _speed * Time.deltaTime);
+        Vector3 dir = _targetPoint - _mTransform.position;
+        return new Vector2(dir.x, dir.y);
     }
     public void SetDirection(Vector2 direction){
         Debug.LogError("Trying to set direction in movetotarget");

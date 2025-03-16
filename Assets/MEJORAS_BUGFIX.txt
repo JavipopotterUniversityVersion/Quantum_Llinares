@@ -1,18 +1,18 @@
 Leyenda:
-    -- Comprobar
     +- Falta
+    -- Comprobar
 
 - Una vez muerto se puede abrir el menú de pausa (y se actualiza el juego con la nave muerta) (CHECK)
 
 
-+- Las FollowBullets rompen el juego
+- Las FollowBullets rompen el juego (CHECK)
 - Comprobar si la BoomerangBullet funciona como se quiere (CHECK)
 
 
 - El láser no mata a los enemigos (balancear daño) (CHECK)
 +- Arreglar visual láser (al separar las naves el láser queda feo sobre la pantalla) (yo lo cambiaría para que fuese una mejora temporal y que el láser salga todo el rato por el cañón del jugador)
 - Láser no destruye balas (bug, arreglar) (CHECK)
--- Hay problema con el láser y el caracol 
+-- Hay problema con el láser y el caracol (CHECK)
 - Que el caracol se vea cómo se aleja (CHECK)
 
 -- Tiene que verse mejor qué hace cada mejora 
@@ -26,7 +26,7 @@ Leyenda:
 
 
 - Forma de acceder al tutorial, añadir a bucle de juego (CHECK)
--- Título mainmenu tiene que hacer fadeout 
++- Título mainmenu tiene que hacer fadeout 
 
 
 - El escudo debería empezar activo desde el principio(? (CHECK)
@@ -41,8 +41,10 @@ Leyenda:
 
 
 - Cuando se juntan o se separan las naves pueden morir, arreglar (CHECK)
-+- Las naves cambian de tamaño al conseguir mejoras y separarse
+- Las naves cambian de tamaño al conseguir mejoras y separarse (CHECK)
 - Se desconfigura el cooldown de la nave cuando se separan y se vuelven a juntar (CHECK)
+
++- Coinflip
 
 
 +- Al principio de cada ronda se disparan dos balas, la normal y una random que no sale de la nave
