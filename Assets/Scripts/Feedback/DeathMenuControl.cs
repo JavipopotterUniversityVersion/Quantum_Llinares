@@ -13,7 +13,7 @@ public class DeathMenuControl : MonoBehaviour
     [SerializeField] GameObject _leadboard;
     public void StartMenuCorrutine()
     {
-          print("me LLamo");
+          // print("me LLamo");
         StartCoroutine(ActiveDeathMenu());
     }
 

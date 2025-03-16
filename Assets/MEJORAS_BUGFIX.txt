@@ -7,9 +7,9 @@
 
 - El láser no mata a los enemigos (balancear daño) (CHECK)
 - Arreglar visual láser (al separar las naves el láser queda feo sobre la pantalla) (yo lo cambiaría para que fuese una mejora temporal y que el láser salga todo el rato por el cañón del jugador)
+- Láser no destruye balas (bug, arreglar) (CHECK)
 - Hay problema con el láser y el caracol
-- Láser no destruye balas (bug, arreglar)
-
+- Que el caracol se vea cómo se aleja
 
 - Tiene que verse mejor qué hace cada mejora
 - Recomiendo que las mejoras se muevan de carril con el entrelazamiento (CHECK)
@@ -23,6 +23,7 @@
 
 - El escudo debería empezar activo desde el principio(?
 - Representación visual de cuándo tienes escudo y cuándo no, podríamos incluso ponerlo encima de la nave como un Sprite
+- Se pierde el escudo que tenías cuando se vuelven a juntar las naves
 
 
 - ChangeBulletUpgrade estaría bien que en vez de calcular la distancia al cañón se lo aplique al cañón que esté usando NormalBulletPrefab, y si no al más antiguo
