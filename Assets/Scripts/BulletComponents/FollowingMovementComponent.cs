@@ -13,7 +13,7 @@ public class FollowingMovementComponent : MonoBehaviour
     [SerializeField] float radius = 5;
     float distanceToTarget;
 
-    [SerializeField] private GameObject _entitiesContainer;
+    [SerializeField] private GameObject _enemiesContainer;
 
     // Start is called before the first frame update
     void Start()
@@ -39,7 +39,7 @@ public class FollowingMovementComponent : MonoBehaviour
         //    }
         //}
 
-        _entitiesContainer = GameObject.FindGameObjectWithTag("EntitiesContainer");
+        _enemiesContainer = GameObject.FindGameObjectWithTag("EnemiesContainer");
     }
     private void OnDrawGizmos()
     {
@@ -53,9 +53,9 @@ public class FollowingMovementComponent : MonoBehaviour
         if (followRef != null)
         {
             Vector3 direction = (followRef.position - myTransform.position).normalized;
-            myTransform.position += direction * speed * Time.deltaTime;
+            transform.position = transform.position + direction * speed * Time.deltaTime;
 
-            Debug.Log(direction);
+            Debug.Log(direction * speed * Time.deltaTime);
         }
         else
         {
@@ -92,7 +92,8 @@ public class FollowingMovementComponent : MonoBehaviour
 
     private void FindTarget()
     {
-        Transform[] possibleTargets = _entitiesContainer.GetComponentsInChildren<Transform>();
-        followRef = possibleTargets.OrderBy(enemy => Vector2.Distance(enemy.position, transform.position)).First();
+        Transform[] possibleTargets = _enemiesContainer.GetComponentsInChildren<Transform>().Where(enemy => enemy.gameObject != _enemiesContainer).ToArray();
+        followRef = possibleTargets.OrderBy(enemy => Vector2.Distance(enemy.position, myTransform.position)).FirstOrDefault();
+        
     }
 }
