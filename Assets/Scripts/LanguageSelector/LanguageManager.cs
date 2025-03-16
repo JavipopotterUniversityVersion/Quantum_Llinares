@@ -20,8 +20,8 @@ public class LanguageManager : MonoBehaviour
         _mSelector.Language = (LanguageSelector.Languages)1;
     }
     public void ChangeLanguage(int value){
-        if(_mSelector.Language != LanguageSelector.Languages.GALLEGO && value == 1)  _mainChannel.Play(_galicianTheme);
-        else if(_mSelector.Language == LanguageSelector.Languages.GALLEGO) _mainChannel.Play(_mainTheme);
+        if(value == 1)  _mainChannel.Play(_galicianTheme);
+        else _mainChannel.Play(_mainTheme);
 
         _mSelector.Language = (LanguageSelector.Languages) value;
     }
