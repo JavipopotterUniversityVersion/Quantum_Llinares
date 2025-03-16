@@ -2054,6 +2054,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1171209160}
     m_Modifications:
+    - target: {fileID: 4243184624099762937, guid: cf65b88b29580034bbf122ffd16a2640, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4243184624099762937, guid: cf65b88b29580034bbf122ffd16a2640, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4243184624099762937, guid: cf65b88b29580034bbf122ffd16a2640, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.000030517578
+      objectReference: {fileID: 0}
+    - target: {fileID: 4243184624099762937, guid: cf65b88b29580034bbf122ffd16a2640, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4928921500456494009, guid: cf65b88b29580034bbf122ffd16a2640, type: 3}
       propertyPath: m_LocalPosition.x
       value: -68.40087
@@ -2093,6 +2109,22 @@ PrefabInstance:
     - target: {fileID: 4928921500456494009, guid: cf65b88b29580034bbf122ffd16a2640, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5729559579885689152, guid: cf65b88b29580034bbf122ffd16a2640, type: 3}
+      propertyPath: m_fontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5729559579885689152, guid: cf65b88b29580034bbf122ffd16a2640, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: e0eca5f6773e5df459280135be6b0f4f, type: 2}
+    - target: {fileID: 5729559579885689152, guid: cf65b88b29580034bbf122ffd16a2640, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5729559579885689152, guid: cf65b88b29580034bbf122ffd16a2640, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6099895043539406035, guid: cf65b88b29580034bbf122ffd16a2640, type: 3}
       propertyPath: _mainTheme
