@@ -1,5 +1,5 @@
 function GetRandomPosition()
-    return Vector3(GenerateRandomNumber(-9, 9), 
+    return Vector3(GenerateRandomNumber(-9, 9),
                    GenerateRandomNumber(-5, 5),
                    0)
 end

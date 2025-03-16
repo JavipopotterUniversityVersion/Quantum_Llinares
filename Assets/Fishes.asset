@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _fishes:
   - {fileID: 5891308992180674673, guid: da16f77da6f9c8d40bdf6c033336373b, type: 3}
-  - {fileID: 4923689461850639086, guid: 569115798c78e0b449bae42e6354ef36, type: 3}
-  - {fileID: 1378841187106665699, guid: 8c2c847d135f3e94c90eaad61c79cbd8, type: 3}
+  - {fileID: 5287111309218949545, guid: 088cf6c90a524d44facc6152ee32984d, type: 3}
+  - {fileID: 7243828673305052407, guid: 5fc6880d42dc0b148ad1e7d7fa215216, type: 3}

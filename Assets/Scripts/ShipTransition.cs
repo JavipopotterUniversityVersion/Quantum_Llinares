@@ -12,6 +12,7 @@ public class ShipTransition : MonoBehaviour
     [SerializeField] Transform Ship1;
     [SerializeField] Transform Ship2;
 
+    private Vector3 _smallShipscale;
     [SerializeField] UnityEvent _onDivide;
     public UnityEvent OnDivide => _onDivide;
     [SerializeField] UnityEvent _onMerge;
@@ -36,7 +37,6 @@ public class ShipTransition : MonoBehaviour
         _ship1UpdatesManager = Ship1.GetComponent<UpdatesManager>();
         _ship2UpdatesManager = Ship2.GetComponent<UpdatesManager>();
     }
-
     private void Update() {
         if(!divided && _canChange)
         {
@@ -85,6 +85,7 @@ public class ShipTransition : MonoBehaviour
         MainShip.transform.SetParent(_entitiesContainer);
         Ship1.transform.SetParent(_entitiesContainer);
         Ship2.transform.SetParent(_entitiesContainer);
+        _smallShipscale = Ship1.transform.localScale;
     }
 
     void Divide() { 
@@ -129,6 +130,8 @@ public class ShipTransition : MonoBehaviour
         // Esta línea creo que está rompiendo/afectando la escala de las naves al separarse
         from.localScale = Vector3.one;
         from.position = to;
+        Ship1.transform.localScale = _smallShipscale;
+        Ship2.transform.localScale = _smallShipscale;
         Ship1.gameObject.SetActive(false);
         Ship2.gameObject.SetActive(false);
         MainShip.position = to;
