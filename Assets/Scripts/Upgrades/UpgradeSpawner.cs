@@ -8,6 +8,8 @@ public class UpgradeSpawner : MonoBehaviour
 
     [SerializeField] Vector2[] _upgradePos;
 
+    [SerializeField] Transform entitiesContainer;
+
     [SerializeField] float _upgradespawnRate = 1.0f;
 
     private void Start()
@@ -18,23 +20,26 @@ public class UpgradeSpawner : MonoBehaviour
     {
         bool isVertical = Random.Range(0, 2) == 0;
         Vector2 spawnPosition = _upgradePos[Random.Range(0, _upgradePos.Length)];
+        GameObject _upgrades;
         if (spawnPosition.y < 0)
         {
-            GameObject _upgrades = Instantiate(_upgradesPrefabs[Random.Range(0, _upgradesPrefabs.Length)], spawnPosition, Quaternion.identity);
+            _upgrades = Instantiate(_upgradesPrefabs[Random.Range(0, _upgradesPrefabs.Length)], spawnPosition, Quaternion.identity);
         }
         else
         {
-            GameObject _upgrades = Instantiate(_upgradesPrefabs[Random.Range(0, _upgradesPrefabs.Length)], spawnPosition, new Quaternion(0,0,180,1));
+            _upgrades = Instantiate(_upgradesPrefabs[Random.Range(0, _upgradesPrefabs.Length)], spawnPosition, new Quaternion(0,0,180,1));
         }
+
+        _upgrades.transform.SetParent(entitiesContainer);
     }
     IEnumerator SpawnUpgrades()
     {
 
         while (true)
         {
-            print("entro");
+            // print("entro");
             yield return new WaitForSeconds(_upgradespawnRate);
-            print("termino de esperar");
+            // print("termino de esperar");
             SpawnUpgrade();
 
         }

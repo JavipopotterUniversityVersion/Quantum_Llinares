@@ -8,13 +8,13 @@ function GetRandomRotation()
     return Quaternion.Euler(0, 0, GenerateRandomNumber(0, 360))
 end
 
+local fishes = GetFishes();
 function RandomSpawn(numberOfFish, posibleFishes)
     for i=1, numberOfFish do
         local pos = GetRandomPosition()
         local rot = GetRandomRotation()
-        local fish = fishes[GenerateRandomNumber(0, posibleFishes)]
-        SpawnFish("Fish1", pos, rot)
+        SpawnFish(fishes[GenerateRandomInt(1, posibleFishes)], pos, rot)
     end
 end
 
-RandomSpawn(10, 2);
+RandomSpawn(10, 3)

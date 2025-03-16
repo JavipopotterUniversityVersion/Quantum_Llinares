@@ -34,6 +34,8 @@ public class ScriptRunner : MonoBehaviour
 
         script.Globals["GenerateRandomNumber"] = 
             (Func<float, float, float>)((min, max) => GenerateRandomNumber(min, max));
+        script.Globals["GenerateRandomInt"] = 
+            (Func<int, int, int>)((min, max) => GenerateRandomInt(min, max));
     }
 
     void Start()
@@ -47,6 +49,10 @@ public class ScriptRunner : MonoBehaviour
 
     private float GenerateRandomNumber(float min, float max){
         return UnityEngine.Random.Range(min, max);
+    }
+
+    private int GenerateRandomInt(int min, int max){
+        return (int) UnityEngine.Random.Range(min, max+1);
     }
 
     public Script GetScript(){
