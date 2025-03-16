@@ -7,7 +7,7 @@ using UnityEngine;
 
 public class EditorLuaFile : Editor
 {
-    private static readonly string _defaultLuaCode = "print(\"Lol osea, si no entiendes que hace este mensaje aqui haztelo ver bro\")";
+    private static readonly string _defaultLuaCode = "print(\"Esto es un script de Lua\")";
 
     [MenuItem("Assets/Create/Lua Script", false, 80)]
     public static void CreateLuaScript(){
@@ -19,6 +19,12 @@ public class EditorLuaFile : Editor
 
         var fullPath = AssetDatabase.GenerateUniqueAssetPath(folderPath + "/NewLuaScript.lua");
 
-        
+        File.WriteAllText(fullPath, _defaultLuaCode);
+        AssetDatabase.Refresh();
+        var obj = AssetDatabase.LoadAssetAtPath<Object>(fullPath);
+        Selection.activeObject = obj;
+        EditorGUIUtility.PingObject(obj);
+        EditorUtility.FocusProjectWindow();
+        EditorGUIUtility.PingObject(obj);
     }
 }

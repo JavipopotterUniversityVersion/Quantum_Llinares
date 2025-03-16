@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 73d921aa6bca99b469cd6686143a2bc8
+guid: 6f89f0f2d47546449ad4aad06567b530
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -97,49 +97,28 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CosasDeNavesRAWR_0
+      name: "Ilustraci\xF3n_0"
       rect:
         serializedVersion: 2
-        x: 62
-        y: 796
+        x: 89
+        y: 807
         width: 84
         height: 83
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.14351498}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0fa1d03d61cee3449f5cf5fb623974b
-      internalID: 1763600381
+      spriteID: 8b1aee5b9fde64c499457ce3b326758b
+      internalID: -1802857825
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CosasDeNavesRAWR_1
-      rect:
-        serializedVersion: 2
-        x: 278
-        y: 626
-        width: 138
-        height: 179
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1e07b1d7445c1a945b4da4e061a40465
-      internalID: -838184650
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CosasDeNavesRAWR_2
+      name: "Ilustraci\xF3n_1"
       rect:
         serializedVersion: 2
         x: 516
@@ -147,83 +126,83 @@ TextureImporter:
         width: 136
         height: 147
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58ef8254318501548aaa7c9c3e48b4fa
-      internalID: -334732679
+      spriteID: dccd90ab452dc34429a429315133bc23
+      internalID: -1065591142
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CosasDeNavesRAWR_3
+      name: "Ilustraci\xF3n_2"
       rect:
         serializedVersion: 2
-        x: 79
-        y: 575
-        width: 58
-        height: 74
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 88
+        y: 594
+        width: 74
+        height: 58
+      alignment: 9
+      pivot: {x: 0.4851903, y: 0.21658745}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f370a5cc121ce84b945b2ebd4e1a600
-      internalID: 1774568615
+      spriteID: 0fa0bb74ba31fca41bde5fb84466b673
+      internalID: -372352174
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CosasDeNavesRAWR_4
+      name: "Ilustraci\xF3n_3"
       rect:
         serializedVersion: 2
-        x: 723
-        y: 578
-        width: 155
-        height: 142
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 269
+        y: 634
+        width: 181
+        height: 132
+      alignment: 9
+      pivot: {x: 0.4636733, y: 0.15131725}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6694d492f3e6a404585ad2730a10f1f7
-      internalID: 1736371544
+      spriteID: d884d8760a729a5418651abae022627e
+      internalID: 1714563562
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CosasDeNavesRAWR_5
+      name: "Ilustraci\xF3n_4"
       rect:
         serializedVersion: 2
-        x: 956
-        y: 456
-        width: 136
-        height: 147
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 734
+        y: 589
+        width: 144
+        height: 156
+      alignment: 9
+      pivot: {x: 0.44672903, y: 0.08554038}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b31b0f3aa8f9fa5429772bb4d189ec85
-      internalID: -1613685094
+      spriteID: 42adde1766c7a9f4e8c404454fc772b6
+      internalID: 1221180736
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CosasDeNavesRAWR_6
+      name: "Ilustraci\xF3n_5"
       rect:
         serializedVersion: 2
         x: 242
@@ -231,20 +210,20 @@ TextureImporter:
         width: 135
         height: 160
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab92b1345130d564292f0947844010bc
-      internalID: -2065946915
+      spriteID: 73638e3acc8e3e3479276bdfaf8a1f72
+      internalID: 1273863846
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CosasDeNavesRAWR_7
+      name: "Ilustraci\xF3n_6"
       rect:
         serializedVersion: 2
         x: 511
@@ -252,20 +231,41 @@ TextureImporter:
         width: 136
         height: 147
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 511197a7056dda54f880c5d97ce799b1
-      internalID: 1905338397
+      spriteID: 1a91f3d13d8e39347b574ab5c9da8a48
+      internalID: -1120000639
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CosasDeNavesRAWR_8
+      name: "Ilustraci\xF3n_7"
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 456
+        width: 136
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 401f6bb95cd48f749a4436eb87f9574c
+      internalID: -1350541956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ilustraci\xF3n_8"
       rect:
         serializedVersion: 2
         x: 60
@@ -273,20 +273,20 @@ TextureImporter:
         width: 135
         height: 160
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2268cd0f212d1ec469ce2205d7548b3f
-      internalID: 905446395
+      spriteID: 58b516a4bec70054eb5190d9e7c36ea4
+      internalID: 446813202
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CosasDeNavesRAWR_9
+      name: "Ilustraci\xF3n_9"
       rect:
         serializedVersion: 2
         x: 549
@@ -294,14 +294,14 @@ TextureImporter:
         width: 461
         height: 272
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c2fd1697e72ab140a25dc851408fd67
-      internalID: -276608470
+      spriteID: 8d0bffa1aabdbbf41a06baeb5eb23c5f
+      internalID: 1076345962
       vertices: []
       indices: 
       edges: []
@@ -317,16 +317,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      CosasDeNavesRAWR_0: 1763600381
-      CosasDeNavesRAWR_1: -838184650
-      CosasDeNavesRAWR_2: -334732679
-      CosasDeNavesRAWR_3: 1774568615
-      CosasDeNavesRAWR_4: 1736371544
-      CosasDeNavesRAWR_5: -1613685094
-      CosasDeNavesRAWR_6: -2065946915
-      CosasDeNavesRAWR_7: 1905338397
-      CosasDeNavesRAWR_8: 905446395
-      CosasDeNavesRAWR_9: -276608470
+      "Ilustraci\xF3n_0": -1802857825
+      "Ilustraci\xF3n_1": -1065591142
+      "Ilustraci\xF3n_2": -372352174
+      "Ilustraci\xF3n_3": 1714563562
+      "Ilustraci\xF3n_4": 1221180736
+      "Ilustraci\xF3n_5": 1273863846
+      "Ilustraci\xF3n_6": -1120000639
+      "Ilustraci\xF3n_7": -1350541956
+      "Ilustraci\xF3n_8": 446813202
+      "Ilustraci\xF3n_9": 1076345962
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
