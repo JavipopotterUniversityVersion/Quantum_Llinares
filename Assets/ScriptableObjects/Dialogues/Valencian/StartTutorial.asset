@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7582aae0121391847b8f1f41a4ad0621, type: 3}
   m_Name: StartTutorial
   m_EditorClassIdentifier: 
-  _value: "<c:nina><name:Glorp><event:AlienTalk>\xA1Hey! Mira ChapoNoco, tenemos
-    visita.\n---\n<c:pilar><name:ChapoNoco><event:ZombieTalk>Por fin, alguien va
-    a ayudarnos a manejar esta nave, t\xFA conduces de pena...\n---\n<c:nina><name:Glorp><event:AlienTalk>No
-    le hag\xE1is caso, es un poco antip\xE1tica.\n---\n<c:nina><name:Glorp><event:AlienTalk>Uno
-    de vosotros tendr\xE1 que colocarse sobre las teclas WASD y otro sobre las teclas
-    IJKL.\n---\n<c:pilar><name:ChapoNoco><event:ZombieTalk>O sobre el D-Pad y los
-    botones de un mando. Siempre se le olvidan los mandos a la ni\xF1ata esta...\n---\n<c:nina><name:Glorp><event:AlienTalk>El
-    que se ponga a la derecha me ayudar\xE1 a m\xED a conducir con J y L o los botones
-    derecho e izquierdo.\n---\n<c:pilar><name:ChapoNoco><event:ZombieTalk>Y el que
-    se ponga a la izquierda disparar\xE1 conmigo, con W y S o el D-pad arriba y abajo.\n---\n<c:pilar><name:ChapoNoco><event:ZombieTalk>Vamos,
-    probad, \xBFesper\xE1is a alguien?<event:wait>"
+  _value: "<c:nina><name:Glorp><event:AlienTalk>Che! Mira ChapoNoco, tenim visita.\n---\n<c:pilar><name:ChapoNoco><event:ZombieTalk>Per
+    fi, alg\xFA en va a ajudar a manejar aquesta nau, tu condueixes com el cul...\n---\n<c:nina><name:Glorp><event:AlienTalk>No
+    li fas cas, \xE9s una mica antip\xE0tica.\n---\n<c:nina><name:Glorp><event:AlienTalk>Un
+    de vosaltres haur\xE1 de col\xB7locar-se sobre les tecles WASD y un altre sobre
+    les tecles IJKL..\n---\n<c:pilar><name:ChapoNoco><event:ZombieTalk>O sobre el
+    D-Pad y les botons d'un comandament. Sempre se li obliden els comandaments a
+    la mocosa... \n---\n<c:nina><name:Glorp><event:AlienTalk>El que es posi a la
+    dreta m'ajudar\xE0 a conduir amb J i L o els botons dret i esquerre.\n---\n<c:pilar><name:ChapoNoco><event:ZombieTalk>I
+    el que es posi a la esquerra disparar\xE0 amb mi amb W i S o el D-Pad ammunt
+    i davall.\n---\n<c:pilar><name:ChapoNoco><event:ZombieTalk>Anem, proveu, espereu
+    alg\xFA?<event:wait>"
