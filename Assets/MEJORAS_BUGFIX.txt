@@ -1,44 +1,48 @@
-- Una vez muerto se puede abrir el menú de pausa (y se actualiza el juego con la nave muerta)
+Leyenda:
+    -- Comprobar
+    +- Falta
+
+- Una vez muerto se puede abrir el menú de pausa (y se actualiza el juego con la nave muerta) (CHECK)
 
 
-- Las FollowBullets rompen el juego
++- Las FollowBullets rompen el juego
 - Comprobar si la BoomerangBullet funciona como se quiere (CHECK)
 
 
 - El láser no mata a los enemigos (balancear daño) (CHECK)
-- Arreglar visual láser (al separar las naves el láser queda feo sobre la pantalla) (yo lo cambiaría para que fuese una mejora temporal y que el láser salga todo el rato por el cañón del jugador)
++- Arreglar visual láser (al separar las naves el láser queda feo sobre la pantalla) (yo lo cambiaría para que fuese una mejora temporal y que el láser salga todo el rato por el cañón del jugador)
 - Láser no destruye balas (bug, arreglar) (CHECK)
-- Hay problema con el láser y el caracol
-- Que el caracol se vea cómo se aleja
+-- Hay problema con el láser y el caracol 
+- Que el caracol se vea cómo se aleja (CHECK)
 
-- Tiene que verse mejor qué hace cada mejora
+-- Tiene que verse mejor qué hace cada mejora 
 - Recomiendo que las mejoras se muevan de carril con el entrelazamiento (CHECK)
 
 
-- Debería poder seleccionarse las opciones de retry, return (final) y resume, restart y quit (pausa) con el mando/teclado
-- Ocultar ratón al detectar mando? O al menos al iniciar una run. Volver a mostrarlo tras la muerte del jugador/coinflip
-- Meter cooldown para gatillos de mando
-- Problema baja el cielo al presionar muchas veces ESC cuando mueres
+- Debería poder seleccionarse las opciones de retry, return (final) y resume, restart y quit (pausa) con el mando/teclado (CHECK)
++- Ocultar ratón al detectar mando? O al menos al iniciar una run. Volver a mostrarlo tras la muerte del jugador/coinflip
++- Meter cooldown para gatillos de mando
+- Problema baja el cielo al presionar muchas veces ESC cuando mueres (NO SE ARREGLA)
 
 
-- Forma de acceder al tutorial, añadir a bucle de juego
-- Título mainmenu tiene que hacer fadeout
+- Forma de acceder al tutorial, añadir a bucle de juego (CHECK)
+-- Título mainmenu tiene que hacer fadeout 
 
 
 - El escudo debería empezar activo desde el principio(? (CHECK)
-- Representación visual de cuándo tienes escudo y cuándo no, podríamos incluso ponerlo encima de la nave como un Sprite
-- Se pierde el escudo que tenías cuando se vuelven a juntar las naves
++- Representación visual de cuándo tienes escudo y cuándo no, podríamos incluso ponerlo encima de la nave como un Sprite
+- Se pierde el escudo que tenías cuando se vuelven a juntar las naves (CHECK)
 
 
-- ChangeBulletUpgrade estaría bien que en vez de calcular la distancia al cañón se lo aplique al cañón que esté usando NormalBulletPrefab, y si no al más antiguo
+- ChangeBulletUpgrade estaría bien que en vez de calcular la distancia al cañón se lo aplique al cañón que esté usando NormalBulletPrefab, y si no al más antiguo (NO SE ARREGLA)
 
 
-- Bajar sonido disparo (demasiado alto/agresivo, suavizar(? )
++- Bajar sonido disparo (demasiado alto/agresivo, suavizar(? )
 
 
 - Cuando se juntan o se separan las naves pueden morir, arreglar (CHECK)
-- Las naves cambian de tamaño al conseguir mejoras y separarse
-- Se desconfigura el cooldown de la nave cuando se separan y se vuelven a juntar
++- Las naves cambian de tamaño al conseguir mejoras y separarse
+- Se desconfigura el cooldown de la nave cuando se separan y se vuelven a juntar (CHECK)
 
 
-- Al principio de cada ronda se disparan dos balas, la normal y una random que no sale de la nave
++- Al principio de cada ronda se disparan dos balas, la normal y una random que no sale de la nave
