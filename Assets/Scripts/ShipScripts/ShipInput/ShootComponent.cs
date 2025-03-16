@@ -5,6 +5,7 @@ using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
 
 public class ShootComponent : MonoBehaviour
@@ -93,5 +94,17 @@ public class ShootComponent : MonoBehaviour
             _stopwatch.Start();
             _canShoot = false;
          }
+    }
+
+    public void Shoot(InputAction.CallbackContext context){
+        if(gameObject.activeInHierarchy == false) return;
+        if(context.performed) StartCoroutine(ShootCoroutine());
+    }
+
+    IEnumerator ShootCoroutine(){
+        while(true){
+            Shoot();
+            yield return null;
+        }
     }
 }

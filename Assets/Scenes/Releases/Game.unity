@@ -1432,6 +1432,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 118927942}
     - target: {fileID: 2869429052483690376, guid: dcf65f3a7b95071408ea7387f8b3a847, type: 3}
+      propertyPath: damagefactor
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 2869429052483690376, guid: dcf65f3a7b95071408ea7387f8b3a847, type: 3}
       propertyPath: _onShoot.m_PersistentCalls.m_Calls.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -1440,8 +1444,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1391166955}
     - target: {fileID: 4607762416428472800, guid: dcf65f3a7b95071408ea7387f8b3a847, type: 3}
+      propertyPath: damagefactor
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 4607762416428472800, guid: dcf65f3a7b95071408ea7387f8b3a847, type: 3}
       propertyPath: _onShoot.m_PersistentCalls.m_Calls.Array.size
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4612414402104674390, guid: dcf65f3a7b95071408ea7387f8b3a847, type: 3}
+      propertyPath: damagefactor
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 4612414402104674390, guid: dcf65f3a7b95071408ea7387f8b3a847, type: 3}
       propertyPath: _onShoot.m_PersistentCalls.m_Calls.Array.size
@@ -1490,6 +1502,10 @@ PrefabInstance:
     - target: {fileID: 6003581576874761132, guid: dcf65f3a7b95071408ea7387f8b3a847, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6350879707348389438, guid: dcf65f3a7b95071408ea7387f8b3a847, type: 3}
+      propertyPath: damagefactor
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 6350879707348389438, guid: dcf65f3a7b95071408ea7387f8b3a847, type: 3}
       propertyPath: _onShoot.m_PersistentCalls.m_Calls.Array.size
