@@ -7,7 +7,11 @@ public class PauseMenuScript : MonoBehaviour
 {
     [SerializeField] private GameObject pauseMenu;
     [SerializeField] Bool _gameover;
-    
+
+    void Start()
+    {
+         Time.timeScale = 1.0f;
+    }
     public void Pause()
     {
        
