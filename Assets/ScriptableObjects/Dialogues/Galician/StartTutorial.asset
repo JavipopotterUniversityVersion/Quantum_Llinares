@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7582aae0121391847b8f1f41a4ad0621, type: 3}
   m_Name: StartTutorial
   m_EditorClassIdentifier: 
-  _value: "<c:nina><name:Glorp><event:AlienTalk>\xA1Hey! Mira ChapoNoco, temos visita.\n---\n<c:pilar><name:ChapoNoco><event:ZombieTalk>Por
+  _value: "<c:nina><name:Glorp><event:AlienTalk>Hei! Mira ChapoNoco, temos visita.\n---\n<c:pilar><name:ChapoNoco><event:ZombieTalk>Por
     fin, algu\xE9n vai axudarnos a manexar esta nave, ti es unha pasp\xE1n...\n---\n<c:nina><name:Glorp><event:AlienTalk>Non
     lle fagades caso, \xE9 un pouco repugnante.\n---\n<c:nina><name:Glorp><event:AlienTalk>Un
     de v\xF3s ter\xE1 que colocarse sobre as teclas WASD e outro sobre as teclas
