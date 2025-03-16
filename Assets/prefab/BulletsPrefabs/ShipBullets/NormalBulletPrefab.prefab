@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: -2878882359552167770}
   - component: {fileID: -7669023027533713891}
   - component: {fileID: 7131714733778438176}
+  - component: {fileID: 2761996500552148368}
   m_Layer: 8
   m_Name: NormalBulletPrefab
   m_TagString: Untagged
@@ -352,3 +353,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _poolHandler: {fileID: 11400000, guid: ac8fceff4928d2f45b207d888a8c0020, type: 2}
+--- !u!114 &2761996500552148368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3114354635972571905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e97fed5dbcf795b4682217edec67a80f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bulletSound: {fileID: 11400000, guid: fcca28e32e5d5684794a34168402fce4, type: 2}

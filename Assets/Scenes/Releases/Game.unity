@@ -1292,10 +1292,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Naves
       objectReference: {fileID: 0}
+    - target: {fileID: 2869429052483690376, guid: dcf65f3a7b95071408ea7387f8b3a847, type: 3}
+      propertyPath: _onShoot.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4092040323004653795, guid: dcf65f3a7b95071408ea7387f8b3a847, type: 3}
       propertyPath: _pauseMenu
       value: 
       objectReference: {fileID: 1391166955}
+    - target: {fileID: 4607762416428472800, guid: dcf65f3a7b95071408ea7387f8b3a847, type: 3}
+      propertyPath: _onShoot.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4612414402104674390, guid: dcf65f3a7b95071408ea7387f8b3a847, type: 3}
+      propertyPath: _onShoot.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5147505090114833612, guid: dcf65f3a7b95071408ea7387f8b3a847, type: 3}
       propertyPath: _smallShip
       value: 0
@@ -1340,14 +1352,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6350879707348389438, guid: dcf65f3a7b95071408ea7387f8b3a847, type: 3}
+      propertyPath: _onShoot.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6450766783376439598, guid: dcf65f3a7b95071408ea7387f8b3a847, type: 3}
       propertyPath: _pauseMenu
       value: 
       objectReference: {fileID: 1391166955}
+    - target: {fileID: 7051316938562985054, guid: dcf65f3a7b95071408ea7387f8b3a847, type: 3}
+      propertyPath: _onShoot.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7990193281751934699, guid: dcf65f3a7b95071408ea7387f8b3a847, type: 3}
       propertyPath: _entitiesContainer
       value: 
       objectReference: {fileID: 1665847972}
+    - target: {fileID: 8789621715062315574, guid: dcf65f3a7b95071408ea7387f8b3a847, type: 3}
+      propertyPath: _onShoot.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
