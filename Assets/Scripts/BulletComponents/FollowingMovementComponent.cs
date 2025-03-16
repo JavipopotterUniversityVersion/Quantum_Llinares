@@ -15,7 +15,7 @@ public class FollowingMovementComponent : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        myTransform = GetComponent<Transform>();
+        myTransform = transform;
         Collider2D[] hit = Physics2D.OverlapCircleAll(transform.position, radius);
         if(hit.Length > 0)
         {
@@ -23,7 +23,8 @@ public class FollowingMovementComponent : MonoBehaviour
             int index = 0;
             while (!found && index < hit.Length)
             {
-                if(hit[index].GetComponent<HealthComponent>())
+                HealthComponent hc;
+                if(hit[index].TryGetComponent(out hc))
                 {
                     found = true;
                     followRef = hit[index].transform;
