@@ -90,6 +90,9 @@ public class ShipTransition : MonoBehaviour
     void Divide() { 
         _canChange = false;
 
+        Ship1.GetComponent<Collider2D>().enabled = false;
+        Ship2.GetComponent<Collider2D>().enabled = false;
+
         Ship1.gameObject.SetActive(true);
         Ship2.gameObject.SetActive(true);
         MainShip.gameObject.SetActive(false);
@@ -100,12 +103,20 @@ public class ShipTransition : MonoBehaviour
         _ship1UpdatesManager.OnShipMerged(MainShip.GetComponentsInChildren<ShootComponent>());
         _ship2UpdatesManager.OnShipMerged(MainShip.GetComponentsInChildren<ShootComponent>());
 
+
+        Ship1.GetComponent<Collider2D>().enabled = true;
+        Ship2.GetComponent<Collider2D>().enabled = true;
+
         divided = true;
         _canChange = true;
     }
 
     IEnumerator Merge(Transform from, Vector2 to){
         _canChange = false;
+
+
+        Ship1.GetComponent<Collider2D>().enabled = false;
+        Ship2.GetComponent<Collider2D>().enabled = false;
 
         _onMerge.Invoke();
         Vector2 fromInitialPosition = from.position;
@@ -115,6 +126,7 @@ public class ShipTransition : MonoBehaviour
             yield return new WaitForEndOfFrame();
         }
 
+        // Esta línea creo que está rompiendo/afectando la escala de las naves al separarse
         from.localScale = Vector3.one;
         from.position = to;
         Ship1.gameObject.SetActive(false);
@@ -130,6 +142,12 @@ public class ShipTransition : MonoBehaviour
             _entitiesContainer.position = Vector2.Lerp(_entitiesContainerInitialPosition, _targetPos, i / _mergeTime);
             yield return new WaitForEndOfFrame();
         }
+
+        
+
+        Ship2.GetComponent<Collider2D>().enabled = true;
+        Ship1.GetComponent<Collider2D>().enabled = true;
+
 
         divided = false;
         _canChange = true;
