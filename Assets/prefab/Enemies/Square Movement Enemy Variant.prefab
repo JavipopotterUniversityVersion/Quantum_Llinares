@@ -50,11 +50,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5617453129520877084, guid: 497fbd7003d5d3d4396a6e88cbd7fb0f, type: 3}
       propertyPath: _health
-      value: 10
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 5617453129520877084, guid: 497fbd7003d5d3d4396a6e88cbd7fb0f, type: 3}
       propertyPath: _onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 200
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 7906243196266977034, guid: 497fbd7003d5d3d4396a6e88cbd7fb0f, type: 3}
       propertyPath: m_Name
@@ -160,3 +160,4 @@ MonoBehaviour:
   _onShoot:
     m_PersistentCalls:
       m_Calls: []
+  _shoot: {fileID: 0}

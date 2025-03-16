@@ -14,7 +14,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2804260652435506004, guid: bae5f90bd9d926d488d4ae1709f19db6, type: 3}
       propertyPath: _health
-      value: 3
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2804260652435506004, guid: bae5f90bd9d926d488d4ae1709f19db6, type: 3}
       propertyPath: _onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
