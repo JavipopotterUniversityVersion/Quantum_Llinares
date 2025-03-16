@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveToTarget : MonoBehaviour
+public class MoveToTarget : MonoBehaviour, IMovementComponent
 {
     private Transform _mTransform;
     [SerializeField] Vector3 _targetPoint = new Vector3(0, 0, 0);
@@ -29,4 +29,14 @@ public class MoveToTarget : MonoBehaviour
     public bool TargetReached(){
         return _mTransform.position == _targetPoint;
     }
+
+    public Vector3 getTarget() => _targetPoint;
+    
+    public Vector2 GetDirection(){
+        return Vector2.MoveTowards(_mTransform.position, _targetPoint, _speed * Time.deltaTime);
+    }
+    public void SetDirection(Vector2 direction){
+        Debug.LogError("Trying to set direction in movetotarget");
+    }
+    public void SetSpeed(float speed) => _speed = speed;
 }
