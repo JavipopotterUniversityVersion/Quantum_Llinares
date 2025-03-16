@@ -18,4 +18,4 @@ MonoBehaviour:
     \n---\n<c:nina><name:Glorp><event:AlienTalk>S\xED, supongo que a veces es mejor
     trabajar por separado, pero as\xED somos m\xE1s d\xE9biles.\n---\n<c:pilar><name:ChapoNoco><event:ZombieTalk>
     Pero as\xED podemos tener indepencencia para todo, incluso para coger mejoras.
-    Mira, ah\xED vienen un par<event:powerup><event:end>\n"
+    Mira, ah\xED vienen un par<event:powerup><event:powerup>"

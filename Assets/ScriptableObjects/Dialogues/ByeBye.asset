@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7582aae0121391847b8f1f41a4ad0621, type: 3}
   m_Name: ByeBye
   m_EditorClassIdentifier: 
-  _value: "<c:nina><name:Glorp><event:AlienTalkCreo que ya est\xE1is preparados para
-    luchar contra los enemigos.\n---\n<c:nina><name:Glorp><event:AlienTalk> Nuestros
-    caminos se separan aqu\xED, pero nosotras siempre estaremos en las naves con
-    vosotros, \xA1juntas!\n---\n<c:pilar><name:ChapoNoco><event:ZombieTalk> O con
-    suerte separadas...<event:end><event:tutorialFinished>\n"
+  _value: "<c:nina><name:Glorp><event:AlienTalk>Creo que ya est\xE1is preparados
+    para luchar contra los enemigos.\n---\n<c:nina><name:Glorp><event:AlienTalk>
+    Nuestros caminos se separan aqu\xED, pero nosotras siempre estaremos en las naves
+    con vosotros, \xA1juntas!\n---\n<c:pilar><name:ChapoNoco><event:ZombieTalk> O
+    con suerte separadas...<event:tutorialFinished>\n"

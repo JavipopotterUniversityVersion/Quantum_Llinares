@@ -22,4 +22,4 @@ MonoBehaviour:
     que se ponga a la derecha me ayudar\xE1 a m\xED a conducir con J y L o los botones
     derecho e izquierdo.\n---\n<c:pilar><name:ChapoNoco><event:ZombieTalk>Y el que
     se ponga a la izquierda disparar\xE1 conmigo, con W y S o el D-pad arriba y abajo.\n---\n<c:pilar><name:ChapoNoco><event:ZombieTalk>Vamos,
-    probad, \xBFesper\xE1is a alguien?<event:end>"
+    probad, \xBFesper\xE1is a alguien?<event:wait>"
