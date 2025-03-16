@@ -1301,6 +1301,18 @@ MonoBehaviour:
           m_StringArgument: Tutorial
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 06a8f43c5cc61894c9af97bf095ca29d, type: 2}
+        m_TargetAssemblyTypeName: AudioChannel, Assembly-CSharp
+        m_MethodName: Stop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1578479407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1435,8 +1447,8 @@ MonoBehaviour:
           m_StringArgument: Game
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: a64864b0073bebc459eeb5a9b8cced52, type: 2}
-        m_TargetAssemblyTypeName: AudioPlayer, Assembly-CSharp
+      - m_Target: {fileID: 11400000, guid: 06a8f43c5cc61894c9af97bf095ca29d, type: 2}
+        m_TargetAssemblyTypeName: AudioChannel, Assembly-CSharp
         m_MethodName: Stop
         m_Mode: 1
         m_Arguments:
