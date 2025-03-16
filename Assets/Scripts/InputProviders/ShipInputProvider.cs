@@ -38,6 +38,9 @@ public class ShipInputProvider : MonoBehaviour
         _shootTopCannon.action.performed += OnShootTopInputRecieved;
         _shootBottomCannon.action.performed += OnShootBottomInputRecieved;
 
+        _shootTopCannon.action.canceled += StopTopCannon;
+        _shootBottomCannon.action.canceled += StopBottomCannon;
+
         _subdivide1.action.performed += _transitioner.PushLeft;
         _subdivide2.action.performed += _transitioner.PushRight;
 
@@ -54,6 +57,9 @@ public class ShipInputProvider : MonoBehaviour
 
         _shootTopCannon.action.performed -= OnShootTopInputRecieved;
         _shootBottomCannon.action.performed -= OnShootBottomInputRecieved;
+
+        _shootTopCannon.action.canceled -= StopTopCannon;
+        _shootBottomCannon.action.canceled -= StopBottomCannon;
 
         _subdivide1.action.performed -= _transitioner.PushLeft;
         _subdivide2.action.performed -= _transitioner.PushRight;
@@ -81,8 +87,11 @@ public class ShipInputProvider : MonoBehaviour
     private void OnRotationInputRecieved(InputAction.CallbackContext obj) => _shipRotation.setRotation(obj.action.ReadValue<Vector3>());
     private void OnRotationInputStopped(InputAction.CallbackContext obj) => _shipRotation.setRotation(Vector3.zero);
 
-    private void OnShootTopInputRecieved(InputAction.CallbackContext obj) => _topCannon.Shoot();
-    private void OnShootBottomInputRecieved(InputAction.CallbackContext obj) => _bottomCannon.Shoot();
+    private void OnShootTopInputRecieved(InputAction.CallbackContext obj) => _topCannon.Shoot(obj);
+    private void OnShootBottomInputRecieved(InputAction.CallbackContext obj) => _bottomCannon.Shoot(obj);
+
+    void StopTopCannon(InputAction.CallbackContext obj) => _topCannon.StopAllCoroutines();
+    void StopBottomCannon(InputAction.CallbackContext obj) => _bottomCannon.StopAllCoroutines();
 
   
     private void OnPauseMenuInputRecieved(InputAction.CallbackContext obj) => _pauseMenu.TogglePause();
