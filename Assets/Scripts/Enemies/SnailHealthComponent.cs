@@ -17,17 +17,6 @@ public class SnailHealthComponent : MonoBehaviour, IDamageable
         distance = distance.normalized;
 
         Vector2 finalPos = transform.position - (distance * d * PushFactor);
-        StartCoroutine(DamageCoroutine(finalPos));
-    }
-
-    private IEnumerator DamageCoroutine(Vector2 finalPos)
-    {
-        while (true)
-        {
-            transform.position = Vector2.Lerp(transform.position, finalPos, Time.deltaTime);
-            if((transform.position - (Vector3)finalPos).magnitude <= 0.5f) { break; }
-        }
-
-        yield return null;
+        transform.position = finalPos;
     }
 }
