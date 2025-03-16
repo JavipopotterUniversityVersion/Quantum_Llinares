@@ -23,10 +23,13 @@ public class ShipHealth : MonoBehaviour, IDamageable
     [SerializeField] int _totalLife = 1;
 
     private int _currentShield;
+
+    private CoinFlipScript _coinflip;
     [SerializeField] int _totalShield = 1;
 
     void Start()
     {
+        _coinflip = GetComponent<CoinFlipScript>();
         _sr = GetComponentInChildren<SpriteRenderer>();
         _currentLife = _totalLife;
         _currentLife = _totalShield;
@@ -94,7 +97,7 @@ public class ShipHealth : MonoBehaviour, IDamageable
         if(_currentShield > 0 && _shieldAvailable) _currentShield--;
         else _currentLife--;
 
-        if(_currentLife <= 0) _onDeath.Invoke();
+        if(_currentLife <= 0 && !_coinflip.SurviveCalc()) _onDeath.Invoke();
         else _onGetDamage.Invoke();
 
         if(_currentShield == 0 && _withoutShield != null) _sr.sprite = _withoutShield;
