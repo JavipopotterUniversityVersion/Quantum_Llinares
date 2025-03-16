@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7582aae0121391847b8f1f41a4ad0621, type: 3}
   m_Name: TeachPowerups
   m_EditorClassIdentifier: 
-  _value: "<c:nina><name:Glorp><event:AlienTalk> Bueno, ahora nos hemos separado,
-    \xBFqu\xE9 hacemos?\n---\n<c:pilar><name:ChapoNoco><event:ZombieTalk>Por fin,
-    ahora puedo conducir y disparar a mis anchas usando toda la cruceta (WASD y D-pad).
-    \n---\n<c:nina><name:Glorp><event:AlienTalk>S\xED, supongo que a veces es mejor
-    trabajar por separado, pero as\xED somos m\xE1s d\xE9biles.\n---\n<c:pilar><name:ChapoNoco><event:ZombieTalk>
-    Pero as\xED podemos tener indepencencia para todo, incluso para coger mejoras.
-    Mira, ah\xED vienen un par<event:powerup><event:powerup>"
+  _value: "<c:nina><name:Glorp><event:AlienTalk> B\xE9, ara ens hem separat, qu\xE8
+    fem?\n---\n<c:pilar><name:ChapoNoco><event:ZombieTalk>Per fi, ara puc condur
+    i disparar a gust usan tota la creueta (WASD y D-Pad). \n---\n<c:nina><name:Glorp><event:AlienTalk>S\xED
+    que suposo que de vegades \xE9s millor treballar per separat, per\xF2 aix\xED
+    som m\xE9s febles\n---\n<c:pilar><name:ChapoNoco><event:ZombieTalk>Per\xF2 aix\xED
+    podem tenir INDEPEND\xC8NCIA per a tot, fins i tot per agafar millores. Mira
+    aqu\xED v\xE9nen un parell<event:powerup><event:powerup>"
