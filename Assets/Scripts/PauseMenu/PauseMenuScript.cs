@@ -6,12 +6,15 @@ using UnityEngine.SceneManagement;
 public class PauseMenuScript : MonoBehaviour
 {
     [SerializeField] private GameObject pauseMenu;
+    [SerializeField] Bool _gameover;
     
     public void Pause()
     {
        
+       if(!_gameover.Value) {
         Time.timeScale = 0.0f;
         pauseMenu.SetActive(true);
+        }
         
     }
     public void Resume()
