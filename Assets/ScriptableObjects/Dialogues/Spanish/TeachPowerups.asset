@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _value: "<c:nina><name:Glorp><event:AlienTalk> Bueno, ahora nos hemos separado,
     \xBFqu\xE9 hacemos?\n---\n<c:pilar><name:ChapoNoco><event:ZombieTalk>Por fin,
-    ahora puedo condcir y disparar a mis anchas usando toda la cruceta (WASD y D-pad).
+    ahora puedo conducir y disparar a mis anchas usando toda la cruceta (WASD y D-pad).
     \n---\n<c:nina><name:Glorp><event:AlienTalk>S\xED, supongo que a veces es mejor
     trabajar por separado, pero as\xED somos m\xE1s d\xE9biles.\n---\n<c:pilar><name:ChapoNoco><event:ZombieTalk>
     Pero as\xED podemos tener indepencencia para todo, incluso para coger mejoras.

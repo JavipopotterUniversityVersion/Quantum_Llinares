@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7582aae0121391847b8f1f41a4ad0621, type: 3}
+  m_Name: StartTutorial
+  m_EditorClassIdentifier: 
+  _value: "<c:nina><name:Glorp><event:AlienTalk>\xA1Hey! Mira ChapoNoco, temos visita.\n---\n<c:pilar><name:ChapoNoco><event:ZombieTalk>Por
+    fin, algu\xE9n vai axudarnos a manexar esta nave, ti es unha pasp\xE1n...\n---\n<c:nina><name:Glorp><event:AlienTalk>Non
+    lle fagades caso, \xE9 un pouco repugnante.\n---\n<c:nina><name:Glorp><event:AlienTalk>Un
+    de v\xF3s ter\xE1 que colocarse sobre as teclas WASD e outro sobre as teclas
+    IJKL [NOT GALICIAN FRIENDLY].\n---\n<c:pilar><name:ChapoNoco><event:ZombieTalk>Ou
+    sobre o D-Pad e os bot\xF3ns dun mando. Nunca lembra os mandos a nena dos coll...\n---\n<c:nina><name:Glorp><event:AlienTalk>O
+    que estea \xE1 dereita axudarame a conducir con J [NOT GALICIAN FRIENDLY] e L
+    ou os bot\xF3ns dereito e esquerdo.\n---\n<c:pilar><name:ChapoNoco><event:ZombieTalk>e
+    o que se po\xF1a \xE1 esquerda disparar\xE1 conmigo, con W e S ou o D-pad enrriba
+    e abaixo.\n---\n<c:pilar><name:ChapoNoco><event:ZombieTalk>Vamos, probade, esperades
+    a algu\xE9n?<event:wait>"
