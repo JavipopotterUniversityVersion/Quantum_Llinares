@@ -28,9 +28,13 @@ PrefabInstance:
       propertyPath: _targetlayer.m_Bits
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 2761996500552148368, guid: 4252c4f624f6370419dee9256283c1e8, type: 3}
+      propertyPath: _bulletSound
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3114354635972571905, guid: 4252c4f624f6370419dee9256283c1e8, type: 3}
       propertyPath: m_Name
-      value: ENemyFollowingBulletPrefab Variant
+      value: EnemyFollowingBulletPrefab Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8589873882471852758, guid: 4252c4f624f6370419dee9256283c1e8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -101,3 +105,4 @@ MonoBehaviour:
   followRef: {fileID: 0}
   maxOffset: 0
   radius: 5
+  _enemiesContainer: {fileID: 0}

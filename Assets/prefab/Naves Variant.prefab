@@ -24,6 +24,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -2065946915, guid: 73d921aa6bca99b469cd6686143a2bc8, type: 3}
+    - target: {fileID: 1041480161285984916, guid: 823fe3f68e7b649448abd64201299415, type: 3}
+      propertyPath: damagefactor
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1609009597647279356, guid: 823fe3f68e7b649448abd64201299415, type: 3}
+      propertyPath: damagefactor
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2064018057397226748, guid: 823fe3f68e7b649448abd64201299415, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -172,6 +180,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 905446395, guid: 73d921aa6bca99b469cd6686143a2bc8, type: 3}
+    - target: {fileID: 7612420666057344330, guid: 823fe3f68e7b649448abd64201299415, type: 3}
+      propertyPath: damagefactor
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7827210068876246895, guid: 823fe3f68e7b649448abd64201299415, type: 3}
       propertyPath: m_UpdateMode
       value: 2
@@ -188,6 +200,10 @@ PrefabInstance:
       propertyPath: _withoutShield
       value: 
       objectReference: {fileID: -276608470, guid: 73d921aa6bca99b469cd6686143a2bc8, type: 3}
+    - target: {fileID: 8179818161388143394, guid: 823fe3f68e7b649448abd64201299415, type: 3}
+      propertyPath: damagefactor
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8688816542265036821, guid: 823fe3f68e7b649448abd64201299415, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.26

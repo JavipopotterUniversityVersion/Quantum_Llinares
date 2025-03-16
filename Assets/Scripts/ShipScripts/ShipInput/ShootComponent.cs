@@ -14,7 +14,7 @@ public class ShootComponent : MonoBehaviour
     [SerializeField] private float _cooldown = 100.0f;
     [SerializeField] private float _cooldownfactor = 1.0f;
 
-    [SerializeField] private float damagefactor;
+    [SerializeField] private float damagefactor = 1;
 
     private float actbulletdamage = 10.0f;
     private float _actCooldown = 100.0f;
@@ -26,14 +26,21 @@ public class ShootComponent : MonoBehaviour
     private bool _canShoot = true;
     private Stopwatch _stopwatch = new Stopwatch();
 
+    [SerializeField] private AudioPlayer _shoot;
     private void Start()
     {
+        SetBulletAudio();
         _actCooldown = _cooldown*_cooldownfactor;
     }
     public void SetBullet(GameObject obj){
         _bulletPrefab = obj;
         damagefactor += 0.1f;
         actbulletdamage = obj.GetComponent<IDamager>().GetDamage()* damagefactor;
+        SetBulletAudio();
+    }
+    public void SetBulletAudio()
+    {
+        _shoot = _bulletPrefab.GetComponent<BulletSound>().getAudio();
     }
     public void SetCooldown(float aux){
         _cooldown = aux;
@@ -57,11 +64,18 @@ public class ShootComponent : MonoBehaviour
             }
         }   
     }
-
+    public void PlayBulletAudio()
+    {
+        if(_shoot != null)
+        {
+            _shoot.Play();
+        }
+    }
     public void Shoot(){
          if(_canShoot)
          { 
             _onShoot.Invoke();
+            PlayBulletAudio();
             GameObject bullet = Instantiate(_bulletPrefab, transform.position, Quaternion.identity);
 
             if (bullet.GetComponent<BoomerangMovement>() != null){
@@ -75,7 +89,7 @@ public class ShootComponent : MonoBehaviour
                 bulletMovement.SetSpeed(_speed);
             }
             else if(bullet.TryGetComponent<FadeWithTime>(out FadeWithTime fadeWithTime)) bullet.transform.rotation = transform.rotation;
-            bullet.GetComponent<IDamager>().SetDamage(actbulletdamage);
+            bullet.GetComponent<IDamager>().SetDamage(actbulletdamage * damagefactor);
             _stopwatch.Start();
             _canShoot = false;
          }
