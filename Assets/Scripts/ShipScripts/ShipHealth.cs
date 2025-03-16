@@ -12,8 +12,11 @@ public class ShipHealth : MonoBehaviour, IDamageable
     private Stopwatch _watch = new Stopwatch();
     [SerializeField] private float _recoverShieldInterval = 10000;
     [SerializeField] private bool _shieldAvailable = true;
+
+    [SerializeField] private bool _smallShip = true;
     [SerializeField] UnityEvent _onGetDamage;
     [SerializeField] UnityEvent _onDeath;
+    [SerializeField] UnityEvent _onRecoverShield;
 
     [SerializeField] private Sprite _withShield, _withoutShield;
 
@@ -87,7 +90,11 @@ public class ShipHealth : MonoBehaviour, IDamageable
     public bool recoverShield(){
         if(_currentShield < _totalShield){
             _currentShield++;
-            if(_withShield != null)_sr.sprite = _withShield;
+            if (_withShield != null)
+            {
+                _sr.sprite = _withShield;
+                if(_currentShield == 1) _onRecoverShield.Invoke();
+            }
             return true;
         }
         return false;
@@ -97,7 +104,7 @@ public class ShipHealth : MonoBehaviour, IDamageable
         if(_currentShield > 0 && _shieldAvailable) _currentShield--;
         else _currentLife--;
 
-        if(_currentLife <= 0 && !_coinflip.SurviveCalc()) _onDeath.Invoke();
+        if((!_smallShip&&_currentLife <= 0)||(_smallShip&&_currentLife <= 0 && !_coinflip.SurviveCalc())) _onDeath.Invoke();
         else _onGetDamage.Invoke();
 
         if(_currentShield == 0 && _withoutShield != null) _sr.sprite = _withoutShield;

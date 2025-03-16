@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7582aae0121391847b8f1f41a4ad0621, type: 3}
+  m_Name: StartTutorial
+  m_EditorClassIdentifier: 
+  _value: "<c:nina><name:Glorp><event:AlienTalk>Che! Mira ChapoNoco, tenim visita.\n---\n<c:pilar><name:ChapoNoco><event:ZombieTalk>Per
+    fi, alg\xFA en va a ajudar a manejar aquesta nau, tu condueixes com el cul...\n---\n<c:nina><name:Glorp><event:AlienTalk>No
+    li fas cas, \xE9s una mica antip\xE0tica.\n---\n<c:nina><name:Glorp><event:AlienTalk>Un
+    de vosaltres haur\xE1 de col\xB7locar-se sobre les tecles WASD y un altre sobre
+    les tecles IJKL..\n---\n<c:pilar><name:ChapoNoco><event:ZombieTalk>O sobre el
+    D-Pad y les botons d'un comandament. Sempre se li obliden els comandaments a
+    la mocosa... \n---\n<c:nina><name:Glorp><event:AlienTalk>El que es posi a la
+    dreta m'ajudar\xE0 a conduir amb J i L o els botons dret i esquerre.\n---\n<c:pilar><name:ChapoNoco><event:ZombieTalk>I
+    el que es posi a la esquerra disparar\xE0 amb mi amb W i S o el D-Pad ammunt
+    i davall.\n---\n<c:pilar><name:ChapoNoco><event:ZombieTalk>Anem, proveu, espereu
+    alg\xFA?<event:wait>"

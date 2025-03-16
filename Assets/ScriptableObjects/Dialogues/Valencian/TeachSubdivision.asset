@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7582aae0121391847b8f1f41a4ad0621, type: 3}
+  m_Name: TeachSubdivision
+  m_EditorClassIdentifier: 
+  _value: "<c:nina><name:Glorp><event:AlienTalk> Parece que se os da bastante bien,
+    hac\xE9is un gran equipo... Ojal\xE1 pudiera decir lo mismo de nosotras.\n---\n<c:pilar><name:ChapoNoco><event:ZombieTalk>Menos
+    mal que esta nave tiene propiedades cu\xE1nticas y podemos conducir por separado.\n---\n<c:nina><name:Glorp><event:AlienTalk>\xA1Oye,
+    eso era un secreto!\n---\n<c:pilar><name:ChapoNoco><event:ZombieTalk>Tranquila
+    Glorp, seguro que no descubren los botones de superposici\xF3n cu\xE1ntica...
+    (que son la Q y P para teclado y los gatillos para mando)\n---\n<c:pilar><name:ChapoNoco><event:ZombieTalk>Y
+    aunque los encuentren nunca los pulsar\xEDan a la vez, \xBFno crees?"

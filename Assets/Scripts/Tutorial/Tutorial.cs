@@ -9,7 +9,7 @@ public class Tutorial : MonoBehaviour
     [SerializeField] StringContainer _container;
 
 
-    [SerializeField] String[] _spanishDialogs, _galicianDialogs;
+    [SerializeField] String[] _spanishDialogs, _galicianDialogs, _valencianDialogs;
     String[] _dialogs;
 
     [SerializeField] LanguageSelector _languageSelector;
@@ -30,7 +30,8 @@ public class Tutorial : MonoBehaviour
     private void Start()
     {
         if (_languageSelector.Language == LanguageSelector.Languages.GALLEGO) _dialogs = _galicianDialogs;
-        else _dialogs = _galicianDialogs;
+        else if (_languageSelector.Language == LanguageSelector.Languages.VALENCIANO) _dialogs = _valencianDialogs;
+        else _dialogs = _spanishDialogs;
         StartCoroutine(TutorialCoroutine());
     }
 

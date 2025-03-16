@@ -8,7 +8,8 @@ public class LanguageSelector : ScriptableObject
     public enum Languages
     {
         ESPANYOL,
-        GALLEGO
+        GALLEGO,
+        VALENCIANO
     }
 
     private Languages _language = Languages.ESPANYOL;
