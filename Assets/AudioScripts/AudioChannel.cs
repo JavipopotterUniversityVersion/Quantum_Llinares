@@ -13,13 +13,13 @@ public class AudioChannel : ScriptableObject
 
     public void Play(AudioPlayer audio)
     {
-        if(_currentAudio != null) _currentAudio.FadeOut(fadeTime);
+        if(_currentAudio != null) _currentAudio.Stop();
         _currentAudio = audio;
-        _currentAudio.FadeIn(fadeTime);
+        _currentAudio.Play();
     }
 
     public void Stop()
     {
-        if(_currentAudio != null) _currentAudio.FadeOut(fadeTime);
+        if(_currentAudio != null) _currentAudio.Stop();
     }
 }

@@ -58,8 +58,9 @@ public class AudioHandler : MonoBehaviour
 
     public void FadeOut(float time)
     { 
-        StopAllCoroutines();
-        StartCoroutine(FadeRoutine(time));
+        _source.Pause();
+        // StopAllCoroutines();
+        // StartCoroutine(FadeRoutine(time));
     }
     IEnumerator FadeRoutine(float duration)
     {
@@ -75,8 +76,9 @@ public class AudioHandler : MonoBehaviour
 
     public void FadeIn(float time)
     {
-        StopAllCoroutines();
-        StartCoroutine(FadeInRoutine(time));
+        _source.Play();
+        // StopAllCoroutines();
+        // StartCoroutine(FadeInRoutine(time));
     }
     IEnumerator FadeInRoutine(float duration)
     {
