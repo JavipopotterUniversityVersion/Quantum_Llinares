@@ -27,4 +27,5 @@ public class CSLuaScript : MonoBehaviour
     }
 
     protected virtual void SetUpLuaVariables(){}
+    protected void SetLuaScriptName(string fileName) => _luaScriptName = fileName;
 }

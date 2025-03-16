@@ -11,7 +11,7 @@ public class LevelInitializer : CSLuaScript
     void Start()
     {
         _levelCreationMethods.Add("RandomLevel");
-        _luaScriptName = "RandomLevel";
+        SetLuaScriptName("RandomLevel");
 
         _script = ScriptRunner.Instance.GetScript();
 
@@ -22,7 +22,7 @@ public class LevelInitializer : CSLuaScript
     }
 
     override protected void SetUpLuaVariables(){
-        _script.Globals["fishes"] = _fishes.getFishesNames();
+        _script.Globals["GetFishes"] = (Func<Script, Table>)_fishes.getFishesNamesTable;
         _script.Globals["SpawnFish"] = (Action<string, Vector3, Quaternion>)SpawnFish;
     }
 
