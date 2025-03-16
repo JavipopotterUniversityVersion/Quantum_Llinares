@@ -84,7 +84,7 @@ public class ShipHealth : MonoBehaviour, IDamageable
     public bool recoverShield(){
         if(_currentShield < _totalShield){
             _currentShield++;
-            _sr.sprite = _withShield;
+            if(_withShield != null)_sr.sprite = _withShield;
             return true;
         }
         return false;
