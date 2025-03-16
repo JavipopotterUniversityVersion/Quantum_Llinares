@@ -32,6 +32,7 @@ Leyenda:
 - El escudo debería empezar activo desde el principio(? (CHECK)
 - Representación visual de cuándo tienes escudo y cuándo no, podríamos incluso ponerlo encima de la nave como un Sprite (CHECK)
 - Se pierde el escudo que tenías cuando se vuelven a juntar las naves (CHECK)
++- Animación romper y aparecer escudo (que sea la misma para ambas, como un flash)
 
 
 - ChangeBulletUpgrade estaría bien que en vez de calcular la distancia al cañón se lo aplique al cañón que esté usando NormalBulletPrefab, y si no al más antiguo (NO SE ARREGLA)
