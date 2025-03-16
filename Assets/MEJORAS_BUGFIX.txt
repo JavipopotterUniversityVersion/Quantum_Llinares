@@ -17,11 +17,15 @@
 
 - Debería poder seleccionarse las opciones de retry, return (final) y resume, restart y quit (pausa) con el mando/teclado
 - Ocultar ratón al detectar mando? O al menos al iniciar una run. Volver a mostrarlo tras la muerte del jugador/coinflip
-- Título mainmenu tiene que hacer fadeout
+- Meter cooldown para gatillos de mando
+- Problema baja el cielo al presionar muchas veces ESC cuando mueres
+
+
 - Forma de acceder al tutorial, añadir a bucle de juego
+- Título mainmenu tiene que hacer fadeout
 
 
-- El escudo debería empezar activo desde el principio(?
+- El escudo debería empezar activo desde el principio(? (CHECK)
 - Representación visual de cuándo tienes escudo y cuándo no, podríamos incluso ponerlo encima de la nave como un Sprite
 - Se pierde el escudo que tenías cuando se vuelven a juntar las naves
 

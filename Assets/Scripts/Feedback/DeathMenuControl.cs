@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class DeathMenuControl : MonoBehaviour
 {
@@ -10,11 +11,13 @@ public class DeathMenuControl : MonoBehaviour
     [SerializeField] GameObject _bretry;
     [SerializeField] GameObject _breturn;
 
+    EventSystem _ev;
     [SerializeField] GameObject _leadboard;
     public void StartMenuCorrutine()
     {
           // print("me LLamo");
         StartCoroutine(ActiveDeathMenu());
+        _ev = FindFirstObjectByType<EventSystem>();
     }
 
     public IEnumerator ActiveDeathMenu(){
@@ -25,6 +28,8 @@ public class DeathMenuControl : MonoBehaviour
         _score.SetActive(true);
         yield return new WaitForSecondsRealtime(1);
       _bretry.SetActive(true);
+      //_ev.currentInputModule. firstSelectedGameObject = _bretry;
+      EventSystem.current.SetSelectedGameObject(_bretry);
       _breturn.SetActive(true);
       _leadboard.SetActive(true);
     }
