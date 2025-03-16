@@ -123,8 +123,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _upgradesPrefabs:
   - {fileID: 3706095031333907312, guid: b05b9570d638782408d68602ca382e50, type: 3}
-  - {fileID: 1382524432699730996, guid: 7907723480a274347852a17f2d418d1b, type: 3}
+  - {fileID: 3927084212328764426, guid: 8f4bd52dec9ac6f468fdead619ccba01, type: 3}
   - {fileID: 6672548119257453488, guid: 8e8e11bfbf4ae4c468db99826f89a8ac, type: 3}
+  - {fileID: 4888454957618411135, guid: 553cfefdf3db83b4b8aa3f233c63de60, type: 3}
+  - {fileID: 7057608418160848823, guid: 9703e6feb20ed284cab2e7f68e9be7d1, type: 3}
   _upgradePos:
   - {x: 6, y: 10}
   - {x: 6, y: -10}
