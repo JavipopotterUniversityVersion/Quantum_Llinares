@@ -39,7 +39,7 @@ Leyenda:
 - ChangeBulletUpgrade estaría bien que en vez de calcular la distancia al cañón se lo aplique al cañón que esté usando NormalBulletPrefab, y si no al más antiguo (NO SE ARREGLA)
 
 
-+- Bajar sonido disparo (demasiado alto/agresivo, suavizar(? )
+- Bajar sonido disparo (demasiado alto/agresivo, suavizar(? ) (CHECK)
 
 
 - Cuando se juntan o se separan las naves pueden morir, arreglar (CHECK)
@@ -47,7 +47,7 @@ Leyenda:
 - Se desconfigura el cooldown de la nave cuando se separan y se vuelven a juntar (CHECK)
 
 
-+- Coinflip
+- Coinflip
 
 
 +- Al principio de cada ronda se disparan dos balas, la normal y una random que no sale de la nave
