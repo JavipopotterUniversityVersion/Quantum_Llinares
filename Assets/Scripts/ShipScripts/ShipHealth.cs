@@ -16,6 +16,7 @@ public class ShipHealth : MonoBehaviour, IDamageable
     [SerializeField] private bool _smallShip = true;
     [SerializeField] UnityEvent _onGetDamage;
     [SerializeField] UnityEvent _onDeath;
+    [SerializeField] UnityEvent _onRecoverShield;
 
     [SerializeField] private Sprite _withShield, _withoutShield;
 
@@ -89,7 +90,11 @@ public class ShipHealth : MonoBehaviour, IDamageable
     public bool recoverShield(){
         if(_currentShield < _totalShield){
             _currentShield++;
-            if(_withShield != null)_sr.sprite = _withShield;
+            if (_withShield != null)
+            {
+                _sr.sprite = _withShield;
+                if(_currentShield == 1) _onRecoverShield.Invoke();
+            }
             return true;
         }
         return false;
