@@ -12,7 +12,7 @@
 
 
 - Tiene que verse mejor qué hace cada mejora
-- Recomiendo que las mejoras no se muevan de carril con el entrelazamiento
+- Recomiendo que las mejoras se muevan de carril con el entrelazamiento (CHECK)
 
 
 - Debería poder seleccionarse las opciones de retry, return (final) y resume, restart y quit (pausa) con el mando/teclado

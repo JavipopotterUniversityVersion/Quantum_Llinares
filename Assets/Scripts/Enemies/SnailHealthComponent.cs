@@ -3,7 +3,7 @@ using UnityEngine;
 public class SnailHealthComponent : MonoBehaviour, IDamageable
 {
     [SerializeField] private PlayerTracker _tracker;
-    [SerializeField] private float _pushFactor = 1.0f;
+    [SerializeField] private float _pushFactor = 1.5f;
 
     public void SetTracker(PlayerTracker t) { _tracker = t; }
 
