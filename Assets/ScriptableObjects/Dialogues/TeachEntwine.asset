@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7582aae0121391847b8f1f41a4ad0621, type: 3}
   m_Name: TeachEntwine
   m_EditorClassIdentifier: 
-  _value: "<c:nina><name:Glorp><event:AlienTalk> Vale, ahora es importante que tom\xE9is
+  _value: "<c:nina><name:Glorp><event:AlienTalk>Vale, ahora es importante que tom\xE9is
     una decisi\xF3n: \n---\n<c:nina><name:Glorp><event:AlienTalk>Solo una de las
     ramas cu\xE1nticas puede sobrevivir. Debemos unirnos antes de que llegue la pr\xF3xima
     mejora.\n---\n<c:nina><name:Glorp><event:AlienTalk>El jugador que quiera dejar
@@ -20,4 +20,4 @@ MonoBehaviour:
     y se unir\xE1 al otro, conservando su mejora.\n---\n<c:pilar><name:ChapoNoco><event:ZombieTalk>El
     bot\xF3n es el mismo que el de separaci\xF3n, hasta vosotros pod\xE9is hacerlo...
     Vamos, elegidme a m\xED.\n---\n<c:nina><name:Glorp><event:AlienTalk> No, \xA1elegidme
-    a m\xED!<event:end>\n"
+    a m\xED!"

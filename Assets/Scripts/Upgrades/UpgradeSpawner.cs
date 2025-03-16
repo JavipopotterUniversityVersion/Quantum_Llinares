@@ -16,7 +16,8 @@ public class UpgradeSpawner : MonoBehaviour
     {
         StartCoroutine(SpawnUpgrades());
     }
-    public void SpawnUpgrade()
+   
+    private void SpawnUpgrade()
     {
         bool isVertical = Random.Range(0, 2) == 0;
         Vector2 spawnPosition = _upgradePos[Random.Range(0, _upgradePos.Length)];
@@ -32,6 +33,27 @@ public class UpgradeSpawner : MonoBehaviour
 
         _upgrades.transform.SetParent(entitiesContainer);
     }
+
+    public void SpawnTutorialUpgrades()
+    {
+        for(int i = 0; i < 2; ++i)
+        {
+            Vector2 spawnPosition = _upgradePos[i];
+            GameObject _upgrades;
+            if (spawnPosition.y < 0)
+            {
+                _upgrades = Instantiate(_upgradesPrefabs[Random.Range(0, _upgradesPrefabs.Length)], spawnPosition, Quaternion.identity);
+            }
+            else
+            {
+                _upgrades = Instantiate(_upgradesPrefabs[Random.Range(0, _upgradesPrefabs.Length)], spawnPosition, new Quaternion(0, 0, 180, 1));
+            }
+
+            _upgrades.transform.SetParent(entitiesContainer);
+        }
+        
+    }
+
     IEnumerator SpawnUpgrades()
     {
 

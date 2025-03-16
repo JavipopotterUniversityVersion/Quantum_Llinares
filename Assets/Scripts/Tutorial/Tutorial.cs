@@ -9,12 +9,17 @@ public class Tutorial : MonoBehaviour
 
     [SerializeField] String[] _dialogs;
 
-    private bool _basicsLearned, _divisionLearned, _powerUpFound, _entwineLearned;
+    private bool _divisionLearned, _powerUpFound, _entwineLearned, _waitEnded;
 
     private int _index;
 
     public void DivisionLearned() => _divisionLearned = true;
-    public void EntwineLearned() => _entwineLearned = true;
+    public void EntwineLearned()
+    {
+        _entwineLearned = true;
+        Wait();
+    }
+
     public void PowerUpFound() => _powerUpFound = true;
 
     private void Start()
@@ -26,21 +31,15 @@ public class Tutorial : MonoBehaviour
     {
         if (_index >= _dialogs.Length) return;
         _container.SetValue(_dialogs[_index]);
-        Time.timeScale = 0.0f;
         _index++;
-    }
-
-    public void UnPause()
-    {
-        Time.timeScale = 1.0f;
     }
 
     private IEnumerator TutorialCoroutine()
     {
         RunTutorialScene();
 
-        _basicsLearned = false;
-        yield return new WaitForSeconds(5);
+        _waitEnded = false;
+        yield return new WaitUntil(() =>_waitEnded);
 
         RunTutorialScene();
 
@@ -55,9 +54,21 @@ public class Tutorial : MonoBehaviour
         RunTutorialScene();
 
         _entwineLearned = false;
-
         yield return new WaitUntil(() => _entwineLearned);
-        yield return new WaitForSeconds(5);
+
         RunTutorialScene();
+
+        _waitEnded = false;
+        yield return new WaitUntil(() => _waitEnded);
+
+        RunTutorialScene();
+    }
+
+    public void Wait() => StartCoroutine(WaitTen());
+
+    private IEnumerator WaitTen()
+    {
+        yield return new WaitForSeconds(8);
+        _waitEnded = true;
     }
 }
