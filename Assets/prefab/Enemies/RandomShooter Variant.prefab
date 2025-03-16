@@ -139,5 +139,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _shooter: {fileID: 2230329719862984553}
-  _minTime: 1000
-  _maxTIme: 2000
+  _minTime: 1500
+  _maxTIme: 3000

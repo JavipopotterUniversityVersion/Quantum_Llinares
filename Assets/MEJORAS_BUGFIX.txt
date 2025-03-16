@@ -27,6 +27,7 @@ Leyenda:
 
 - Forma de acceder al tutorial, añadir a bucle de juego (CHECK)
 - Título mainmenu tiene que hacer fadeout (CHECK)
++- Desactivar input en el tutorial
 
 
 - El escudo debería empezar activo desde el principio(? (CHECK)
