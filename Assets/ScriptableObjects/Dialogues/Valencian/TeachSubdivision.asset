@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7582aae0121391847b8f1f41a4ad0621, type: 3}
   m_Name: TeachSubdivision
   m_EditorClassIdentifier: 
-  _value: "<c:nina><name:Glorp><event:AlienTalk> Parece que se os da bastante bien,
-    hac\xE9is un gran equipo... Ojal\xE1 pudiera decir lo mismo de nosotras.\n---\n<c:pilar><name:ChapoNoco><event:ZombieTalk>Menos
-    mal que esta nave tiene propiedades cu\xE1nticas y podemos conducir por separado.\n---\n<c:nina><name:Glorp><event:AlienTalk>\xA1Oye,
-    eso era un secreto!\n---\n<c:pilar><name:ChapoNoco><event:ZombieTalk>Tranquila
-    Glorp, seguro que no descubren los botones de superposici\xF3n cu\xE1ntica...
-    (que son la Q y P para teclado y los gatillos para mando)\n---\n<c:pilar><name:ChapoNoco><event:ZombieTalk>Y
-    aunque los encuentren nunca los pulsar\xEDan a la vez, \xBFno crees?"
+  _value: "<c:nina><name:Glorp><event:AlienTalk>Sembla que se us d\xF3na prou b\xE9,
+    sou com el farton i l'orxata! Tant de bo podu\xE9s dir el mateix de nosaltres.\n---\n<c:pilar><name:ChapoNoco><event:ZombieTalk>Encara
+    sort que aquesta nau t\xE9 propietats qu\xE0ntiques i podem conduir separades.\n---\n<c:nina><name:Glorp><event:AlienTalk>Eiii!
+    Aix\xF3 era un secret\n---\n<c:pilar><name:ChapoNoco><event:ZombieTalk>Tranquil\xB7la
+    Glorp, segur que no descobreixen els botons de superposici\xF3 qu\xE0ntica...
+    (que s\xF3n la Q i P per a teclat i els gallets per a comandament).\n---\n<c:pilar><name:ChapoNoco><event:ZombieTalk>I
+    encara que ho trobin mai els premurien alhora, no creus?\r"
