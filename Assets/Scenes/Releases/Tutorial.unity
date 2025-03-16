@@ -167,12 +167,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _container: {fileID: 11400000, guid: 0feb63281527d1647b835d7c1d6e0af6, type: 2}
-  _dialogs:
+  _spanishDialogs:
   - {fileID: 11400000, guid: f6f96c12512b8ee45994f1d18211a578, type: 2}
   - {fileID: 11400000, guid: 0fcaf03be2a24d04eab977c620cab72e, type: 2}
   - {fileID: 11400000, guid: 1a90fb13849e08747905d4b81b3a6804, type: 2}
   - {fileID: 11400000, guid: 570151c1bb912854e93e6c0f56028e16, type: 2}
   - {fileID: 11400000, guid: c911ad8669545c547bd10348c09ba6c0, type: 2}
+  _galicianDialogs:
+  - {fileID: 11400000, guid: 31f7b54c033eaf04c86bb2a48162da7c, type: 2}
+  - {fileID: 11400000, guid: e84b0fbf1b1f12048bad3343a69ef0ab, type: 2}
+  - {fileID: 11400000, guid: e7c583fe9d006b242bcdcee17fce5090, type: 2}
+  - {fileID: 11400000, guid: 6247d09ed8323664e9ddaf08289e7105, type: 2}
+  - {fileID: 11400000, guid: de86fca5a2f1a874d864b47115a8f130, type: 2}
+  _languageSelector: {fileID: 11400000, guid: 6f35a69e94d699c4c82832ea737b7cbf, type: 2}
 --- !u!1001 &177572768
 PrefabInstance:
   m_ObjectHideFlags: 0

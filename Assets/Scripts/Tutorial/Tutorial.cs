@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,7 +8,11 @@ public class Tutorial : MonoBehaviour
 {
     [SerializeField] StringContainer _container;
 
-    [SerializeField] String[] _dialogs;
+
+    [SerializeField] String[] _spanishDialogs, _galicianDialogs;
+    String[] _dialogs;
+
+    [SerializeField] LanguageSelector _languageSelector;
 
     private bool _divisionLearned, _powerUpFound, _entwineLearned, _waitEnded;
 
@@ -24,6 +29,8 @@ public class Tutorial : MonoBehaviour
 
     private void Start()
     {
+        if (_languageSelector.Language == LanguageSelector.Languages.GALLEGO) _dialogs = _galicianDialogs;
+        else _dialogs = _galicianDialogs;
         StartCoroutine(TutorialCoroutine());
     }
 
