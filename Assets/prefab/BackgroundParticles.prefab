@@ -45,12 +45,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 5792934071104967270}
     m_Modifications:
     - target: {fileID: 1052126528159564654, guid: 5e002e7863095394a8c7163905013e3b, type: 3}
+      propertyPath: m_SortMode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1052126528159564654, guid: 5e002e7863095394a8c7163905013e3b, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 9d053770acb6cb24f8f1f607b50a1aaa, type: 2}
     - target: {fileID: 5559816466775770273, guid: 5e002e7863095394a8c7163905013e3b, type: 3}
       propertyPath: m_Name
       value: Planets2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6185795278020699806, guid: 5e002e7863095394a8c7163905013e3b, type: 3}
+      propertyPath: ShapeModule.m_Scale.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6185795278020699806, guid: 5e002e7863095394a8c7163905013e3b, type: 3}
       propertyPath: InitialModule.startSize.scalar
@@ -429,12 +437,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 5792934071104967270}
     m_Modifications:
     - target: {fileID: 1052126528159564654, guid: 5e002e7863095394a8c7163905013e3b, type: 3}
+      propertyPath: m_SortMode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1052126528159564654, guid: 5e002e7863095394a8c7163905013e3b, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ac77dbd026c8d794ca4e0d7b9763d270, type: 2}
     - target: {fileID: 5559816466775770273, guid: 5e002e7863095394a8c7163905013e3b, type: 3}
       propertyPath: m_Name
       value: Planets
+      objectReference: {fileID: 0}
+    - target: {fileID: 6185795278020699806, guid: 5e002e7863095394a8c7163905013e3b, type: 3}
+      propertyPath: ShapeModule.m_Scale.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6185795278020699806, guid: 5e002e7863095394a8c7163905013e3b, type: 3}
       propertyPath: InitialModule.startSize.scalar

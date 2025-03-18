@@ -20,6 +20,8 @@ public class DialogueInterpreter : MonoBehaviour
     [SerializeField] float timeBetweenChars = 0.05f;
     [SerializeField] float timeBetweenLines = 1.0f;
     [SerializeField] UnityEvent _onCharWritten;
+    [SerializeField] UnityEvent _onLineStart;
+    [SerializeField] UnityEvent _onLineEnd;
     [SerializeField] Image sr;
     [SerializeField] SerializableDictionary<string, Sprite> spriteDictionary;
     SceneLoader sceneLoader;
@@ -58,10 +60,12 @@ public class DialogueInterpreter : MonoBehaviour
 
         for(int c = 0; c < lines.Length; c++)
         {
+            _onLineStart.Invoke();
             string line = lines[c];
             _text.text = line.Trim();
             _text.maxVisibleCharacters = 0;
             float waitTime = timeBetweenLines;
+            _stop = true;
 
             for(int i = 0; i < _text.text.Length; i++)
             {
@@ -76,10 +80,11 @@ public class DialogueInterpreter : MonoBehaviour
                     ReadCommand(value, ref waitTime);
                 } else if(_text.text[i] != ' ' && !Input.GetKey(KeyCode.Tab)) _onCharWritten.Invoke();
 
-                if(Input.GetKey(KeyCode.Tab)) yield return null;
+                if(Input.GetKey(KeyCode.Tab) || !_stop) yield return null;
                 else yield return new WaitForSeconds(timeBetweenChars);
             }
             _stop = true;
+            _onLineEnd.Invoke();
             yield return new WaitWhile(() => _stop);
             if(Input.GetKey(KeyCode.Tab)) yield return null;
             //else yield return new WaitForSeconds(waitTime);

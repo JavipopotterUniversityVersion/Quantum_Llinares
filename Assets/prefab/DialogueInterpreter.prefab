@@ -132,6 +132,36 @@ MonoBehaviour:
   _onCharWritten:
     m_PersistentCalls:
       m_Calls: []
+  _onLineStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1100352644277236265}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: CHARACTER_TALK
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onLineEnd:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1100352644277236265}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Talk
+          m_BoolArgument: 0
+        m_CallState: 2
   sr: {fileID: 1578016543562741944}
   spriteDictionary:
     list:
@@ -411,6 +441,7 @@ GameObject:
   - component: {fileID: 5592228781933433848}
   - component: {fileID: 3635723228843803456}
   - component: {fileID: 1578016543562741944}
+  - component: {fileID: 1100352644277236265}
   m_Layer: 5
   m_Name: Character
   m_TagString: Untagged
@@ -434,8 +465,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0.000061035156, y: 0}
-  m_SizeDelta: {x: 615.66, y: 0}
+  m_AnchoredPosition: {x: 47, y: -207}
+  m_SizeDelta: {x: 749.0284, y: 281}
   m_Pivot: {x: 0.50000006, y: 0.5}
 --- !u!222 &3635723228843803456
 CanvasRenderer:
@@ -465,7 +496,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1448555537, guid: a3df36682877a3140b5208e37324de3d, type: 3}
+  m_Sprite: {fileID: 1773322152, guid: c596d29de255e5e409ef1a691f1a0a07, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -475,6 +506,27 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!95 &1100352644277236265
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4510839605240555450}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 48b5deae9e7646346b59a13f3476c589, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &5102260267708819203
 GameObject:
   m_ObjectHideFlags: 0
